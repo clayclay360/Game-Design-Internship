@@ -1,18 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static int reliableDate;
+    public static string question;
+    public static Dictionary<int,bool> reliableInformation = new Dictionary<int,bool>();
 
-    // Update is called once per frame
-    void Update()
+    public void Game()
     {
-        
+
     }
 }
