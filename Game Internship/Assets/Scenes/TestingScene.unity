@@ -3094,6 +3094,16 @@ MonoBehaviour:
         in a fit of rage at the park. That guy must really hate the park
       month: Posted May 7th
       year: 2019
+    - Type: 1
+      isReliable: 0
+      source: 
+      title: 
+      author: Anonyous123
+      information: "\u201CYes, I am a builder at heart and greatly enjoyed my relationships
+        with Nefaripolis Builders Unite. I think their vision for the city is wonderful
+        and I can\u2019t wait to be part of it\u201D\n"
+      month: Recorded in
+      year: 2027
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0

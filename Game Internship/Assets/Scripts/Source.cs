@@ -11,7 +11,7 @@ public class Source
     public string source;
     public string title;
     public string author;
-    [TextArea(1,5)]
+    [TextArea(1,8)]
     public string information;
     public string month;
     public int year;
