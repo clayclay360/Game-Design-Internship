@@ -64,6 +64,7 @@ public class Main : MonoBehaviour
                 informationPrefab = Instantiate(informationType.articlePrefab, draggableUI.transform);
                 break;
             case Source.type.social:
+                informationPrefab = Instantiate(informationType.socialsPrefab, draggableUI.transform);
                 break;
             case Source.type.research:
                 break;

@@ -3083,21 +3083,17 @@ MonoBehaviour:
   questionText: {fileID: 1720250127}
   draggableUI: {fileID: 1678326140}
   questions:
-  - question: Is John Fox corrupt?
+  - question: Is Candidate A Corrupt?
     sources:
-    - Type: 0
+    - Type: 1
       isReliable: 0
-      source: Hot Topic
-      title: Ligma Strikes Again
-      author: Johnny Doe
-      information: 'Hello I''m johnny doe ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-        I like
-        pie and ice cream ~~~~~~~~~~~~~~~~~~~~~~
-
-        Help It''s an addiction.'
-      month: August
-      year: 1928
+      source: 
+      title: 
+      author: Sally  Ratking
+      information: I saw Candidate A throwing water on people and pushing over trashcans
+        in a fit of rage at the park. That guy must really hate the park
+      month: Posted May 7th
+      year: 2019
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0
@@ -3125,5 +3121,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   articlePrefab: {fileID: 1542358782119838860, guid: 927184b0729b92945b2093ec3c4ba6a7, type: 3}
-  socialsPrefab: {fileID: 0}
+  socialsPrefab: {fileID: 2231909901935483417, guid: 4bd07adc63b3c834dbfb6804b0a4f1b1, type: 3}
   researchPrefab: {fileID: 0}
