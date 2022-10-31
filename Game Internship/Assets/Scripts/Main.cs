@@ -8,7 +8,7 @@ public class Main : MonoBehaviour
     [Header("UI")]
     public CanvasGroup blackScreen;
     public Text questionText;
-    public GameObject environment;
+    public GameObject draggableUI;
 
     [Header("Questions")]
     public Question[] questions;
@@ -61,7 +61,7 @@ public class Main : MonoBehaviour
         switch (sourceType)
         {
             case Source.type.article:
-                informationPrefab = Instantiate(informationType.articlePrefab, environment.transform);
+                informationPrefab = Instantiate(informationType.articlePrefab, draggableUI.transform);
                 break;
             case Source.type.social:
                 break;
