@@ -19,4 +19,23 @@ public class Main : MonoBehaviour
                 break;
         }
     }
+
+    private void Update()
+    {
+        CheckPlayerInput();
+    }
+
+    public void CheckPlayerInput()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            if (hit)
+            {
+                hit.transform.gameObject.TryGetComponent<Button>(out Button uibutt);
+                uibutt.OnClick();
+            }
+        }
+    }
 }
