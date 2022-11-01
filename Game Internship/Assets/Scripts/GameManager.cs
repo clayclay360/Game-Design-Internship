@@ -8,4 +8,5 @@ public class GameManager
 {
     public static int reliableDate;
     public static int currentDay;
+    public static bool readyForNextSource;
 }

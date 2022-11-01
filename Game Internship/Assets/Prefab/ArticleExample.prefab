@@ -409,6 +409,7 @@ GameObject:
   - component: {fileID: 1542358782119838866}
   - component: {fileID: 2365843903136114008}
   - component: {fileID: 6582941906958067248}
+  - component: {fileID: 5591135679263867441}
   m_Layer: 5
   m_Name: ArticleExample
   m_TagString: Untagged
@@ -510,6 +511,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
+--- !u!225 &5591135679263867441
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542358782119838860}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1903731807803918191
 GameObject:
   m_ObjectHideFlags: 0
