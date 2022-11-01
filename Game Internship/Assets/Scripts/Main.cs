@@ -91,22 +91,4 @@ public class Main : MonoBehaviour
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
     }
 
-    private void Update()
-    {
-        CheckPlayerInput();
-    }
-
-    public void CheckPlayerInput()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-            if (hit)
-            {
-                hit.transform.gameObject.TryGetComponent<Button>(out Button uibutt);
-                uibutt.OnClick();
-            }
-        }
-    }
 }
