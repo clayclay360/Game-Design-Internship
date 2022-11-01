@@ -35,6 +35,7 @@ public class Main : MonoBehaviour
             blackScreen.alpha -= 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
+        blackScreen.blocksRaycasts = false;
 
         yield return new WaitForSeconds(1);
         questionText.text = questions[GameManager.currentDay].question;
@@ -49,11 +50,21 @@ public class Main : MonoBehaviour
             sourceIndex = numberOfReviewedInformation;
             CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
             numberOfReviewedInformation++;
+            
+            //wait until player finishes sources
+            while (!GameManager.readyForNextSource)
+            {
+                yield return null;
+            }
+            GameManager.readyForNextSource = false;
+
+            yield return new WaitForSeconds(2);
         }
         Debug.Log("End Task");
 
     }
 
+    // create the source and fill in the information
     public void CreateSource(Source.type sourceType)
     {
         GameObject informationPrefab = null;
@@ -77,5 +88,6 @@ public class Main : MonoBehaviour
         information.informationText.text = questions[GameManager.currentDay].sources[sourceIndex].information;
         information.monthText.text = questions[GameManager.currentDay].sources[sourceIndex].month;
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
+        information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
     }
 }

@@ -287,6 +287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 106791169}
+  - component: {fileID: 106791170}
   m_Layer: 5
   m_Name: ReliableInformationBin
   m_TagString: Untagged
@@ -314,6 +315,19 @@ RectTransform:
   m_AnchoredPosition: {x: -500, y: -89.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &106791170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106791168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dacb20bb9bd3d49ab03df6a8572f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotType: 0
 --- !u!1 &138420394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +1972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1295978955}
+  - component: {fileID: 1295978956}
   m_Layer: 5
   m_Name: UnReliableInformationBin
   m_TagString: Untagged
@@ -1985,6 +2000,19 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -89.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1295978956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295978954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dacb20bb9bd3d49ab03df6a8572f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotType: 1
 --- !u!1 &1379221447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,7 +2387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678326140}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adf1366b7ce926f44a0786264912917a, type: 3}
   m_Name: 
@@ -3095,7 +3123,7 @@ MonoBehaviour:
       month: Posted May 7th
       year: 2019
     - Type: 1
-      isReliable: 0
+      isReliable: 1
       source: 
       title: 
       author: Anonyous123

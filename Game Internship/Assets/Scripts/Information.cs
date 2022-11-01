@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 public class Information : MonoBehaviour
 {
     [Header("UI")]
@@ -11,5 +12,6 @@ public class Information : MonoBehaviour
     public Text informationText;
     public Text monthText;
     public Text yearText;
-    
+    [HideInInspector]
+    public bool isReliable;
 }
