@@ -90,4 +90,5 @@ public class Main : MonoBehaviour
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
     }
+
 }
