@@ -10,6 +10,7 @@ public class GameManager
     public static int currentDay;
     public static int totalDays = 2;
     public static bool readyForNextSource;
+    public static bool readyToStartWork;
 
     public static int correctlySorted;
     public static int[] correctNeeded = { 2, 2 } ;
