@@ -20,10 +20,12 @@ public class InformationSlot : MonoBehaviour, IDropHandler
             {
                 if(information.isReliable && slotType.Equals(SlotType.reliable))
                 {
+                    GameManager.correctlySorted += 1;
                     Debug.Log("Correct");
                 }
                 else if(!information.isReliable && slotType.Equals(SlotType.unreliable))
                 {
+                    GameManager.correctlySorted += 1;
                     Debug.Log("Correct");
                 }
                 else
