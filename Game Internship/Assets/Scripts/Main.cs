@@ -7,7 +7,7 @@ public class Main : MonoBehaviour
 {
     [Header("UI")]
     public CanvasGroup blackScreen;
-    public Text questionText;
+    public Text questionText, dayText;
     public GameObject draggableUI;
 
     [Header("Questions")]
@@ -19,7 +19,7 @@ public class Main : MonoBehaviour
     private void Start()
     {
         informationType = GetComponent<InformationType>();
-
+        GameManager.correctlySorted = 0;
         StartCoroutine(Gameloop());
     }
 
@@ -28,6 +28,7 @@ public class Main : MonoBehaviour
         // start the day and display question
         #region Display
         blackScreen.gameObject.SetActive(true);
+        blackScreen.alpha = 1;
         yield return new WaitForSeconds(2);
 
         while(blackScreen.alpha != 0)
@@ -39,6 +40,7 @@ public class Main : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         questionText.text = questions[GameManager.currentDay].question;
+        questionText.gameObject.SetActive(true);
         #endregion
 
         // start passing out information
@@ -60,8 +62,9 @@ public class Main : MonoBehaviour
 
             yield return new WaitForSeconds(2);
         }
-        Debug.Log("End Task");
 
+        EndDay();
+        Debug.Log("End Task");
     }
 
     // create the source and fill in the information
@@ -89,6 +92,32 @@ public class Main : MonoBehaviour
         information.monthText.text = questions[GameManager.currentDay].sources[sourceIndex].month;
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
+    }
+
+    public void EndDay()
+    {
+        if (GameManager.correctlySorted >= GameManager.correctNeeded[GameManager.currentDay])
+        {
+            Debug.Log("Good Ending");
+        }
+        else
+        {
+            Debug.Log("Bad Ending");
+        }
+        GameManager.currentDay += 1;
+        //Check if that was the last level
+        if (GameManager.currentDay > GameManager.totalDays + 1) //Add one because arrays start at zero!
+        {
+            Debug.Log("End Game");
+        }
+        else
+        {
+            //Reset to start next level
+            GameManager.correctlySorted = 0;
+            dayText.text = GameManager.dayText[GameManager.currentDay];
+            questionText.gameObject.SetActive(false);
+            StartCoroutine(Gameloop());
+        }
     }
 
 }

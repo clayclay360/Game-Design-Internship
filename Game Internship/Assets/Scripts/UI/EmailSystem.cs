@@ -116,12 +116,12 @@ public class EmailSystem : MonoBehaviour
     public void ShowEmail(int btnNum) //Accessed from button
     {
         ChangeEmail(Inbox[btnNum]);
-        emailPanel.gameObject.SetActive(true);
+        emailPanel.SetActive(true);
     }
 
     public void HideEmail() //Accessed from button
     {
-        emailPanel.gameObject.SetActive(false);
+        emailPanel.SetActive(false);
     }
 
 }
