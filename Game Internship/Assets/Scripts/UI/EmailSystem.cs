@@ -9,7 +9,9 @@ public class EmailSystem : MonoBehaviour
     [Header("UI")]
     public GameObject emailPanel;
     public GameObject inboxPanel;
+    public GameObject notifcations;
     public Text buttonText;
+    public Text notificationText;
     public Button toggleBtn;
     public Email[] Inbox;
 
@@ -22,12 +24,14 @@ public class EmailSystem : MonoBehaviour
     public Text subject;
     public Text sender;
     public Text body;
-  
+
+    private int currentEmailIndex;
+    private int numberOfUnreadEmails;
+    private bool emailUpToDate;
 
     private void Awake()
     {
-        Inbox = new Email[5];
-        ShowHide();
+        //Inbox = new Email[5];
         DisplayEmails();
     }
 
@@ -36,7 +40,7 @@ public class EmailSystem : MonoBehaviour
         SortInbox();
         for (int i = 0; i < Inbox.Length; i++)
         {
-            if (Inbox[i])
+            if (Inbox[i] != null)
             {
                 InboxSubjects[i].text = Inbox[i].subject;
                 InboxFroms[i].text = Inbox[i].sender;
@@ -117,11 +121,55 @@ public class EmailSystem : MonoBehaviour
     {
         ChangeEmail(Inbox[btnNum]);
         emailPanel.gameObject.SetActive(true);
+        currentEmailIndex = btnNum;
     }
 
     public void HideEmail() //Accessed from button
     {
         emailPanel.gameObject.SetActive(false);
+        Inbox[currentEmailIndex].opened = true;
+    }
+
+    private void Update()
+    {
+        CheckEmails();
+        GameManager.readyToStartWork = emailUpToDate; 
+    }
+
+    public void CheckEmails() 
+    {
+        // check if all emails are read
+        for (int i = 0; i < Inbox.Length; i++)
+        {
+            if (!Inbox[i].opened)
+            {
+                emailUpToDate = false;
+                break;
+            }
+            emailUpToDate = true;
+        }
+
+        numberOfUnreadEmails = 0;
+
+        //check how many emails aren;t read
+        #region Notifications
+        for (int c = 0; c < Inbox.Length; c++)
+        {
+            if (!Inbox[c].opened)
+            {
+                numberOfUnreadEmails++;
+            }
+        }
+        if(numberOfUnreadEmails == 0)
+        {
+            notifcations.SetActive(false);
+        }
+        else
+        {
+            notifcations.SetActive(true);
+        }
+        notificationText.text = numberOfUnreadEmails.ToString();
+        #endregion
     }
 
 }

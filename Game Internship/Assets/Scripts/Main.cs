@@ -36,10 +36,17 @@ public class Main : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         blackScreen.blocksRaycasts = false;
+        #endregion
+
+        #region ReadEmails
+        while (!GameManager.readyToStartWork)
+        {
+            yield return null;
+        }
+        #endregion
 
         yield return new WaitForSeconds(1);
         questionText.text = questions[GameManager.currentDay].question;
-        #endregion
 
         // start passing out information
         yield return null;
