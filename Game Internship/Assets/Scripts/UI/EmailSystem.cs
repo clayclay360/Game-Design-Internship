@@ -122,12 +122,19 @@ public class EmailSystem : MonoBehaviour
         ChangeEmail(Inbox[btnNum]);
         emailPanel.gameObject.SetActive(true);
         currentEmailIndex = btnNum;
+        Inbox[currentEmailIndex].opened = true;
     }
 
     public void HideEmail() //Accessed from button
     {
-        emailPanel.gameObject.SetActive(false);
-        Inbox[currentEmailIndex].opened = true;
+        emailPanel.gameObject.SetActive(false); 
+    }
+
+    public void DeleteEmail()
+    {
+        emailPanel.SetActive(false);
+        Inbox[currentEmailIndex] = null;
+        DisplayEmails();
     }
 
     private void Update()
@@ -141,7 +148,7 @@ public class EmailSystem : MonoBehaviour
         // check if all emails are read
         for (int i = 0; i < Inbox.Length; i++)
         {
-            if (!Inbox[i].opened)
+            if (Inbox[i] != null && !Inbox[i].opened)
             {
                 emailUpToDate = false;
                 break;
@@ -155,7 +162,7 @@ public class EmailSystem : MonoBehaviour
         #region Notifications
         for (int c = 0; c < Inbox.Length; c++)
         {
-            if (!Inbox[c].opened)
+            if (Inbox[c] != null && !Inbox[c].opened)
             {
                 numberOfUnreadEmails++;
             }
