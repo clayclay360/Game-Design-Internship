@@ -97,9 +97,9 @@ public class Main : MonoBehaviour
         }
         #endregion
 
-        #region Currency
+        #region Relevancy
         // start passing out information
-        yield return null;
+        yield return new WaitForSeconds(1);
 
         while (numberOfReviewedInformation < 4/*questions[GameManager.currentDay].sources.Length*/)
         {
