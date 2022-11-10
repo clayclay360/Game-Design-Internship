@@ -13,12 +13,18 @@ public class Main : MonoBehaviour
     [Header("Questions")]
     public Question[] questions;
 
+    [Header("Emails")]
+    public Email[] emails;
+
     private int sourceIndex;
 
     private InformationType informationType;
+    private EmailSystem emailSystem;
+
     private void Start()
     {
         informationType = GetComponent<InformationType>();
+        emailSystem = FindObjectOfType<EmailSystem>();
 
         StartCoroutine(Gameloop());
     }
@@ -44,14 +50,16 @@ public class Main : MonoBehaviour
             yield return null;
         }
         #endregion
-
+        
         yield return new WaitForSeconds(1);
         questionText.text = questions[GameManager.currentDay].question;
 
+        #region Currency
         // start passing out information
         yield return null;
         int numberOfReviewedInformation = 0;
-        while(numberOfReviewedInformation < questions[GameManager.currentDay].sources.Length)
+
+        while(numberOfReviewedInformation < 2/*questions[GameManager.currentDay].sources.Length*/)
         {
             //temporary
             sourceIndex = numberOfReviewedInformation;
@@ -67,8 +75,51 @@ public class Main : MonoBehaviour
 
             yield return new WaitForSeconds(2);
         }
-        Debug.Log("End Task");
+        #endregion
 
+        //count the emails
+        int currentEmailIndex = 0;
+
+        for(int i = 0; i < emailSystem.Inbox.Length; i++)
+        {
+            if(emailSystem.Inbox[i] == null && currentEmailIndex < emails.Length)
+            {
+                emailSystem.Inbox[i] = emails[currentEmailIndex];
+                currentEmailIndex++;
+            }
+        }
+
+        #region ReadEmails
+        GameManager.readyToStartWork = false;
+        while (!GameManager.readyToStartWork)
+        {
+            yield return null;
+        }
+        #endregion
+
+        #region Currency
+        // start passing out information
+        yield return null;
+
+        while (numberOfReviewedInformation < 4/*questions[GameManager.currentDay].sources.Length*/)
+        {
+            //temporary
+            sourceIndex = numberOfReviewedInformation;
+            CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
+            numberOfReviewedInformation++;
+
+            //wait until player finishes sources
+            while (!GameManager.readyForNextSource)
+            {
+                yield return null;
+            }
+            GameManager.readyForNextSource = false;
+
+            yield return new WaitForSeconds(2);
+        }
+        #endregion
+
+        Debug.Log("End Task");
     }
 
     // create the source and fill in the information
@@ -85,6 +136,9 @@ public class Main : MonoBehaviour
                 informationPrefab = Instantiate(informationType.socialsPrefab, draggableUI.transform);
                 break;
             case Source.type.research:
+                break;
+            case Source.type.newspaper:
+                informationPrefab = Instantiate(informationType.newspaperPrefab, draggableUI.transform);
                 break;
         }
 

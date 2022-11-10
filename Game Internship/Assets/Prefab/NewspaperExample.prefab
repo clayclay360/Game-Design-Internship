@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 675, y: 183}
+  m_SizeDelta: {x: 1500, y: 183}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1542358780052923398
 CanvasRenderer:
@@ -111,11 +111,11 @@ RectTransform:
   m_Father: {fileID: 1542358782119838867}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 17.136, y: 133}
-  m_SizeDelta: {x: 606.451, y: 183}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 24.400024, y: 0}
+  m_SizeDelta: {x: 675, y: 183}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &1542358780145406716
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -148,16 +148,16 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 75
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 75
+    m_MaxSize: 172
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: by John Doe
+  m_Text: Jonah Jamason,
 --- !u!1 &1542358780310948900
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,8 +192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.714, y: -279.86893}
-  m_SizeDelta: {x: 962.299, y: 609.238}
+  m_AnchoredPosition: {x: -0.000053406, y: -168.81}
+  m_SizeDelta: {x: 1650, y: 436.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1542358780310948905
 CanvasRenderer:
@@ -229,7 +229,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 75
+    m_MaxSize: 172
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -273,7 +273,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -325}
-  m_SizeDelta: {x: 800, y: 183}
+  m_SizeDelta: {x: 1500, y: 183}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1542358780656753597
 CanvasRenderer:
@@ -309,14 +309,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 172
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spider-brat attacks Elder woman!
+  m_Text: "Spider-brat attacks \nElder woman!"
 --- !u!1 &1542358780692309067
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -201, y: 0}
-  m_SizeDelta: {x: 657.456, y: 183}
+  m_SizeDelta: {x: 793.395, y: 183}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1542358780692309064
 CanvasRenderer:
@@ -407,11 +407,11 @@ GameObject:
   - component: {fileID: 1542358782119838867}
   - component: {fileID: 1542358782119838865}
   - component: {fileID: 1542358782119838866}
-  - component: {fileID: 2365843903136114008}
+  - component: {fileID: 7835925024090678698}
   - component: {fileID: 6582941906958067248}
   - component: {fileID: 5591135679263867441}
   m_Layer: 5
-  m_Name: ArticleExample
+  m_Name: NewspaperExample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -440,7 +440,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 1500}
+  m_SizeDelta: {x: 2000, y: 1250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1542358782119838865
 CanvasRenderer:
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2365843903136114008
+--- !u!114 &7835925024090678698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1542358782119838860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a96445a70fb3ef3458a1350579fd5fe8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a831337227f2dd4e8d99802f1f70794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sourceText: {fileID: 1542358780052923399}

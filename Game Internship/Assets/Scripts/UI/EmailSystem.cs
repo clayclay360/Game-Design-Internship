@@ -141,12 +141,15 @@ public class EmailSystem : MonoBehaviour
         // check if all emails are read
         for (int i = 0; i < Inbox.Length; i++)
         {
-            if (!Inbox[i].opened)
+            if (Inbox[i] != null)
             {
-                emailUpToDate = false;
-                break;
+                if (!Inbox[i].opened)
+                {
+                    emailUpToDate = false;
+                    break;
+                }
+                emailUpToDate = true;
             }
-            emailUpToDate = true;
         }
 
         numberOfUnreadEmails = 0;
@@ -155,9 +158,12 @@ public class EmailSystem : MonoBehaviour
         #region Notifications
         for (int c = 0; c < Inbox.Length; c++)
         {
-            if (!Inbox[c].opened)
+            if (Inbox[c] != null) 
             {
-                numberOfUnreadEmails++;
+                if (!Inbox[c].opened)
+                {
+                    numberOfUnreadEmails++;
+                }
             }
         }
         if(numberOfUnreadEmails == 0)

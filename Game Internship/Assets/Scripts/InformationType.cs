@@ -8,4 +8,5 @@ public class InformationType : MonoBehaviour
     public GameObject articlePrefab;
     public GameObject socialsPrefab;
     public GameObject researchPrefab;
+    public GameObject newspaperPrefab;
 }
