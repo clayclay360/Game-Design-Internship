@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class EmailSystem : MonoBehaviour
@@ -130,6 +131,14 @@ public class EmailSystem : MonoBehaviour
         Inbox[currentEmailIndex].opened = true;
     }
 
+    public void DeleteEmail()
+    {
+        Inbox[currentEmailIndex].opened = true;
+        emailPanel.SetActive(false);
+        Inbox[currentEmailIndex] = null;
+        DisplayEmails();
+    }
+
     private void Update()
     {
         CheckEmails();
@@ -138,11 +147,15 @@ public class EmailSystem : MonoBehaviour
 
     public void CheckEmails() 
     {
+        bool allEmailsDeleted = true;
+
         // check if all emails are read
         for (int i = 0; i < Inbox.Length; i++)
         {
             if (Inbox[i] != null)
             {
+                allEmailsDeleted = false;
+
                 if (!Inbox[i].opened)
                 {
                     emailUpToDate = false;
@@ -150,6 +163,12 @@ public class EmailSystem : MonoBehaviour
                 }
                 emailUpToDate = true;
             }
+        }
+        
+        //check if all emails are deleted
+        if (allEmailsDeleted)
+        {
+            emailUpToDate = true;
         }
 
         numberOfUnreadEmails = 0;

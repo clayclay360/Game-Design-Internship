@@ -8,7 +8,8 @@ public class Main : MonoBehaviour
     [Header("UI")]
     public CanvasGroup blackScreen;
     public Text questionText;
-    public GameObject draggableUI;
+    public GameObject informationContainer;
+    public GameObject answerPrompt;
 
     [Header("Questions")]
     public Question[] questions;
@@ -26,6 +27,7 @@ public class Main : MonoBehaviour
         informationType = GetComponent<InformationType>();
         emailSystem = FindObjectOfType<EmailSystem>();
 
+        GameManager.currentDay = 0;
         StartCoroutine(Gameloop());
     }
 
@@ -119,6 +121,7 @@ public class Main : MonoBehaviour
         }
         #endregion
 
+        answerPrompt.SetActive(true);
         Debug.Log("End Task");
     }
 
@@ -130,15 +133,15 @@ public class Main : MonoBehaviour
         switch (sourceType)
         {
             case Source.type.article:
-                informationPrefab = Instantiate(informationType.articlePrefab, draggableUI.transform);
+                informationPrefab = Instantiate(informationType.articlePrefab, informationContainer.transform);
                 break;
             case Source.type.social:
-                informationPrefab = Instantiate(informationType.socialsPrefab, draggableUI.transform);
+                informationPrefab = Instantiate(informationType.socialsPrefab, informationContainer.transform);
                 break;
             case Source.type.research:
                 break;
             case Source.type.newspaper:
-                informationPrefab = Instantiate(informationType.newspaperPrefab, draggableUI.transform);
+                informationPrefab = Instantiate(informationType.newspaperPrefab, informationContainer.transform);
                 break;
         }
 
