@@ -23,5 +23,8 @@ public class AnswerPrompt : MonoBehaviour
         {
             Debug.Log("incorrect");
         }
+
+        FindObjectOfType<Main>().EndDay();
+        gameObject.SetActive(false);
     }
 }

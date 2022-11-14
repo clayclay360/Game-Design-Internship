@@ -4511,6 +4511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackScreen: {fileID: 507827420}
   questionText: {fileID: 1720250127}
+  dayText: {fileID: 1204985235}
   informationContainer: {fileID: 1678326140}
   answerPrompt: {fileID: 493541064}
   questions:
@@ -4535,6 +4536,46 @@ MonoBehaviour:
         and I can\u2019t wait to be part of it\u201D - Mayor"
       month: Recorded in
       year: 2027
+    - Type: 3
+      isReliable: 1
+      source: Local News
+      title: President Grande makes statement on corruption rumors
+      author: ' Molly Mckay'
+      information: Our Beloved and almighty president Grande has made a statement
+        about the political rumors festering over the sports stadium. I believe the
+        governor would never solicit money, let alone for something that would hurt
+        the city. If he is building a stadium it must be for the best of the people
+        in his state...
+      month: Published April 17th
+      year: 2030
+    - Type: 0
+      isReliable: 0
+      source: Peer Review
+      title: The Future for Trolls
+      author: by John Doe
+      information: The social services of Nefaripolis was badly damaged during the
+        battle of Troll Kings.We did a five year study to see how quickly the services
+        were being updated and repaired.
+      month: Written May 5th,
+      year: 2025
+  - question: Can Pigs Fly?
+    sources:
+    - Type: 1
+      isReliable: 0
+      source: 
+      title: 
+      author: Billy Bigguns
+      information: Pigs are too heavy to fly
+      month: Posted April 28th,
+      year: 2025
+    - Type: 1
+      isReliable: 1
+      source: 
+      title: 
+      author: Shirly Tenkle
+      information: If pigs had wings they might be able to fly, but they don't
+      month: ' Twitted June 19th'
+      year: 2028
     - Type: 3
       isReliable: 1
       source: Local News
