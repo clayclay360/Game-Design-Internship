@@ -8,6 +8,7 @@ public class Main : MonoBehaviour
     [Header("UI")]
     public CanvasGroup blackScreen;
     public Text questionText;
+    public Text dayText;
     public GameObject informationContainer;
     public GameObject answerPrompt;
 
@@ -36,6 +37,7 @@ public class Main : MonoBehaviour
         // start the day and display question
         #region Display
         blackScreen.gameObject.SetActive(true);
+        blackScreen.alpha = 1;
         yield return new WaitForSeconds(2);
 
         while(blackScreen.alpha != 0)
@@ -43,6 +45,7 @@ public class Main : MonoBehaviour
             blackScreen.alpha -= 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
+        dayText.text = "";
         blackScreen.blocksRaycasts = false;
         #endregion
 
@@ -54,6 +57,7 @@ public class Main : MonoBehaviour
         #endregion
         
         yield return new WaitForSeconds(1);
+        questionText.gameObject.SetActive(true);
         questionText.text = questions[GameManager.currentDay].question;
 
         #region Currency
@@ -153,6 +157,52 @@ public class Main : MonoBehaviour
         information.monthText.text = questions[GameManager.currentDay].sources[sourceIndex].month;
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
+    }
+
+    public void EndDay()
+    {
+        if (GameManager.correctlySorted >= GameManager.correctNeeded[GameManager.currentDay])
+        {
+            Debug.Log("Good Ending");
+        }
+        else
+        {
+            Debug.Log("Bad Ending");
+        }
+        GameManager.currentDay += 1;
+        //Check if that was the last level
+        if (GameManager.currentDay > GameManager.totalDays + 1) //Add one because arrays start at zero!
+        {
+            Debug.Log("End Game");
+        }
+        else
+        {
+            Debug.Log("Continue");
+            StartCoroutine(FadeOut());
+        }
+    }
+
+    public IEnumerator FadeOut()
+    {
+        //Transition
+        #region Display
+        blackScreen.blocksRaycasts = true;
+        yield return new WaitForSeconds(.25f);
+
+        while (blackScreen.alpha != 1)
+        {
+            blackScreen.alpha += 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+        #endregion
+
+        #region NextDay
+        //Reset to start next level
+        GameManager.correctlySorted = 0;
+        dayText.text = GameManager.dayText[GameManager.currentDay];
+        questionText.gameObject.SetActive(false);
+        StartCoroutine(Gameloop());
+        #endregion
     }
 
 }
