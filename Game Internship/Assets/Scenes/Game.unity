@@ -266,6 +266,7 @@ MonoBehaviour:
   - {fileID: 2078155934710643554}
   - {fileID: 0}
   - {fileID: 0}
+  scrollBar: {fileID: 735206024}
   InboxBtns:
   - {fileID: 7609455449819097211}
   - {fileID: 970655685550176040}
@@ -715,8 +716,8 @@ RectTransform:
   m_Father: {fileID: 78210778}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.56721467}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.30326283}
+  m_AnchorMax: {x: 1, y: 0.99999994}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1691,8 +1692,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 250788167}
   m_HandleRect: {fileID: 250788166}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.43278533
+  m_Value: 0.99999976
+  m_Size: 0.6967371
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5129,9 +5130,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sender: 'From: Boss'
   subject: 'Subject: Welcome'
-  body: "Greetings and welcome to Nefaripolis.\n\n Your job is to check information
-    and see whether it's reliable. blah blah blah blah blah blah. Don't mess up!\n\n-Your
-    Boss"
+  body: 'Greetings and welcome to Nefaripolis.
+
+
+    Your job is to check information
+    and see whether it''s reliable. blah blah blah blah blah blah. Don''t mess up!
+
+
+    -Your
+    Boss'
   opened: 0
 --- !u!1 &2260986290783364716
 GameObject:
@@ -5727,8 +5734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.00004005432, y: -850.82214}
-  m_SizeDelta: {x: 1713.6511, y: 1500}
+  m_AnchoredPosition: {x: 0.000049591064, y: -282.56213}
+  m_SizeDelta: {x: 1854.2, y: 931.7401}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &4400114244861217903
 MonoBehaviour:
