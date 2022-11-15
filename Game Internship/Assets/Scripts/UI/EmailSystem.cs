@@ -15,6 +15,7 @@ public class EmailSystem : MonoBehaviour
     public Text notificationText;
     public Button toggleBtn;
     public Email[] Inbox;
+    public Scrollbar scrollBar;
 
     [Header("Inbox")]
     public Button[] InboxBtns;
@@ -123,6 +124,7 @@ public class EmailSystem : MonoBehaviour
         ChangeEmail(Inbox[btnNum]);
         emailPanel.gameObject.SetActive(true);
         currentEmailIndex = btnNum;
+        scrollBar.value = 1;
     }
 
     public void HideEmail() //Accessed from button
