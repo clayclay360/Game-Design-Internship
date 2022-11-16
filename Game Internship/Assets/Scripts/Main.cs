@@ -11,6 +11,7 @@ public class Main : MonoBehaviour
     public Text dayText;
     public GameObject informationContainer;
     public GameObject answerPrompt;
+    public EndingNewspaper newsPaper;
 
     [Header("Questions")]
     public Question[] questions;
@@ -79,7 +80,7 @@ public class Main : MonoBehaviour
             }
             GameManager.readyForNextSource = false;
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(.5f);
         }
         #endregion
 
@@ -121,7 +122,7 @@ public class Main : MonoBehaviour
             }
             GameManager.readyForNextSource = false;
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(.5f);
         }
         #endregion
 
@@ -161,12 +162,24 @@ public class Main : MonoBehaviour
 
     public void EndDay()
     {
+        //TODO: This has to be changed to be affected by the choice the player makes
         if (GameManager.correctlySorted >= GameManager.correctNeeded[GameManager.currentDay])
         {
+            //Populate newspaper goodresult
+            //Will do something fancier eventually
+            string headline = "NEW POLITICAL SCANDAL UNVEILED";
+            string deck = "CANDIDATE IS CORRUPT";
+            string article = "Investigations have revealed new details surrounding one of the local mayoral candidates and several dubious connections. The candidate has dropped out of the race amid these allegations but has made no comment as to the truthfulness of the accusations against them.";
+            newsPaper.SetNewspaper(headline, deck, article);
             Debug.Log("Good Ending");
         }
         else
         {
+            //Populate newspaper badresult
+            string headline = "ELECTION IN CLOSE RACE";
+            string deck = "CANDIDATE B LEADING POLLS";
+            string article = "Candidate B's lead over Candidate A remains even amidst allegations of corruption. Candidate B is choosing not to let rumors affect their campaign, saying that no solid evidence against them has been produced.";
+            newsPaper.SetNewspaper(headline, deck, article);
             Debug.Log("Bad Ending");
         }
         GameManager.currentDay += 1;
@@ -182,8 +195,20 @@ public class Main : MonoBehaviour
         }
     }
 
+    public IEnumerator newsPaperAnim()
+    {
+        newsPaper.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        while (!Input.GetMouseButtonDown(0))
+        {
+            yield return null;
+        }
+        newsPaper.gameObject.SetActive(false);
+    }
+
     public IEnumerator FadeOut()
     {
+        
         //Transition
         #region Display
         blackScreen.blocksRaycasts = true;
@@ -195,7 +220,8 @@ public class Main : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         #endregion
-
+        //Play the newspaper animation and wait for the player to click
+        yield return StartCoroutine(newsPaperAnim());
         #region NextDay
         //Reset to start next level
         GameManager.correctlySorted = 0;

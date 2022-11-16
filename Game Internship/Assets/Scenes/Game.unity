@@ -1452,6 +1452,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577224880}
   m_CullTransparentMesh: 1
+--- !u!224 &622304369 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+  m_PrefabInstance: {fileID: 829705364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &622304371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9182350266784670949, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+  m_PrefabInstance: {fileID: 829705364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5089794e9ac3fd4c89482ecb75b9719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &632979707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1885,107 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739526083}
   m_CullTransparentMesh: 1
+--- !u!1001 &829705364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 883157286}
+    m_Modifications:
+    - target: {fileID: 1548826712904597907, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_Name
+      value: Newspaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548826712904597907, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
 --- !u!1 &841636656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,7 +2142,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2047,6 +2164,7 @@ RectTransform:
   - {fileID: 1678326142}
   - {fileID: 70227441}
   - {fileID: 507827417}
+  - {fileID: 622304369}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4515,6 +4633,7 @@ MonoBehaviour:
   dayText: {fileID: 1204985235}
   informationContainer: {fileID: 1678326140}
   answerPrompt: {fileID: 493541064}
+  newsPaper: {fileID: 622304371}
   questions:
   - question: 'Which candidate do you think is corrupt: Canidate A or Canidate B? '
     sources:

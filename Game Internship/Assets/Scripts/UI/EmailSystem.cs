@@ -139,6 +139,10 @@ public class EmailSystem : MonoBehaviour
         emailPanel.SetActive(false);
         Inbox[currentEmailIndex] = null;
         DisplayEmails();
+        if (Inbox[0] == null)
+        {
+            ShowHide();
+        }
     }
 
     private void Update()
