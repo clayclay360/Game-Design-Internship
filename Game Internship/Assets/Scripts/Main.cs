@@ -51,15 +51,23 @@ public class Main : MonoBehaviour
         #endregion
 
         #region ReadEmails
+        for(int i = 0; i < 2; i++)
+        {
+            emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[i];
+        }
+        yield return null;
+
         while (!GameManager.readyToStartWork)
         {
             yield return null;
         }
         #endregion
-        
+
+        #region DisplayQuestion
         yield return new WaitForSeconds(1);
         questionText.gameObject.SetActive(true);
         questionText.text = questions[GameManager.currentDay].question;
+        #endregion
 
         #region Currency
         // start passing out information
@@ -84,6 +92,8 @@ public class Main : MonoBehaviour
         }
         #endregion
 
+        #region ReadEmails
+
         //count the emails
         int currentEmailIndex = 0;
 
@@ -91,12 +101,13 @@ public class Main : MonoBehaviour
         {
             if(emailSystem.Inbox[i] == null && currentEmailIndex < emails.Length)
             {
+                //add next wave of emails
                 emailSystem.Inbox[i] = emails[currentEmailIndex];
                 currentEmailIndex++;
             }
         }
 
-        #region ReadEmails
+        
         GameManager.readyToStartWork = false;
         while (!GameManager.readyToStartWork)
         {
