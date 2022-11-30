@@ -7,4 +7,5 @@ public class Question
 {
     public string question;
     public Source[] sources;
+    public Email[] emails;
 }
