@@ -6,6 +6,7 @@ using UnityEngine;
 public class Question
 {
     public string question;
+    public string[] answers;
     public Source[] sources;
     public Email[] emails;
 }
