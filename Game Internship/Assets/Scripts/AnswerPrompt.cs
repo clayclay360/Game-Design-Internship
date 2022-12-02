@@ -9,7 +9,8 @@ public class AnswerPrompt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        answers.Add(0, 1);   
+        answers.Add(0, 1);
+        answers.Add(1, 1);
     }
 
     //get the button that is pressed and check whether it's correct.

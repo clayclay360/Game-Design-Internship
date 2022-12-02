@@ -3549,6 +3549,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576715888}
   m_CullTransparentMesh: 1
+--- !u!1 &1657785582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1657785584}
+  - component: {fileID: 1657785583}
+  m_Layer: 0
+  m_Name: ThirdColleagueEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1657785583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657785582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: 'From: Colleague'
+  subject: 'Subject: Authority'
+  body: "Some of our colleagues at The NP Post have been crafting this podcast about
+    the case using the documents collected by the police. \n\nGive it a listen\u2026"
+  opened: 0
+--- !u!4 &1657785584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657785582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4230859356815901295}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678326140
 GameObject:
   m_ObjectHideFlags: 0
@@ -4728,11 +4776,16 @@ MonoBehaviour:
   blackScreen: {fileID: 507827420}
   questionText: {fileID: 1720250127}
   dayText: {fileID: 1204985235}
+  LeftText: {fileID: 516324036}
+  RightText: {fileID: 1570546338}
   informationContainer: {fileID: 1678326140}
   answerPrompt: {fileID: 493541064}
   newsPaper: {fileID: 622304371}
   questions:
   - question: 'Which candidate do you think is corrupt: Canidate A or Canidate B? '
+    answers:
+    - Candidate A
+    - Candidate B
     sources:
     - Type: 1
       isReliable: 0
@@ -4780,48 +4833,63 @@ MonoBehaviour:
     - {fileID: 2078155934710643554}
     - {fileID: 2079109644}
   - question: Is Buster Custard guilty or not?
+    answers:
+    - Yes
+    - No
     sources:
     - Type: 1
       isReliable: 0
       source: 
-      title: 
-      author: Billy Bigguns
-      information: Pigs are too heavy to fly
-      month: Posted April 28th,
-      year: 2025
+      title: MARY JANE MURDER COMPLETE TIMELINE
+      author: Saiddit Post
+      information: I have spent the last four years following this case and I am
+        sure that he is guilty from all of my research which I have link below.
+      month: made in
+      year: 2028
     - Type: 1
-      isReliable: 1
+      isReliable: 0
       source: 
-      title: 
-      author: Shirly Tenkle
-      information: If pigs had wings they might be able to fly, but they don't
-      month: ' Twitted June 19th'
+      title: BUSTER IS GUILTY
+      author: FacePage Group
+      information: This page is for discussions about how Buster Custard is guilty
+        of the Murder of Mary Jane Gelato. Facts only. Buster is an innocent truthers
+        DNI.
+      month: 'made '
       year: 2028
     - Type: 3
       isReliable: 1
-      source: Local News
-      title: President Grande makes statement on corruption rumors
-      author: ' Molly Mckay'
-      information: Our Beloved and almighty president Grande has made a statement
-        about the political rumors festering over the sports stadium. I believe the
-        governor would never solicit money, let alone for something that would hurt
-        the city. If he is building a stadium it must be for the best of the people
-        in his state...
-      month: Published April 17th
-      year: 2030
+      source: Cereal Podcast
+      title: 
+      author: 
+      information: "A Investigative Podcast based analyzing the police and court
+        documents from the Mary Jane Gelato murder investigation. We aim to bring
+        you a complete look at the case, including information about the bias of
+        the Nefaripolis Police Department when investigating Buster Custard due to
+        his divorce from the police chief\u2019s daughter. We also talk to Buster\u2019s
+        attorney about the lack of evidence submitted by the prosecution that was
+        allowed"
+      month: made in
+      year: 2028
     - Type: 0
       isReliable: 0
-      source: Peer Review
-      title: The Future for Trolls
-      author: by John Doe
-      information: The social services of Nefaripolis was badly damaged during the
-        battle of Troll Kings.We did a five year study to see how quickly the services
-        were being updated and repaired.
-      month: Written May 5th,
-      year: 2025
+      source: The Journal of Ice Cream Sciences
+      title: Data Analysis on the Importance of Additives in Frozen Yogurt
+      author: Written by Buster Custard
+      information: '-----------------------------------
+
+        -----------------------------------
+
+        ------------------------------------
+
+        --------------------------------------
+
+        ------------------------------------'
+      month: Published January
+      year: 2020
     emails:
     - {fileID: 1483115278}
     - {fileID: 734367640}
+    - {fileID: 1657785583}
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0
@@ -5759,6 +5827,7 @@ Transform:
   - {fileID: 2079109645}
   - {fileID: 1483115277}
   - {fileID: 734367639}
+  - {fileID: 1657785584}
   m_Father: {fileID: 70227441}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

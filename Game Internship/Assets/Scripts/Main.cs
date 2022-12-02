@@ -9,6 +9,8 @@ public class Main : MonoBehaviour
     public CanvasGroup blackScreen;
     public Text questionText;
     public Text dayText;
+    public Text LeftText;
+    public Text RightText;
     public GameObject informationContainer;
     public GameObject answerPrompt;
     public EndingNewspaper newsPaper;
@@ -36,6 +38,7 @@ public class Main : MonoBehaviour
         {
             // start the day and display question
             #region Display
+
             blackScreen.gameObject.SetActive(true);
             blackScreen.alpha = 1;
             yield return new WaitForSeconds(2);
@@ -136,6 +139,11 @@ public class Main : MonoBehaviour
             }
             #endregion
 
+            #region GetAnswers
+            LeftText.text = questions[GameManager.currentDay].answers[0];
+            RightText.text = questions[GameManager.currentDay].answers[1];
+            #endregion
+
             answerPrompt.SetActive(true);
             Debug.Log("End Task");
         }
@@ -157,7 +165,7 @@ public class Main : MonoBehaviour
             #endregion
 
             #region ReadEmails
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 2; i++)
             {
                 emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[i];
             }
@@ -180,7 +188,7 @@ public class Main : MonoBehaviour
             yield return null;
             int numberOfReviewedInformation = 0;
 
-            while (numberOfReviewedInformation < 3)
+            while (numberOfReviewedInformation < 2)
             {
                 //temporary
                 sourceIndex = numberOfReviewedInformation;
@@ -201,13 +209,14 @@ public class Main : MonoBehaviour
             #region ReadEmails
 
             //count the emails
-            int currentEmailIndex = 1;
+            int currentEmailIndex = 2;
 
             for (int i = 0; i < emailSystem.Inbox.Length; i++)
             {
                 if (emailSystem.Inbox[i] == null && currentEmailIndex < questions[GameManager.currentDay].emails.Length)
                 {
                     //add next wave of emails
+                    Debug.Log("EmailAdd");
                     emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[currentEmailIndex];
                     currentEmailIndex++;
                 }
@@ -241,6 +250,11 @@ public class Main : MonoBehaviour
 
                 yield return new WaitForSeconds(.5f);
             }
+            #endregion
+
+            #region GetAnswers
+            LeftText.text = questions[GameManager.currentDay].answers[0];
+            RightText.text = questions[GameManager.currentDay].answers[1];
             #endregion
 
             answerPrompt.SetActive(true);
