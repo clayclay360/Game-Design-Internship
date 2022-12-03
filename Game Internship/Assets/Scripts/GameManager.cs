@@ -12,6 +12,7 @@ public class GameManager
     public static bool readyForNextSource;
     public static bool readyToStartWork;
 
+    //Do these do anything anymore?
     public static int correctlySorted;
     public static int[] correctNeeded = { 2, 2 } ;
 

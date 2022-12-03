@@ -1940,13 +1940,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 883157286}
     m_Modifications:
+    - target: {fileID: 1425144261080919384, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425144261080919384, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1548826712904597907, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_Name
       value: Newspaper
       objectReference: {fileID: 0}
     - target: {fileID: 1548826712904597907, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552226811165327191, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535358271517627707, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752880917438243668, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_Pivot.x
@@ -2030,6 +2050,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4584456448858676156, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481696751035504231, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069394430772622035, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_text
+      value: CHILDREN UNSURE OF FACT OR FICTION
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069394430772622035, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_fontSize
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069394430772622035, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809568169785288121, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842956310253621670, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_text
+      value: A survey of Nefaripolis school children about the history of our city
+        has revealed that many youths believe falsehoods about historical events
+        and figures. Students are certain Nefaripolis has no faults and is the greatest
+        city in the world, stating their school classes have taught them everything
+        they need to know about their history. Students were found to have no awareness
+        of several unfortunate past city oversights and failures.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438995306716089, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_text
+      value: SCHOOL CURRICULUM TO BLAME
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080827601002203983, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
+      propertyPath: m_PlayAutomatically
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

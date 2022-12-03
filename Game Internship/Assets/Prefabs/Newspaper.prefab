@@ -74,6 +74,7 @@ MonoBehaviour:
   deckText: 
   articleText: 
   image: {fileID: 0}
+  spinAnimation: {fileID: 8080827601002203983}
   headline: {fileID: 7069394430772622035}
   deck: {fileID: 7916438995306716089}
   article: {fileID: 7842956310253621670}

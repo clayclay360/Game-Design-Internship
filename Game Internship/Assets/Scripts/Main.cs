@@ -14,6 +14,7 @@ public class Main : MonoBehaviour
     public GameObject informationContainer;
     public GameObject answerPrompt;
     public EndingNewspaper newsPaper;
+    private Articles articles;
 
     [Header("Questions")]
     public Question[] questions;
@@ -27,6 +28,8 @@ public class Main : MonoBehaviour
     {
         informationType = GetComponent<InformationType>();
         emailSystem = FindObjectOfType<EmailSystem>();
+        articles = new Articles();
+        newsPaper.gameObject.SetActive(false);
 
         GameManager.currentDay = 0;
         StartCoroutine(Gameloop());
@@ -292,29 +295,12 @@ public class Main : MonoBehaviour
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
     }
 
-    public void EndDay()
+    public void EndDay(bool isPlayerCorrect)
     {
-        //TODO: This has to be changed to be affected by the choice the player makes
-        if (GameManager.correctlySorted >= GameManager.correctNeeded[GameManager.currentDay])
-        {
-            //Populate newspaper goodresult
-            //Will do something fancier eventually
-            string headline = "NEW POLITICAL SCANDAL UNVEILED";
-            string deck = "CANDIDATE IS CORRUPT";
-            string article = "Investigations have revealed new details surrounding one of the local mayoral candidates and several dubious connections. The candidate has dropped out of the race amid these allegations but has made no comment as to the truthfulness of the accusations against them.";
-            newsPaper.SetNewspaper(headline, deck, article);
-            Debug.Log("Good Ending");
-        }
-        else
-        {
-            //Populate newspaper badresult
-            string headline = "ELECTION IN CLOSE RACE";
-            string deck = "CANDIDATE B LEADING POLLS";
-            string article = "Candidate B's lead over Candidate A remains even amidst allegations of corruption. Candidate B is choosing not to let rumors affect their campaign, saying that no solid evidence against them has been produced.";
-            newsPaper.SetNewspaper(headline, deck, article);
-            Debug.Log("Bad Ending");
-        }
-        GameManager.currentDay += 1;
+        //Get the newspaper info from the Articles script
+        string[] paperInfo = articles.GetNewspaperInfo(GameManager.currentDay, isPlayerCorrect);
+        newsPaper.SetNewspaper(paperInfo[0], paperInfo[1], paperInfo[2]);
+        GameManager.currentDay += 1; //Increment the Day
         //Check if that was the last level
         if (GameManager.currentDay > GameManager.totalDays + 1) //Add one because arrays start at zero!
         {
@@ -330,6 +316,7 @@ public class Main : MonoBehaviour
     public IEnumerator newsPaperAnim()
     {
         newsPaper.gameObject.SetActive(true);
+        newsPaper.spinAnimation.Play();
         yield return new WaitForSeconds(3f);
         while (!Input.GetMouseButtonDown(0))
         {

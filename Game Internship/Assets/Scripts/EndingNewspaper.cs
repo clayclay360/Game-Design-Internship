@@ -11,6 +11,7 @@ public class EndingNewspaper : MonoBehaviour
     public string deckText;
     public string articleText;
     public Sprite image;
+    public Animation spinAnimation;
 
     [Header("UI")]
     public TextMeshProUGUI headline;
