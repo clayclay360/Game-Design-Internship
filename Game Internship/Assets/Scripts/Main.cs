@@ -31,7 +31,7 @@ public class Main : MonoBehaviour
         articles = new Articles();
         newsPaper.gameObject.SetActive(false);
 
-        GameManager.currentDay = 3;
+        GameManager.currentDay = 0;
         StartCoroutine(Gameloop());
     }
 

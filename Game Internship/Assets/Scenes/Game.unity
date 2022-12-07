@@ -4954,7 +4954,7 @@ MonoBehaviour:
       month: Posted May 7th
       year: 2019
     - Type: 1
-      isReliable: 1
+      isReliable: 0
       source: 
       title: 
       author: Anonyous123
@@ -4964,7 +4964,7 @@ MonoBehaviour:
       month: Recorded in
       year: 2027
     - Type: 3
-      isReliable: 1
+      isReliable: 0
       source: Local News
       title: President Grande makes statement on corruption rumors
       author: ' Molly Mckay'
@@ -5011,7 +5011,7 @@ MonoBehaviour:
       information: This page is for discussions about how Buster Custard is guilty
         of the Murder of Mary Jane Gelato. Facts only. Buster is an innocent truthers
         DNI.
-      month: 'made '
+      month: made in
       year: 2028
     - Type: 3
       isReliable: 1
@@ -5047,10 +5047,10 @@ MonoBehaviour:
     - {fileID: 1483115278}
     - {fileID: 734367640}
     - {fileID: 1657785583}
-  - question: ??????????
+  - question: Is the factory to blame for the acid rain?
     answers:
-    - ???
-    - ???
+    - Yes
+    - No
     sources:
     - Type: 1
       isReliable: 0
@@ -5064,13 +5064,13 @@ MonoBehaviour:
       year: 2030
     - Type: 1
       isReliable: 1
-      source: 
+      source: Nefaripolis Weather Service
       title: 
-      author: -Nefaripolis Weather Service Official
+      author: Official Account
       information: 'ALERT: Please stay inside for the next eight hours as the doppler
         radar is predicting a large amount of rainwater with an extremely high acid
         content within the Factory area of Nefaripolis City Proper'
-      month: ?????
+      month: ','
       year: 2030
     - Type: 1
       isReliable: 1
