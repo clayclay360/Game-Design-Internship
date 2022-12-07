@@ -968,6 +968,55 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &354229420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354229422}
+  - component: {fileID: 354229421}
+  m_Layer: 0
+  m_Name: FifthColleagueEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &354229421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354229420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: 'From: Colleague'
+  subject: 'Subject: Purpose'
+  body: " We secretly obtained an early copy of the new NP Official Textbook. We
+    need to work together to figure out the purpose behind the sources that were
+    chosen for the textbook.\n\nMAKE SURE THEY AREN\u2019T BIASED!"
+  opened: 0
+--- !u!4 &354229422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354229420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4230859356815901295}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!225 &440579418
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5045,6 +5094,60 @@ MonoBehaviour:
       year: 2030
     emails:
     - {fileID: 1795259230}
+  - question: Should this book be used in schools?
+    answers:
+    - Yes
+    - No
+    sources:
+    - Type: 0
+      isReliable: 0
+      source: NP Official Textbook
+      title: Introduction of Book
+      author: 
+      information: 'This book aims to help students in Nerfaripolis learn about our
+        great and powerful culture. We have ruled and dominated this land for hundreds
+        of glorious years and wish to fill young minds with this history. No one
+        has come close to our greatness and that is fact. '
+      month: 
+      year: 0
+    - Type: 0
+      isReliable: 1
+      source: NP Official Textbook
+      title: Introduction of Book
+      author: 
+      information: "Academic Article from Economics of Nefaripolis, 2029: \u201C...statistics
+        of the treasury department shows that over the past 20 years, the economy
+        of Nefaripolis has grown from a deficit into the glorious wealth we have
+        currently"
+      month: 
+      year: 0
+    - Type: 0
+      isReliable: 0
+      source: NP Official Textbook
+      title: Quote from Book
+      author: 
+      information: "Nefaripolis\u2019 first president was known for his generosity.
+        Despite being a billionaire, he gave out a million dollars every year to
+        various charities of his choice. Because of the dismantling of the welfare
+        system early in his reign, these funds help support new social services,
+        including his pet project of Bird Watching. [Citation from: An Exalted Leader:
+        Nefaripolis\u2019 First President Straight from his Right Handman published
+        2025"
+      month: 
+      year: 0
+    - Type: 0
+      isReliable: 0
+      source: Press Conference with Nefaripolis Tourism Office
+      title: 
+      author: 
+      information: The official textbook is the only thing that we need to learn
+        the history of our great city, one that will make residents proud and outsiders
+        want to visit! Click the affiliated link on our website to order now for
+        your schoo
+      month: 
+      year: 0
+    emails:
+    - {fileID: 354229421}
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0
@@ -5984,6 +6087,7 @@ Transform:
   - {fileID: 734367639}
   - {fileID: 1657785584}
   - {fileID: 1795259231}
+  - {fileID: 354229422}
   m_Father: {fileID: 70227441}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
