@@ -31,7 +31,7 @@ public class Main : MonoBehaviour
         articles = new Articles();
         newsPaper.gameObject.SetActive(false);
 
-        GameManager.currentDay = 3;
+        GameManager.currentDay = 0;
         StartCoroutine(Gameloop());
     }
 
@@ -528,7 +528,7 @@ public class Main : MonoBehaviour
         newsPaper.SetNewspaper(paperInfo[0], paperInfo[1], paperInfo[2]);
         GameManager.currentDay += 1; //Increment the Day
         //Check if that was the last level
-        if (GameManager.currentDay > GameManager.totalDays + 1) //Add one because arrays start at zero!
+        if (GameManager.currentDay > GameManager.totalDays) //Subtract one because arrays start at zero!
         {
             Debug.Log("End Game");
         }

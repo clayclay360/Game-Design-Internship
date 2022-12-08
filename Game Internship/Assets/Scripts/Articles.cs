@@ -16,7 +16,7 @@ public class Articles
             case 1:
                 return dayTwo(wasPlayerCorrect);
             case 2:
-                break;
+                return dayThree(wasPlayerCorrect);
             case 3:
                 return dayFour(wasPlayerCorrect);
         }
@@ -112,7 +112,38 @@ public class Articles
         }
     }
 
-    //Day 3 not written yet
+    private string[] dayThree(bool wasPlayerCorrect)
+    {
+        if (wasPlayerCorrect)
+        {
+            return new string[]
+            {
+                "POLLUTION REACHES ALL-TIME LOW", //Header
+                "NEW CLIMATE REGULATIONS EFFECTIVE", //Deck
+                "A recent investigation into Nefaropolis' acid jean wash factory invoked " + //Article
+                "new legislation that would regulate many factories that were found to " +
+                "be contributing to climate pollution and causing an increase of harmful " +
+                "acid rain in the city. Factories are now requrired to properly dispose " +
+                "of wasteful materials instead of dumping them into the river. Nefaripolis " +
+                "weather service is rolling back its acid rain warning as pollutants are cleared away."
+            };
+        }
+        else
+        {
+            return new string[]
+            {
+                "ACID JEAN  WASH FACTORY CLOSES", //Header
+                "STILL NO END TO POLLUTION IN SIGHT", //Deck
+                "A recent investigation into the local acid jean wash factory found " + //Article
+                "it to be the cause of an increase in acid rain in the city, forcing " +
+                "the factory to shut down. Water quality however has continued to " +
+                "deteriorate with some questioning if the jean factory was the true " +
+                "cause of the pollution. Nefaripolis science association has issued a " +
+                "warning declaring city water non-potable."
+            };
+        }
+    }
+
     private string[] dayFour(bool wasPlayerCorrect)
     {
         if (wasPlayerCorrect)

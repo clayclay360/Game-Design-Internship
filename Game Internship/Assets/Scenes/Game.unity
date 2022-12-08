@@ -2107,7 +2107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069394430772622035, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_text
-      value: CHILDREN UNSURE OF FACT OR FICTION
+      value: POLLUTION REACHES ALL-TIME LOW
       objectReference: {fileID: 0}
     - target: {fileID: 7069394430772622035, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_fontSize
@@ -2123,16 +2123,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7842956310253621670, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_text
-      value: A survey of Nefaripolis school children about the history of our city
-        has revealed that many youths believe falsehoods about historical events
-        and figures. Students are certain Nefaripolis has no faults and is the greatest
-        city in the world, stating their school classes have taught them everything
-        they need to know about their history. Students were found to have no awareness
-        of several unfortunate past city oversights and failures.
+      value: A recent investigation into Nefaropolis' acid jean wash factory invoked
+        new legislation that would regulate many factories that were found to be
+        contributing to climate pollution and causing an increase of harmful acid
+        rain in the city. Factories are now requrired to properly dispose of wasteful
+        materials instead of dumping them into the river. Nefaripolis weather service
+        is rolling back its acid rain warning as pollutants are cleared away.
       objectReference: {fileID: 0}
     - target: {fileID: 7916438995306716089, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_text
-      value: SCHOOL CURRICULUM TO BLAME
+      value: NEW CLIMATE REGULATIONS EFFECTIVE
       objectReference: {fileID: 0}
     - target: {fileID: 8080827601002203983, guid: 927225e38fa6cf34996bfe1fa79ca671, type: 3}
       propertyPath: m_PlayAutomatically

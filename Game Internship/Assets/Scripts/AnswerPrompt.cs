@@ -11,8 +11,8 @@ public class AnswerPrompt : MonoBehaviour
     {
         answers.Add(0, 1); //Day 1, Correct answer: choice 2
         answers.Add(1, 1); //Day 2, Correct answer: choice 2
-
-        answers.Add(3, 1); //Day 3, Correct answer: choice 2
+        answers.Add(2, 1); //Day 3, Correct answer: choice 2
+        answers.Add(3, 1); //Day 4, Correct answer: choice 2
     }
 
     //get the button that is pressed and check whether it's correct.

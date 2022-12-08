@@ -8,7 +8,7 @@ public class GameManager
 {
     public static int reliableDate;
     public static int currentDay;
-    public static int totalDays = 2;
+    public static int totalDays = 4;
     public static bool readyForNextSource;
     public static bool readyToStartWork;
 
