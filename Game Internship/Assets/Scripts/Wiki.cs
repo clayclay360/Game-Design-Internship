@@ -16,6 +16,9 @@ public class Wiki : MonoBehaviour
         {
             bool isActive = Source.activeSelf;
             Source.SetActive(!isActive);
+
+           
         }
+
     }
 }
