@@ -5047,10 +5047,10 @@ MonoBehaviour:
     - {fileID: 1483115278}
     - {fileID: 734367640}
     - {fileID: 1657785583}
-  - question: ??????????
+  - question: Is the factory to blame for the acid rain?
     answers:
-    - ???
-    - ???
+    - Yes
+    - No
     sources:
     - Type: 1
       isReliable: 0
@@ -5070,27 +5070,27 @@ MonoBehaviour:
       information: 'ALERT: Please stay inside for the next eight hours as the doppler
         radar is predicting a large amount of rainwater with an extremely high acid
         content within the Factory area of Nefaripolis City Proper'
-      month: ?????
+      month: Posted July 18
       year: 2030
     - Type: 1
       isReliable: 1
       source: 
       title: 
-      author: ??????
+      author: '- Joel Kinney'
       information: Image taken from a newspaper article published 2 years ago showing
         the accumulation of waste byproduct in the river behind the plastic spork
         factory
-      month: ????
+      month: Posted August 8
       year: 2030
     - Type: 0
       isReliable: 1
       source: Academic Article
-      title: 
+      title: Bob Lee
       author: ' Nefaripolis Climate'
       information: ...a five year study across the factory system of Nefaripolis
         shows that there has been a steady increase in waste byproducts going into
         our air and water systems affecting the acid content in the rain.
-      month: ?????
+      month: Posted April 25
       year: 2030
     emails:
     - {fileID: 1795259230}
