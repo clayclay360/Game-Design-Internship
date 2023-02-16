@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+//TODO: Add From/Subject to base email so it's not in every line
 public class EmailSystem : MonoBehaviour
 {
     public Email currentEmail;
@@ -66,6 +67,26 @@ public class EmailSystem : MonoBehaviour
     {
         SortInbox();
         Inbox[FindLowestEmpty()] = email;
+    }
+
+    /// <summary>
+    /// Uses its parameters to generate an email telling the player that they got a question wrong.
+    /// </summary>
+    /// <returns></returns>
+    public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, Player player)
+    {
+        Email correctionEmail = new Email();
+        string reliableString = isReliable ? "unreliable, when it is actually reliable" : 
+                                             "reliable, when it is actually unreliable";
+
+        correctionEmail.subject = $"Correction about \"{articleTitle}\"";
+        correctionEmail.sender = "Boss"; //Change this later? Add story?
+        correctionEmail.body = $"Dear {Player.Name},\n\nIt appears you have made an error " +
+                               $"in regards to a recent article you reviewed titled {articleTitle}. " +
+                               $"The article was marked incorrectly as {reliableString}. Please have " +
+                               $"more diligence. Check the database if you are having trouble.";
+
+        return correctionEmail;
     }
 
     public void SortInbox()
