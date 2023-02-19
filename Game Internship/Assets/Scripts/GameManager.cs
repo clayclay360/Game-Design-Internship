@@ -9,10 +9,11 @@ public class GameManager
     public static int reliableDate;
     public static int currentDay;
     public static int totalDays = 4;
+    public static int playerScore = 0;
     public static bool readyForNextSource;
     public static bool readyToStartWork;
 
-    //Do these do anything anymore?
+    //Do these do anything anymore? Yeah!
     public static int correctlySorted;
     public static int[] correctNeeded = { 2, 2 } ;
 
