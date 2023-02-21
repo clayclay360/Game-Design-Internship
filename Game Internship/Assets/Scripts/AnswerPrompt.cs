@@ -18,7 +18,10 @@ public class AnswerPrompt : MonoBehaviour
     //get the button that is pressed and check whether it's correct.
     public void GetButton(int num)
     {
-        //`answers[GameManager.currentDay] == num` checks if we selected the
+        if(answers[GameManager.currentDay] == num) //checks if we selected the
+        {
+            GameManager.playerScore += 100; // add 100 to player score
+        } 
         //correct option, returning true or false
         FindObjectOfType<Main>().EndDay(answers[GameManager.currentDay] == num);
         gameObject.SetActive(false);
