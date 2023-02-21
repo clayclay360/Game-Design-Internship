@@ -32,9 +32,8 @@ public class EmailSystem : MonoBehaviour
     private int numberOfUnreadEmails;
     private bool emailUpToDate;
 
-    private void Awake()
+    public void Start()
     {
-        //Inbox = new Email[5];
         DisplayEmails();
     }
 
@@ -73,21 +72,62 @@ public class EmailSystem : MonoBehaviour
     /// Uses its parameters to generate an email telling the player that they got a question wrong.
     /// </summary>
     /// <returns></returns>
-    public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, Player player)
+    public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, string pieceOfCRAAP, string correctionInfo)
     {
-        Email correctionEmail = new Email();
+        Email correctionEmail = gameObject.AddComponent<Email>();
         string reliableString = isReliable ? "unreliable, when it is actually reliable" : 
                                              "reliable, when it is actually unreliable";
 
         correctionEmail.subject = $"Correction about \"{articleTitle}\"";
         correctionEmail.sender = "Boss"; //Change this later? Add story?
-        correctionEmail.body = $"Dear {Player.Name},\n\nIt appears you have made an error " +
+        correctionEmail.body = "Dear *,\n\nIt appears you have made an error " +
                                $"in regards to a recent article you reviewed titled {articleTitle}. " +
-                               $"The article was marked incorrectly as {reliableString}. Please have " +
-                               $"more diligence. Check the database if you are having trouble.";
+                               $"The article was marked incorrectly as {reliableString}.\n\n" +
+                               $"The reliability of the information has to do with its {pieceOfCRAAP}. " +
+                               $"{sortCRAAP(isReliable, pieceOfCRAAP, correctionInfo)}" +
+                               $" Please have more diligence, and check the database if you are having trouble.";
 
         return correctionEmail;
     }
+
+    private string sortCRAAP(bool isReliable, string pieceOfCRAAP, string correctionInfo)
+    {
+        if (isReliable)
+        {
+            switch (pieceOfCRAAP)
+            {
+                case "currency":
+                    return $"Information less than *\"FIVE\"* years old is considered reliable, and the article was published on {correctionInfo}.";
+                case "relevancy":
+                    return $"The information is actually relevant to the topic you are researching, because {correctionInfo}.";
+                case "authority":
+                    return $"The author of the work is trustworthy, because they {correctionInfo}.";
+                case "accuracy":
+                    return $"The information in the article is most likely accurate, because it {correctionInfo}.";
+                case "purpose":
+                    return $"The article's information can be considered reliable, because its purpose is to {correctionInfo}.";
+            }
+        }
+        else
+        {
+            switch (pieceOfCRAAP)
+            {
+                case "currency":
+                    return $"Information older than *\"FIVE\"* years old is considered unreliable, and the article was published on {correctionInfo}.";
+                case "relevancy":
+                    return $"The information is not relevant to the topic you are researching, because {correctionInfo}.";
+                case "authority":
+                    return $"The author of the work is not trustworhy, because they {correctionInfo}.";
+                case "accuracy":
+                    return $"The information in the article may not be accurate, because it {correctionInfo}.";
+                case "purpose":
+                    return $"The article's information might not be accurate, because its purpose is to {correctionInfo}.";
+            }
+        }
+        Debug.LogWarning("Your pieceOfCRAAP fell through the switch statements in the sortCRAAP method!" +
+                         "\nDouble check that your spelled it correctly and it's all lowercase!");
+        return "WHOA!! This shouldn't be here!";
+    }    
 
     public void SortInbox()
     {
@@ -133,6 +173,9 @@ public class EmailSystem : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Set buttons to NONE in navigation sto stop them from continuously calling their methods
+    /// </summary>
     public void ShowHide()
     {
         DisplayEmails();
