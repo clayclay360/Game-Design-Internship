@@ -546,19 +546,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4d59f81569850d945a36e5b7c8e5c4df, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UnReliable Information
+  m_Text: Unreliable Information
 --- !u!222 &233015771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3753,12 +3753,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4d59f81569850d945a36e5b7c8e5c4df, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 2
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -4070,6 +4070,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 883157286}
     m_Modifications:
+    - target: {fileID: 1053921847486814756, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4d59f81569850d945a36e5b7c8e5c4df, type: 3}
+    - target: {fileID: 1053921847486814756, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053921847486814756, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053921847486814756, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1053921848946984968, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_Name
       value: Email
@@ -4169,6 +4185,14 @@ PrefabInstance:
     - target: {fileID: 1053921849045361854, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000135464564208519, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4d59f81569850d945a36e5b7c8e5c4df, type: 3}
+    - target: {fileID: 3000135464564208519, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
