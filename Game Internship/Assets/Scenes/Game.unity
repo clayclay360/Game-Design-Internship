@@ -413,6 +413,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138420394}
   m_CullTransparentMesh: 1
+--- !u!1 &170359949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170359950}
+  - component: {fileID: 170359951}
+  m_Layer: 0
+  m_Name: RelevancyEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170359950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170359949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1472223963}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170359951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170359949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: Good Luck!
+  body: "Oh good. A new hire. It seems you\u2019ve already gotten to work, as well.
+    Good for\r\nyou. However, I wouldn\u2019t have you getting your hopes up for
+    your future with\r\nthis company. You see, we are independent of the government,
+    which means no\r\ngovernment funding. No government funding means the company
+    doesn\u2019t make\r\na lot of money. Catch my drift? I doubt it.\r\n\nThe grapevine
+    tells me there\u2019s going to be layoffs at the end of the week, as well\r\nas
+    a replacement of our current supervisor. Don\u2019t get too excited, because
+    that\r\nposition is mine, and I will leave you in the dust faster than you can
+    sort one of\r\nthe trivial sources they give you.\r\n\nIn any case, I\u2019ve
+    been told to hand off some of the more questionable sources to\r\nyou. You have
+    to verify their currency AND relevance to our story. You know\r\nwhat those words
+    mean, right newbie?\r\n\nEnjoy the extra work,\r\nLloyd Libel, Senior Fact Checker"
+  opened: 0
 --- !u!1 &207363733
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +625,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233015768}
   m_CullTransparentMesh: 1
+--- !u!1 &263960651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263960652}
+  m_Layer: 0
+  m_Name: EmailContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263960652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263960651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1472223963}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343906584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &734367640 stripped
 MonoBehaviour:
@@ -1755,7 +1844,7 @@ RectTransform:
   - {fileID: 507827417}
   - {fileID: 622304369}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2808,6 +2897,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464125900}
   m_CullTransparentMesh: 1
+--- !u!1 &1472223962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472223963}
+  m_Layer: 0
+  m_Name: DayOneEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472223963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472223962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1483750731}
+  - {fileID: 170359950}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1483115278 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1053921847810922230, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
@@ -2819,6 +2940,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1483750730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483750731}
+  - component: {fileID: 1483750732}
+  m_Layer: 0
+  m_Name: IntroEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1483750731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483750730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1472223963}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483750732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483750730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Do not Share
+  subject: Anonymous
+  body: "As an independent journal, the governance currently has little control over
+    what you\r\nreport on. I assure you this freedom will not last forever. Canton\u2019s
+    governance seeks\r\nultimate control over their people and the information they
+    consume. The roots of the\r\ncity state\u2019s corruption has only grown deeper
+    since we seceded from the union all those\r\nyears ago. Fortunately, I am working
+    closely with the Almanac\u2019s executives to push back\r\nagainst the sanitization
+    of information, and provide the citizens of Canton the clarity\r\nthey deserve.\r\nAs
+    a fact checker, your goals are simple. I provide your company information, and
+    you\r\nverify its reliability. What information you share with the constituency
+    is imperative to\r\nsave them from their own establishment, so it must be correct
+    and reliable.\r\nToday you will be reviewing stories and anecdotes of Councilman
+    C. Rook\u2019s cruelty to\r\neveryday citizens. You will receive a set of sources
+    after you close this email. Make sure\r\nyou verify the information is not outdated,
+    as currency is essential. Good luck.\n\n~Anonymous"
+  opened: 0
 --- !u!1 &1570546336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,9 +4041,8 @@ MonoBehaviour:
       month: Written May 5th,
       year: 2025
     emails:
-    - {fileID: 4400114243878096245}
-    - {fileID: 2078155934710643554}
-    - {fileID: 2079109644}
+    - {fileID: 1483750732}
+    - {fileID: 170359951}
   - question: Is Buster Custard guilty or not?
     answers:
     - Yes
@@ -4034,7 +4214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1990688871
 MonoBehaviour:
@@ -4052,17 +4232,6 @@ MonoBehaviour:
   socialsPrefab: {fileID: 2231909901935483417, guid: 4bd07adc63b3c834dbfb6804b0a4f1b1, type: 3}
   researchPrefab: {fileID: 0}
   newspaperPrefab: {fileID: 1542358782119838860, guid: 46ee2519023528e48ac80b03707f1a39, type: 3}
---- !u!114 &2079109644 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1053921847214682100, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1053921849016950264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4196,25 +4365,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
---- !u!114 &2078155934710643554 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1330637328126944922, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4400114243878096245 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3724495317158072461, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3b196b11c60a5b4d95b18cb501b2d7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

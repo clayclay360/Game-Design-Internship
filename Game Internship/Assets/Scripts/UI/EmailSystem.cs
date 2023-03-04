@@ -32,9 +32,12 @@ public class EmailSystem : MonoBehaviour
     private int numberOfUnreadEmails;
     private bool emailUpToDate;
 
+    public Email correctionEmail;
+
     public void Start()
     {
         DisplayEmails();
+        correctionEmail = gameObject.AddComponent<Email>();
     }
 
     public void DisplayEmails()
@@ -74,7 +77,6 @@ public class EmailSystem : MonoBehaviour
     /// <returns></returns>
     public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, string pieceOfCRAAP, string correctionInfo)
     {
-        Email correctionEmail = gameObject.AddComponent<Email>();
         string reliableString = isReliable ? "unreliable, when it is actually reliable" : 
                                              "reliable, when it is actually unreliable";
 
@@ -97,7 +99,7 @@ public class EmailSystem : MonoBehaviour
             switch (pieceOfCRAAP)
             {
                 case "currency":
-                    return $"Information less than *\"FIVE\"* years old is considered reliable, and the article was published on {correctionInfo}.";
+                    return $"Information less than fifteen years old is considered reliable, and the article was published on {correctionInfo}.";
                 case "relevancy":
                     return $"The information is actually relevant to the topic you are researching, because {correctionInfo}.";
                 case "authority":
@@ -113,7 +115,7 @@ public class EmailSystem : MonoBehaviour
             switch (pieceOfCRAAP)
             {
                 case "currency":
-                    return $"Information older than *\"FIVE\"* years old is considered unreliable, and the article was published on {correctionInfo}.";
+                    return $"Information older than fifteen years old is considered unreliable, and the article was published on {correctionInfo}.";
                 case "relevancy":
                     return $"The information is not relevant to the topic you are researching, because {correctionInfo}.";
                 case "authority":
@@ -127,7 +129,46 @@ public class EmailSystem : MonoBehaviour
         Debug.LogWarning("Your pieceOfCRAAP fell through the switch statements in the sortCRAAP method!" +
                          "\nDouble check that your spelled it correctly and it's all lowercase!");
         return "WHOA!! This shouldn't be here!";
-    }    
+    }
+    
+    public Email DayOneCorrections(int index)
+    {
+        switch (index)
+        {
+            case 1: //Counilman Cameron Rook steals candy from a baby //RELIABLE
+                correctionEmail = GenerateCorrectionEmail("Councilman Cameron Rook steals candy from baby", true, "currency", "June 5th, 2019");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("C. Rook is a monster!", false, "currency", "January 6th, 2001");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("DO NOT VOTE FOR C. ROOK!…", false, "currency", "October 30th, 2013");
+                break;
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("Cameron Rook", true, "currency", "July 5th, 2020");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("C. Rook does WHAAAAAAT?!", false, "curency", "August 27th, 1999");
+                break;
+            //Part 2
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("I used to babysit… ", false, "relevancy", "it does not mention Cameron Rook, just a boy named Cameron");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("Investigation of Cameron Rook's involvement in the increase of Crime throughout Canton", true, "relevancy", "it has to do with C. Rook's legislation");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("C. Rook raises taxes, and forgives his own", true, "relevancy", "it discusses C. Rook's tax bill");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("\"Did you guys see the news… \"", false, "currency", "September 17th, 2009");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("Monsters Among Us", false, "relevancy", "it doesn't have to do with C. Rook's policies");
+                break;
+        }
+        return correctionEmail;
+    }
 
     public void SortInbox()
     {
