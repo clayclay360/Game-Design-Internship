@@ -182,7 +182,7 @@ public class EmailSystem : MonoBehaviour
                 correctionEmail = GenerateCorrectionEmail("\"They've got the wrong guy!\"", false, "authority", "have no credentials or sources");
                 break;
             case 3:
-                correctionEmail = GenerateCorrectionEmail("BREAKING: State Attorneys confident in Police Sergeant’s innocence", false, "authority", "are a government-sanctioned journalist");
+                correctionEmail = GenerateCorrectionEmail("BREAKING: State Attorneys confident in Police Sergeant’s innocence", false, "authority", "are politically motivated");
                 break;
             //Part 2
             case 4:
@@ -207,10 +207,200 @@ public class EmailSystem : MonoBehaviour
                 correctionEmail = GenerateCorrectionEmail("New evidence links suspect to Canton Clubber killings", false, "currency", "December 22nd, 2002");
                 break;
         }
-        
         return correctionEmail;
     }
 
+    public Email DayThreeCorrections(int index)
+    {
+        switch(index)
+        {
+            case 1:
+                correctionEmail = GenerateCorrectionEmail("Water quality has never been better!", true, "accuracy", "was written by many experts");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("\"My whole family is freaking out…\"", false, "accuracy", "is not backed up by any real sources");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("Canton", true, "accuracy", "comes from a moderated information wiki");
+                break;
+            //Part 2
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("Water quality has never been better!", false, "currency", "January 20th, 1980");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("Acid rain: Who to blame?", false, "authority", "are politically motivated");
+                break;
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("Today’s Acid Rain", true, "accuracy", "has a source backing it up");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("\"Everybody is complaining about their cars…\"", false, "relevancy", "brings up an issue unrelated to the acid rain");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("OMG, this acid rain has got to stop!", false, "accuracy", "does not confirm whether the problem was caused by the acid rain");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("Regulations of factories repealed, government forgets to inform the public.", true, "accuracy", "provides factual information");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("\"I can't believe people haven't realized it…\"", false, "accuracy", "does not provide any evidence for its statements");
+                break;
+        }
+        return correctionEmail;
+    }
+
+    public Email DayFourCorrections(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                correctionEmail = GenerateCorrectionEmail("Canton", true, "purpose", "give information about the Spanish Flu pandemic");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("Revisiting our history", false, "purpose", "make people think Canton is the greatest nation in the world");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("Canton’s Grand Mayors and their Contributions", false, "purpose", "make Canton's mayors look good");
+                break;
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("Canton’s industrial revolution", true, "purpose", "provide data on Canton's economy");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("Where did Canton come from?", false, "purpose", "glorify religion");
+                break;
+            //Part 2
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("Centon is Awesome!", false, "relevancy", "does not provide any important information");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("Sociology of Canton: History of Ethics in the Workplace", false, "currency", "December 4th, 1964");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("Remembering the Downtown Inferno Crisis", true, "purpose", "provide information about a historical event");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("\" You know what, I’m gonna say it.\"", false, "accuracy", "does not provide any sources");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("Canton’s History of Conservation", true, "purpose", "provide information about Canton's efforts in nature conservation");
+                break;
+        }
+        return correctionEmail;
+    }
+
+    public Email DayFiveCorrections(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+        }
+        return correctionEmail;
+    }
+
+    public Email DaySixCorrections(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+        }
+        return correctionEmail;
+    }
+
+    public Email DaySevenCorrections(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                break;
+        }
+        return correctionEmail;
+    }
     #endregion
 
     public void SortInbox()

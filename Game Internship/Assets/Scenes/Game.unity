@@ -202,6 +202,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2706750}
   m_CullTransparentMesh: 1
+--- !u!1 &19993760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 19993761}
+  - component: {fileID: 19993762}
+  m_Layer: 0
+  m_Name: DayThreeIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &19993761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19993760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871960424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &19993762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19993760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Anonymous
+  subject: Accuracy
+  body: "Hello again, *, While I would like to complement your efforts thus far,
+    there is still too much to do. I will make this brief.\r\n\r\nLast night there
+    was a terrible catastrophe, one that affects every citizen of Canton. This morning,
+    the entire city suffered from a catastrophic acid rain storm worse than any we
+    have seen in history, which has engulfed the population in panic. People demand
+    to know why people are now being hospitalized for chemical burns. In a time of
+    hysteria, guidance is the only defense we have. The government knows this, and
+    they seek to make this an opportunity to gain support and trust in the establishment.
+    \r\n\r\nThey will rely upon deception by finding a scapegoat. You, however, will
+    rely on facts, and provide the people the answers they deserve. Make sure the
+    information you gather is as accurate as possible to ensure the people\u2019s
+    trust.\r\n\r\nSort carefully, *, the citizens depend on you.\r\n~Anonymous "
+  opened: 0
 --- !u!224 &70227441 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1053921848946984969, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
@@ -546,6 +604,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207363733}
   m_CullTransparentMesh: 1
+--- !u!1 &221657033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 221657034}
+  m_Layer: 0
+  m_Name: DayFourEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &221657034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221657033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 292615254}
+  - {fileID: 1828298987}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &233015768
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,9 +744,70 @@ Transform:
   m_Children:
   - {fileID: 1472223963}
   - {fileID: 376532025}
+  - {fileID: 871960424}
+  - {fileID: 221657034}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &292615253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292615254}
+  - component: {fileID: 292615255}
+  m_Layer: 0
+  m_Name: DayFourIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &292615254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 221657034}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292615255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Anonymous
+  subject: Purpose
+  body: "Welcome to another day, *, I\u2019m sure you think you\u2019re doing a good
+    job around that cushy office. You deserve a pat on the back, though you shouldn\u2019t
+    get too comfortable. Canton depends on your best foot being put forward.\r\n\r\nThe
+    Department of Education has put forward new history textbooks. If there\u2019s
+    anything a corrupt government would want to do, it\u2019s rewrite history to
+    put themselves in a better light, using anything they can get their hands on.
+    The good news is we don\u2019t have to go searching for sources for today\u2019s
+    focus, being they\u2019re all provided by the book. The bad news is that these
+    sources are horrible, and they\u2019re already being given to kids. The parents
+    deserve to know how unreliable this book is.\r\n\r\nYou cannot afford to lose
+    focus. You must investigate the purpose of the information in these sources.
+    Are they there to provide objective information, or are they to sway someone
+    towards a certain direction?\r\n\r\nI have faith in your judgment,\r\n~Anonymous"
+  opened: 0
 --- !u!1 &343906584
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,17 +883,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343906584}
   m_CullTransparentMesh: 1
---- !u!114 &354229421 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1053921848664818005, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &376532024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,17 +1589,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &734367640 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1053921848559407712, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &739526083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,6 +1960,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841636656}
   m_CullTransparentMesh: 1
+--- !u!1 &871960423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 871960424}
+  m_Layer: 0
+  m_Name: DayThreeEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &871960424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 19993761}
+  - {fileID: 1491806378}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &883157282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,17 +3238,6 @@ Transform:
   m_Father: {fileID: 263960652}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1483115278 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1053921847810922230, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1483750730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,6 +3297,60 @@ MonoBehaviour:
     C. Rook\u2019s cruelty to\r\neveryday citizens. You will receive a set of sources
     after you close this email. Make sure\r\nyou verify the information is not outdated,
     as currency is essential. Good luck.\n\n~Anonymous"
+  opened: 0
+--- !u!1 &1491806377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491806378}
+  - component: {fileID: 1491806379}
+  m_Layer: 0
+  m_Name: DayThreeLloydEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491806378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491806377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871960424}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1491806379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491806377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: Work 4 U
+  body: "Hey, newbie. I gotta admit, you\u2019re doing a good job\u2026 a good job
+    at embarrassing yourself! Seriously, are you still gunning for that promo? I\u2019d
+    respect your efforts if they weren\u2019t so pathetic! \r\n\r\nDo me a favor
+    will you? I have to meet my stunning new girlfriend at the bar tonight, and I
+    have a bunch of work I gotta do. Mind taking it off my hands? You don\u2019t
+    have a choice, because I\u2019m not giving you one. I am technically your superior
+    after all.\r\n\r\nWish me luck!\r\n~Lloyd Libel, Senior Fact Checker\r\n\r\nP.S.
+    My date is your mother!"
   opened: 0
 --- !u!1 &1570546336
 GameObject:
@@ -3381,17 +3585,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576715888}
   m_CullTransparentMesh: 1
---- !u!114 &1657785583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1053921847367848215, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1678326140
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,17 +4091,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772122362}
   m_CullTransparentMesh: 1
---- !u!114 &1795259230 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1053921847490176678, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
-  m_PrefabInstance: {fileID: 1053921849016950264}
+--- !u!1 &1828298986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828298987}
+  - component: {fileID: 1828298988}
+  m_Layer: 0
+  m_Name: DayFourLloydEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1828298987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828298986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 221657034}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1828298988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828298986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: I'm not your step-dad, I'm the dad who's stepping up
+  body: "Hey son! It\u2019s your new dad speaking! While I want to tell you all about
+    the date I had, I guess I\u2019m pretty swamped with work. By the way, why was
+    management saying they gave you all the \u201Cgood sources\u201D today, and that
+    you reported me to \u201CHuman Resources\u201D for \u201CHarassment\u201D? That\u2019s
+    no way to treat your father!\r\n\r\nI guess I\u2019m in a unique position to
+    ground you for disrespecting me. Your punishment is that you now have to go through
+    my sources for the day as well! Don\u2019t worry, champ, discipline builds character.
+    Besides, it\u2019s not ALL bad, the sources this textbook uses are so bad it\u2019s
+    almost comical. Seriously, Saiddit posts?! What a joke!\r\n\r\nYour Daddy,\r\nLloyd
+    Libel, Senior Fact Checker"
+  opened: 0
 --- !u!1 &1859896496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4246,9 +4484,8 @@ MonoBehaviour:
       month: Published January
       year: 2020
     emails:
-    - {fileID: 1483115278}
-    - {fileID: 734367640}
-    - {fileID: 1657785583}
+    - {fileID: 1460859462}
+    - {fileID: 653604018}
   - question: Is the factory to blame for the acid rain?
     answers:
     - Yes
@@ -4295,7 +4532,8 @@ MonoBehaviour:
       month: Posted April 25
       year: 2030
     emails:
-    - {fileID: 1795259230}
+    - {fileID: 19993762}
+    - {fileID: 1491806379}
   - question: Should this book be used in schools?
     answers:
     - Yes
@@ -4349,7 +4587,8 @@ MonoBehaviour:
       month: 
       year: 0
     emails:
-    - {fileID: 354229421}
+    - {fileID: 292615255}
+    - {fileID: 1828298988}
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0
