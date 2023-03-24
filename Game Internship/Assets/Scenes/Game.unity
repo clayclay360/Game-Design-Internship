@@ -653,6 +653,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1472223963}
+  - {fileID: 376532025}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -742,6 +743,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &376532024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376532025}
+  m_Layer: 0
+  m_Name: DayTwoEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &376532025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376532024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1460859461}
+  - {fileID: 653604017}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493541064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,6 +1329,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632979707}
   m_CullTransparentMesh: 1
+--- !u!1 &653604016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653604017}
+  - component: {fileID: 653604018}
+  m_Layer: 0
+  m_Name: DayTwoLloydEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &653604017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653604016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 376532025}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653604018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653604016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: 'IMPORTANT: OPEN IMMEDIATELY'
+  body: "Still around, new hire? Good, I always believed competition makes success
+    so much sweeter. Regardless, I have a few more sources I need to dump on you.\r\n\r\nThe
+    man upstairs asks me to remind you that you still need to take everything into
+    consideration, such as the source\u2019s currency and relevance, regardless of
+    what you\u2019ve been instructed to focus on. You\u2019re probably already aware
+    of this, however this gives me adequate reason to insult your intelligence, an
+    activity I will continue to take great joy in.\n\nEnjoy the work,\r\nLloyd Libel,
+    Senior Fact Checker"
+  opened: 0
 --- !u!1 &723611388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,6 +2905,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1460859460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460859461}
+  - component: {fileID: 1460859462}
+  m_Layer: 0
+  m_Name: DayTwoIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460859461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460859460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 376532025}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1460859462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460859460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Anonymous
+  subject: Authority
+  body: "Congratulations *, you\u2019ve made it to your second day. Most don\u2019t
+    make it this far, especially those who are brave enough to fight against the
+    government\u2019s interests. Don\u2019t get a big head about it, you\u2019ll
+    give our adversaries an easier shot when they decide to fight back.\r\n\r\nYou
+    must be well acquainted with your workstation and your responsibilities. It only
+    gets harder from here, so you best prepare yourself. Today, Police Sergeant Kevin
+    Iller has been arrested for serial murder under the alias \u201CThe Canton Clubber\u201D.
+    This name should be familiar to you, as the Canton Clubber is responsible for
+    many infamous murders throughout many decades. We must keep him off the streets
+    to keep the populus safe, which means pressuring the police into keeping him
+    behind bars until his trial. Your sources today will be a mess of reliable sources,
+    government propaganda to protect their image, and true crime fanatics who believe
+    they\u2019re detectives. You must verify which of these authors has the authority
+    and credibility to be commenting on this issue.\r\n\r\nBe vigilant, lest Kevin
+    Iller is let free. Good luck.\r\n~Anonymous"
+  opened: 0
 --- !u!1 &1464125900
 GameObject:
   m_ObjectHideFlags: 0

@@ -71,6 +71,7 @@ public class EmailSystem : MonoBehaviour
         Inbox[FindLowestEmpty()] = email;
     }
 
+    #region Correction Emails
     /// <summary>
     /// Uses its parameters to generate an email telling the player that they got a question wrong.
     /// </summary>
@@ -152,7 +153,7 @@ public class EmailSystem : MonoBehaviour
                 break;
             //Part 2
             case 6:
-                correctionEmail = GenerateCorrectionEmail("I used to babysit… ", false, "relevancy", "it does not mention Cameron Rook, just a boy named Cameron");
+                correctionEmail = GenerateCorrectionEmail("\"I used to babysit… \"", false, "relevancy", "it does not mention Cameron Rook, just a boy named Cameron");
                 break;
             case 7:
                 correctionEmail = GenerateCorrectionEmail("Investigation of Cameron Rook's involvement in the increase of Crime throughout Canton", true, "relevancy", "it has to do with C. Rook's legislation");
@@ -169,6 +170,48 @@ public class EmailSystem : MonoBehaviour
         }
         return correctionEmail;
     }
+
+    public Email DayTwoCorrections(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                correctionEmail = GenerateCorrectionEmail("Canton's Police Force, Void of Accountability", true, "authority", "published it in an academic journal");
+                break;
+            case 2:
+                correctionEmail = GenerateCorrectionEmail("\"They've got the wrong guy!\"", false, "authority", "have no credentials or sources");
+                break;
+            case 3:
+                correctionEmail = GenerateCorrectionEmail("BREAKING: State Attorneys confident in Police Sergeant’s innocence", false, "authority", "are a government-sanctioned journalist");
+                break;
+            //Part 2
+            case 4:
+                correctionEmail = GenerateCorrectionEmail("Canton Police Force", false, "relevancy", "it does not involve Kevin Iller");
+                break;
+            case 5:
+                correctionEmail = GenerateCorrectionEmail("\"I have been inundated with questions…\"", true, "authority", "are a detective with a firsthand statement");
+                break;
+            case 6:
+                correctionEmail = GenerateCorrectionEmail("We did it Saiddit!", false, "authority", "did not back up their statement with any credibility");
+                break;
+            case 7:
+                correctionEmail = GenerateCorrectionEmail("Canton Clubber sleeping with Grand Mayor?!", false, "relevancy", "it does not have to do with the murder case");
+                break;
+            case 8:
+                correctionEmail = GenerateCorrectionEmail("Marissa Urder", true, "authority", "are an archive of official documents");
+                break;
+            case 9:
+                correctionEmail = GenerateCorrectionEmail("\"I would never have believed…\"", true, "authority", "directly quote a statement made by the chief of police");
+                break;
+            case 10:
+                correctionEmail = GenerateCorrectionEmail("New evidence links suspect to Canton Clubber killings", false, "currency", "December 22nd, 2002");
+                break;
+        }
+        
+        return correctionEmail;
+    }
+
+    #endregion
 
     public void SortInbox()
     {
