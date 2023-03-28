@@ -4385,47 +4385,98 @@ MonoBehaviour:
     - Candidate A
     - Candidate B
     sources:
-    - Type: 1
-      isReliable: 0
-      source: 
-      title: 
-      author: Sally  Ratking
-      information: I saw Candidate A throwing water on people and pushing over trashcans
-        in a fit of rage at the park. That guy must really hate the park.
-      month: Posted May 7th
-      year: 2019
-    - Type: 1
-      isReliable: 1
-      source: 
-      title: 
-      author: Anonyous123
-      information: "\u201CYes, I am a builder at heart and greatly enjoyed my relationships
-        with Nefaripolis Builders Unite. I think their vision for the city is wonderful
-        and I can\u2019t wait to be part of it\u201D - Mayor"
-      month: Recorded in
-      year: 2027
-    - Type: 3
-      isReliable: 1
-      source: Local News
-      title: President Grande makes statement on corruption rumors
-      author: ' Molly Mckay'
-      information: Our Beloved and almighty president Grande has made a statement
-        about the political rumors festering over the sports stadium. I believe the
-        governor would never solicit money, let alone for something that would hurt
-        the city. If he is building a stadium it must be for the best of the people
-        in his state...
-      month: Published April 17th
-      year: 2030
     - Type: 0
       isReliable: 0
-      source: Peer Review
-      title: The Future for Trolls
-      author: by John Doe
-      information: The social services of Nefaripolis was badly damaged during the
-        battle of Troll Kings.We did a five year study to see how quickly the services
-        were being updated and repaired.
-      month: Written May 5th,
-      year: 2025
+      source: NP Post
+      title: Councilman Cameron Rook steals candy from baby
+      author: By Bob Writer
+      information: "Councilman Cameron Rook, normally referred to as C. Rook was
+        reported today stealing a comically sized lollipop from a small child in
+        their stroller. \u201CI have never seen anything so evil in my life, and
+        he did it so easily!\u201D said the concerned mother who witnessed the theft.
+        \u201CWaaaaaaaah!\u201D said the small child. Current status of the lollipop
+        is unknown.\r"
+      month: Posted June 5th,
+      year: 2019
+    - Type: 1
+      isReliable: 0
+      source: Saiddit
+      title: C. Rook is a monster!
+      author: Eatdaticecream554
+      information: "I can\u2019t believe what I saw today! C. Rook, one of our city\u2019s
+        councilmen, was walking an old lady across the street. Halfway across, he
+        leaves her in the middle of the road! Thankfully no one was hurt, but she
+        almost got hit a few times!\r"
+      month: Posted January 6th,
+      year: 2001
+    - Type: 1
+      isReliable: 1
+      source: Witter
+      title: President Grande makes statement on corruption rumors
+      author: '@mrboopy'
+      information: "DO NOT VOTE FOR C. ROOK! I played a game of blackjack, and he
+        paid off the dealer to make sure I would bust every game! He didn\u2019t
+        even play, he just wanted to see me lose!\r"
+      month: Posted October 30th,
+      year: 2013
+    - Type: 0
+      isReliable: 0
+      source: Infopedia
+      title: Cameron Rook
+      author: 
+      information: ' In recent years, Councilman Cameron Rook has been linked to
+        the growing drug epidemic targeting teens and young adults inside the iron
+        border of the Canton City State. Investigators pile evidence against the
+        councilman, however no official case has ever been sparked'
+      month: Last edited July 5th,
+      year: 2020
+    - Type: 1
+      isReliable: 0
+      source: Facepage
+      title: 
+      author: 'Tammy Poomalla '
+      information: "I used to babysit a kid named Cameron back in 1980. He would
+        always snap the toys in half so the other kids couldn\u2019t play with them.
+        What a little rascal!"
+      month: December 12th,
+      year: 2017
+    - Type: 0
+      isReliable: 0
+      source: Academics Anonymous
+      title: "Investigation of Cameron Rook\u2019s involvement in the increase of
+        Crime throughout Canton"
+      author: By Ali Baba and Emma Zone
+      information: "Criminal activity had been at a stable incline since the iron
+        border separating Canton from the United States was created. However in the
+        past decade, crime rates have skyrocketed across the board, reaching unprecedented
+        levels. In this study, we correlate Councilman C. Rook\u2019s passed legislation
+        and crimes were reported throughout the city. Our findings conclude C. Rook
+        is directly to blame."
+      month: April 2nd,
+      year: 2020
+    - Type: 0
+      isReliable: 1
+      source: NP Post
+      title: C. Rook raises taxes, and forgives his own
+      author: By Hank Hoagie
+      information: While the citizens of Canton demanded taxes to be lowered in response
+        to the lowering of minimum wage, C. Rook has just approved a bill to raise
+        tax rates for working citizens. The same bill also lowered taxes for government
+        legislators and the council, which are reported to make 4x the average working
+        citizens yearly salary.
+      month: ' May 10th,'
+      year: 2018
+    - Type: 1
+      isReliable: 0
+      source: Witter
+      title: 
+      author: '@mrcoolguy21'
+      information: " Did you guys see the news about C. Rook\u2019s plan to demolish
+        the lake port to make a chemical waste disposal facility? As if we need to
+        be dumping chemicals into one of the few clean lakes around here! Read below:
+        (link unavailable)"
+      month: September 17th,
+      year: 2009
     emails:
     - {fileID: 1483750732}
     - {fileID: 170359951}
