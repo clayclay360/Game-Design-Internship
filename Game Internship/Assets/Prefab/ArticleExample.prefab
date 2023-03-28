@@ -32,10 +32,10 @@ RectTransform:
   m_Father: {fileID: 1542358782119838867}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 675, y: 183}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 5.93042, y: -100}
+  m_SizeDelta: {x: -37.1409, y: 183}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1542358780052923398
 CanvasRenderer:
@@ -66,8 +66,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 163
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Daily Bugle
+  m_Text: Academics Anonymous
 --- !u!1 &1542358780145406719
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,10 +111,10 @@ RectTransform:
   m_Father: {fileID: 1542358782119838867}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 17.136, y: 133}
-  m_SizeDelta: {x: 882.86, y: 183}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 17.136, y: -617}
+  m_SizeDelta: {x: -37.700012, y: 183}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1542358780145406716
 CanvasRenderer:
@@ -146,18 +146,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 75
+    m_MaxSize: 65
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: by John Doe
+  m_Text: by Ali Baba and Emma Zone
 --- !u!1 &1542358780310948900
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,10 +190,10 @@ RectTransform:
   m_Father: {fileID: 1542358782119838867}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.714, y: -279.86893}
-  m_SizeDelta: {x: 962.299, y: 609.238}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.7139893, y: -1029.8689}
+  m_SizeDelta: {x: -37.70099, y: 609.23804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1542358780310948905
 CanvasRenderer:
@@ -225,19 +225,22 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 75
-    m_Alignment: 0
+    m_MaxSize: 65
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Early this morning footage caught Spiderman hitting a woman. ~~~~~~~~~~~~~
-    ~~~~~~~~~~~. Spider man should be arrested for such violence!
+  m_Text: "Criminal activity had been at a stable incline since the iron border separating
+    Canton from the United States was created. However in the past decade, crime
+    rates have skyrocketed across the board, reaching unprecedented levels. In this
+    study, we correlate Councilman C. Rook\u2019s passed legislation and crimes were
+    reported throughout the city. Our findings conclude C. Rook is directly to blame."
 --- !u!1 &1542358780656753592
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,10 +273,10 @@ RectTransform:
   m_Father: {fileID: 1542358782119838867}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -325}
-  m_SizeDelta: {x: 800, y: 183}
+  m_SizeDelta: {x: 0, y: 183}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1542358780656753597
 CanvasRenderer:
@@ -305,18 +308,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 116
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 172
+    m_MaxSize: 70
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spider-brat attacks Elder woman!
+  m_Text: "Investigation of Cameron Rook\u2019s involvement in the increase of Crime
+    throughout Canton."
 --- !u!1 &1542358780692309067
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,10 +353,10 @@ RectTransform:
   m_Father: {fileID: 1542358782119838867}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -201, y: 0}
-  m_SizeDelta: {x: 657.456, y: 183}
+  m_AnchoredPosition: {x: -201, y: -26}
+  m_SizeDelta: {x: -218.14001, y: 183}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1542358780692309064
 CanvasRenderer:
@@ -388,14 +392,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 70
+    m_MaxSize: 65
     m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Febuary
+  m_Text: Post Febuary,
 --- !u!1 &1542358782119838860
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +444,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 1500}
+  m_SizeDelta: {x: 1569.8, y: 1500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1542358782119838865
 CanvasRenderer:
@@ -558,7 +562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -26}
   m_SizeDelta: {x: 187.3748, y: 183}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &302649686210280735

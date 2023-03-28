@@ -56,7 +56,7 @@ public class Main : MonoBehaviour
             #endregion
 
             #region ReadEmails
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 1; i++)
             {
                 emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[i];
             }
@@ -79,7 +79,7 @@ public class Main : MonoBehaviour
             yield return null;
             int numberOfReviewedInformation = 0;
 
-            while (numberOfReviewedInformation < 2/*questions[GameManager.currentDay].sources.Length*/)
+            while (numberOfReviewedInformation < 4/*questions[GameManager.currentDay].sources.Length*/)
             {
                 //temporary
                 sourceIndex = numberOfReviewedInformation;
@@ -100,7 +100,7 @@ public class Main : MonoBehaviour
             #region ReadEmails
 
             //count the emails
-            int currentEmailIndex = 2;
+            int currentEmailIndex = 1;
 
             for (int i = 0; i < emailSystem.Inbox.Length; i++)
             {
@@ -124,7 +124,7 @@ public class Main : MonoBehaviour
             // start passing out information
             yield return new WaitForSeconds(1);
 
-            while (numberOfReviewedInformation < 4/*questions[GameManager.currentDay].sources.Length*/)
+            while (numberOfReviewedInformation < 8/*questions[GameManager.currentDay].sources.Length*/)
             {
                 //temporary
                 sourceIndex = numberOfReviewedInformation;
