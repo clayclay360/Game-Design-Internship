@@ -4401,8 +4401,8 @@ MonoBehaviour:
     - Type: 1
       isReliable: 0
       source: Saiddit
-      title: C. Rook is a monster!
-      author: Eatdaticecream554
+      title: Saiddit
+      author: -U:Eatdaticecream554
       information: "I can\u2019t believe what I saw today! C. Rook, one of our city\u2019s
         councilmen, was walking an old lady across the street. Halfway across, he
         leaves her in the middle of the road! Thankfully no one was hurt, but she
@@ -4412,8 +4412,8 @@ MonoBehaviour:
     - Type: 1
       isReliable: 1
       source: Witter
-      title: President Grande makes statement on corruption rumors
-      author: '@mrboopy'
+      title: Witter
+      author: -@mrboopy
       information: "DO NOT VOTE FOR C. ROOK! I played a game of blackjack, and he
         paid off the dealer to make sure I would bust every game! He didn\u2019t
         even play, he just wanted to see me lose!\r"
@@ -4433,7 +4433,7 @@ MonoBehaviour:
     - Type: 1
       isReliable: 0
       source: Facepage
-      title: 
+      title: Facepage
       author: 'Tammy Poomalla '
       information: "I used to babysit a kid named Cameron back in 1980. He would
         always snap the toys in half so the other kids couldn\u2019t play with them.
@@ -4469,8 +4469,8 @@ MonoBehaviour:
     - Type: 1
       isReliable: 0
       source: Witter
-      title: 
-      author: '@mrcoolguy21'
+      title: Witter
+      author: -@mrcoolguy21
       information: " Did you guys see the news about C. Rook\u2019s plan to demolish
         the lake port to make a chemical waste disposal facility? As if we need to
         be dumping chemicals into one of the few clean lakes around here! Read below:
@@ -4485,55 +4485,114 @@ MonoBehaviour:
     - Yes
     - No
     sources:
-    - Type: 1
-      isReliable: 0
-      source: 
-      title: MARY JANE MURDER COMPLETE TIMELINE
-      author: Saiddit Post
-      information: I have spent the last four years following this case and I am
-        sure that he is guilty from all of my research which I have link below.
-      month: made in
-      year: 2028
-    - Type: 1
-      isReliable: 0
-      source: 
-      title: BUSTER IS GUILTY
-      author: FacePage Group
-      information: This page is for discussions about how Buster Custard is guilty
-        of the Murder of Mary Jane Gelato. Facts only. Buster is an innocent truthers
-        DNI.
-      month: 'made '
-      year: 2028
-    - Type: 3
+    - Type: 0
       isReliable: 1
-      source: Cereal Podcast
-      title: 
-      author: 
-      information: "A Investigative Podcast based analyzing the police and court
-        documents from the Mary Jane Gelato murder investigation. We aim to bring
-        you a complete look at the case, including information about the bias of
-        the Nefaripolis Police Department when investigating Buster Custard due to
-        his divorce from the police chief\u2019s daughter. We also talk to Buster\u2019s
-        attorney about the lack of evidence submitted by the prosecution that was
-        allowed"
-      month: made in
-      year: 2028
+      source: Academics Anonymous
+      title: "Canton\u2019s Police Force, Void of Accountability"
+      author: By James Donovan
+      information: "Since glorious Canton\u2019s secession from the union, our government
+        has promised a complete reformation of the police force. Indeed, they have
+        delivered in their reform, however it is apparent, and evident through this
+        paper, that the situation has gotten out of control. The government has turned
+        a blind eye to the police force, and here are the gruesome effects it has
+        on our people."
+      month: September 4th,
+      year: 2021
+    - Type: 1
+      isReliable: 0
+      source: Witter
+      title: Witter
+      author: -@jim_lee_ditective
+      information: "They\u2019ve got the wrong guy! I\u2019ve been looking more into
+        this, and Kevin Iller can\u2019t be the Canton Clubber because he\u2019s
+        a cop! It\u2019s very well known that police cannot be bad people or do bad
+        things!"
+      month: March 8th,
+      year: 2023
     - Type: 0
       isReliable: 0
-      source: The Journal of Ice Cream Sciences
-      title: Data Analysis on the Importance of Additives in Frozen Yogurt
-      author: Written by Buster Custard
-      information: '-----------------------------------
-
-        -----------------------------------
-
-        ------------------------------------
-
-        --------------------------------------
-
-        ------------------------------------'
-      month: Published January
-      year: 2020
+      source: The Canton Herald
+      title: "BREAKING: State Attorneys confident in Police Sergeant\u2019s innocence"
+      author: Lickada Boot, Government-Sanctioned Journalist
+      information: "Just last night, Police Sergeant Kevin Iller was arrested on
+        his private ranch during his weekly feast. Kevin Iller now faces 17 charges
+        of 1st degree murder, on top of many other insidious charges. \u201CPreposterous
+        charges from jealous coworkers' ' says Defense attorney Richard Cranium,
+        who has been assigned to defend Kevin Iller in his upcoming trial."
+      month: March 8th,
+      year: 2023
+    - Type: 0
+      isReliable: 0
+      source: Infopedia
+      title: Canton Police Force
+      author: Notable Controversies
+      information: "In October 1976, Sparkles the kitten was rescued from a tree
+        by the Canton Fire Brigade. Sparkles\u2019 freedom was short-lived, as four
+        Canton police officers were found putting the kitten back in the tree once
+        the fire. department had left the scene."
+      month: Last edited:February 27th,
+      year: 2016
+    - Type: 1
+      isReliable: 1
+      source: Facepage
+      title: Facepage
+      author: -David Leblanc
+      information: I have been inundated with questions regarding our recent arrest
+        of Kevin Iller. While it is not my place to say if he is innocent or guilty,
+        I am able to say that there was just cause for our arrest, as multiple DNA
+        samples linked Kevin Iller to the many victims of the Canton Clubber. I should
+        know, I was there.
+      month: 'March 8th, '
+      year: 2023
+    - Type: 1
+      isReliable: 0
+      source: Saiddit
+      title: Saiddit
+      author: -u/TrueCrimeLord
+      information: "We did it! Through all of our efforts, we finally found the Canton
+        Clubber! While they parade Kevin Iller as their scapegoat, we Saidittors
+        know well that Pete Macad, owner of Macad\u2019s Auto Parts, is the murderer.
+        Once we finally gather evidence, we will present it to the courts and let
+        them see the truth!."
+      month: 'March 8th, '
+      year: 2023
+    - Type: 0
+      isReliable: 0
+      source: FMZ
+      title: Canton Clubber sleeping with Grand Mayor?!
+      author: By Anita Bath
+      information: "The Canton Clubber strikes again, however this time he\u2019s
+        added to a different body count?! Rumors have been circulating that a man
+        was seen fleeing the Grand Mayor\u2019s property shortly before another attack
+        from the Canton Clubber was reported. Could our Grand Mayor be involved in
+        the murders, or are they even aware of their partner\u2019s secret double
+        life?"
+      month: January 17th,
+      year: 2017
+    - Type: 0
+      isReliable: 1
+      source: ' Canton Supreme Court Archives (Scholarly Journal)'
+      title: Marissa Urder
+      author: By Anita Bath
+      information: "Marissa Urder was found at the scene of Laura Sirona\u2019s murder
+        by first responders, supposedly attempting to conceal evidence. Urder proudly
+        claimed to be affiliated with the Canton Clubber, however refused to disclose
+        the infamous killer\u2019s identity. Urder plead guilty, receiving a 23 year
+        sentence for accessory to murder and kidnapping, with no chance of parole."
+      month: 'Last reviewed: May 29th,'
+      year: 2022
+    - Type: 0
+      isReliable: 0
+      source: The NP Post
+      title: New evidence links suspect to Canton Clubber killings
+      author: By Amanda Hema
+      information: "For many long years, the Canton Clubber has brought fear to the
+        streets of Canton, and with each skull caved in, the police have never gotten
+        any closer to identifying a suspect. That all changed when a murder weapon
+        was found at the scene of Laura Sirona\u2019s brutal attack, DNA evidence
+        linking. Policeman Kevin Iller to the crime."
+      month: December 22nd,
+      year: 2002
     emails:
     - {fileID: 1460859462}
     - {fileID: 653604018}
