@@ -57,27 +57,25 @@ public class Articles
         {
             return new string[]
             {
-                "CITY SAVED FROM CORRUPTION", //Header
-                "CANDIDATE B RETURNS MILLIONS", //Deck
-                "Recent investigations into the two mayoral candidates' affairs " + //Article
-                "has revealed Candidate B received unlawful funding from Nefaripolis " +
-                "Builders United. The candidate is now being forced by the city to " +
-                "donate the 2.5 million dollars he received to the city's social services " +
-                "department, to support local parks and shelters."
+                "LAYMAN'S JOURNAL", //Header
+                "Citizens call for impeachment of Councilman Cameron Rook", //Deck
+                "Overwhelming evidence has flooded in these past few days of " +
+                "Councilman C. Rook’s connections to crimes throughout the city, as well " +
+                "as a blatant disregard for the denizens of the Canton city-state. " +
+                "Justifiably, the populus are disgusted with the actions of the councilman, " +
+                "and the people’s demands are clear: Remove C. Rook!"
             };
         }
         else
         {
             return new string[]
             {
-                "RICH PARK YACHTS WHILE WE STARVE", //Header
-                "CORRUPTION REACHES ALL-TIME HIGH", //Deck
+                "THE CANTON HERALD", //Header
+                "Councilman C. Rook running for a 5th term!", //Deck
                 "Many citizens of Nefaripolis are unhappy with recent legislation. " + //Article
-                "Funding for many social services has been reduced to give give tax " +
-                "cuts to the rich. A bill allocating 25% of Nefaripolis' remaining " +
-                "green space to be converted into yacht parking also passed following " +
-                "massive lobbying from yacht venders and their patrons. Many pantries " +
-                "and shelters are have been forced to close their doors, causing many to go hungry."
+                "With civil unrest at an all time low, our beautiful utopia thrives! " +
+                "In light of the successes of the council, Councilman Cameron Rook " +
+                "has announced his campaign for the Legislative seat of the Canton city council!"
             };
         }
     }
@@ -88,26 +86,26 @@ public class Articles
         {
             return new string[]
             {
-                "EXONERATED HERO RETURNS ICE CREAM", //Header
-                "CUSTARD CLEARD OF ALL CHARGES", //Deck
-                "Buster Custard has been released following his retrial. Custard receieved " + //Article
-                "this retrial thanks to new evidence uncovered by the hosts of the popular " +
-                "podcast Cereal. The retrial found there was not enough evidence to convict " +
-                "Custard of the murder of his girlfriend Mary Jane. Custard's recent FacePage " +
-                "post shows him celebrating with Young Franklin star Zane Legitage"
+                "LAYMAN'S JOURNAL", //Header
+                "Citizens gather outside Canton Police Station, cursing Canton Clubber.", //Deck
+                "Citizens restlessly wait outside the Canton Police station this evening, " +
+                "following the arrest of Police Sergeant Kevin Iller, the alleged Canton Clubber. " +
+                "Many have come to protest the Police Station, claiming they could have done " +
+                "more from the beginning to prevent these murders. Some are just concerned " +
+                "with the punishment of the Canton Clubber, calling for capital punishment."
             };
         }
         else
         {
             return new string[]
             {
-                "SPRINKLE KILLER REMAINS AT LARGE", //Header
-                "POLICED BAFFLED BY NEW MUDERS", //Deck
-                "The infamous monster known only as \"The Sprinkle Killer\" has claimed another " + //Article
-                "victim. Young Franklin star Zane Legitage was found murdered in his home with " +
-                "the telltale signs of the Sprinkle Killer left behind at the scene. Zane makes " +
-                "for the killer's third confirmed victim, though some believe there is also a " +
-                "connection to the murder of Mary Jane, despite her boyfriend's conviction."
+                "THE CANTON HERALD", //Header
+                "Kevin Iller released after detainment period.", //Deck
+                "Following the arrest of Police Sergeant Kevin Iller last night, " +
+                "the Canton Police Force has released Kevin Iller from the " +
+                "precinct tonight, unable to find approval to extend the " +
+                "detainment period for the alleged Canton Clubber. Kevin " +
+                "Iller is to remain on paid leave until a verdict has been given on the case."
             };
         }
     }
@@ -118,28 +116,31 @@ public class Articles
         {
             return new string[]
             {
-                "POLLUTION REACHES ALL-TIME LOW", //Header
-                "NEW CLIMATE REGULATIONS EFFECTIVE", //Deck
+                "THE LAYMAN'S ALMANAC", //Header
+                "Many to blame for Acid Rain", //Deck
                 "A recent investigation into Nefaropolis' acid jean wash factory invoked " + //Article
-                "new legislation that would regulate many factories that were found to " +
-                "be contributing to climate pollution and causing an increase of harmful " +
-                "acid rain in the city. Factories are now requrired to properly dispose " +
-                "of wasteful materials instead of dumping them into the river. Nefaripolis " +
-                "weather service is rolling back its acid rain warning as pollutants are cleared away."
+                "April showers bring May flowers all around the world, however in Canton, " +
+                "they have now started to bring medical bills. Citizens look for someone " +
+                "to blame, however there is no sole culprit for these frequent natural " +
+                "disasters. Climate scientists believe that the rapid industrialization " +
+                "of Canton to keep up with our sister country, as well as the lack of " +
+                "solid regulations of these factories, have led to dangerous changes " +
+                "in our environment, and endangered the public in exchange for profit and progress."
             };
         }
         else
         {
             return new string[]
             {
-                "ACID JEAN  WASH FACTORY CLOSES", //Header
-                "STILL NO END TO POLLUTION IN SIGHT", //Deck
+                "THE CANTON HERALD", //Header
+                "Trapezoid Pants Factory found to be cause of pollution!", //Deck
                 "A recent investigation into the local acid jean wash factory found " + //Article
-                "it to be the cause of an increase in acid rain in the city, forcing " +
-                "the factory to shut down. Water quality however has continued to " +
-                "deteriorate with some questioning if the jean factory was the true " +
-                "cause of the pollution. Nefaripolis science association has issued a " +
-                "warning declaring city water non-potable."
+                "On March 9th, 2023, Canton had witnessed the most severe Acid Rainstorm " +
+                "in world history, leaving over $2 million in damages and about 140 " +
+                "injured. The government had immediately intervened to investigate " +
+                "the cause of such a horrible natural catastrophe, and found Trapezoid " +
+                "Pants Factory to be in multiple violations of Environmental and Work " +
+                "safety. Matt Wiener, owner of Trapezoid Pants Factory, to stand trial in 6 months."
             };
         }
     }
@@ -150,27 +151,31 @@ public class Articles
         {
             return new string[]
             {
-                "BOOK AUDIT FINDS BIAS IN TEXTBOOK", //Header
-                "NEW CURRICULUM APPROVED", //Deck
-                "Review of the latest edition of the NP Official Textbook found high " + //Article
-                "amounts of biased information being presented. Many of the textbook's " +
-                "sources were found to be giving biased accounts of events and our history. " +
-                "Lawmakers are now working with teachers to create a curriculum using " +
-                "objective first and secondary historical sources."
+                "THE LAYMAN'S ALMANAC", //Header
+                "Canton schools adopt unreliable & inaccurate textbooks.", //Deck
+                "The Department of Education has recently approved and distributed " +
+                "a new history textbook to middle school students throughout the " +
+                "nation, The History of Glorious Canton 8th edition. This " +
+                "textbook, however, is far from the standards it should have " +
+                "reached. Using Facepage and Saiddit posts as sources for the " +
+                "book, as well as other outdated or otherwise unreliable " +
+                "sources, this is a laughable excuse for an educational tool for our upcoming generation."
             };
         }
         else
         {
             return new string[]
             {
-                "CHILDREN UNSURE OF FACT OR FICTION", //Header
-                "SCHOOL CURRICULUM TO BLAME", //Deck
-                "A survey of Nefaripolis school children about the history of our city has " +
-                "revealed that many youths believe falsehoods about historical events and " +
-                "figures. Students are certain Nefaripolis has no faults and is the greatest " +
-                "city in the world, stating their school classes have taught them everything " +
-                "they need to know about their history. Students were found to have no " +
-                "awareness of several unfortunate past city oversights and failures."
+                "THE CANTON HERALD", //Header
+                "Department of Education to create a new round of textbooks.", //Deck
+                "With the positive reactions to the newest edition of The " +
+                "History of Glorious Canton 8th edition, the Department " +
+                "of Education has begun creating new editions for each " +
+                "of their textbooks in circulation. The new, updated " +
+                "editions will fully replace past editions, and " +
+                "government officials advise that families dispose " +
+                "of their old books as soon as they gain access " +
+                "to the newest editions."
             };
         }
     }

@@ -1,43 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &799278617963107630
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3753539720958435223}
-  m_Layer: 0
-  m_Name: EmailsList
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3753539720958435223
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799278617963107630}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3724495317158072460}
-  - {fileID: 6919929142725170172}
-  - {fileID: 1053921847214682101}
-  - {fileID: 1053921847810922229}
-  - {fileID: 1053921848559407727}
-  - {fileID: 1053921847367848200}
-  - {fileID: 1053921847490176679}
-  - {fileID: 1053921848664818006}
-  m_Father: {fileID: 1053921848946984969}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &850447040174510426
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,55 +288,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &1053921847214682099
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053921847214682101}
-  - component: {fileID: 1053921847214682100}
-  m_Layer: 0
-  m_Name: FirstColleagueEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053921847214682101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847214682099}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053921847214682100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847214682099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Colleague'
-  subject: 'Subject: Relevancy'
-  body: "Have been getting more sources, but they are coming in so fast, I\u2019m
-    not able to tell if they are relevant or not. getting to the bottom of this.
-    \n\nPlease help!"
-  opened: 0
 --- !u!1 &1053921847265684472
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,54 +500,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Hide
---- !u!1 &1053921847367848214
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053921847367848200}
-  - component: {fileID: 1053921847367848215}
-  m_Layer: 0
-  m_Name: ThirdColleagueEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053921847367848200
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847367848214}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053921847367848215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847367848214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Colleague'
-  subject: 'Subject: Authority'
-  body: "Some of our colleagues at The NP Post have been crafting this podcast about
-    the case using the documents collected by the police. \n\nGive it a listen\u2026"
-  opened: 0
 --- !u!1 &1053921847486814754
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,57 +579,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1
---- !u!1 &1053921847490176677
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053921847490176679}
-  - component: {fileID: 1053921847490176678}
-  m_Layer: 0
-  m_Name: FourthColleagueEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053921847490176679
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847490176677}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053921847490176678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847490176677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Colleague'
-  subject: 'Subject: Accuracy'
-  body: We have been getting tips from an inside source from the acid wash jeans
-    factory saying that the acid rain is caused by the byproduct of the jean making
-    process that is escaping from the smokestacks and into the river. Most of the
-    sources are hearsay from social media accounts. Can you help us determine their
-    accuracy?
-  opened: 0
 --- !u!1 &1053921847529381912
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,55 +658,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Delete
---- !u!1 &1053921847810922228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053921847810922229}
-  - component: {fileID: 1053921847810922230}
-  m_Layer: 0
-  m_Name: CrimeGroupEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053921847810922229
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847810922228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053921847810922230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921847810922228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Local True Crime Group'
-  subject: 'Subject: Threatening'
-  body: You need to publish the truth that Buster Custard is a cold-hearted murderer.
-    If you help get him off, you have blood on your hands! We are sure from our independent
-    research that he deserves the electric chair!
-  opened: 0
 --- !u!1 &1053921848251866742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,54 +818,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'From:'
---- !u!1 &1053921848559407726
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053921848559407727}
-  - component: {fileID: 1053921848559407712}
-  m_Layer: 0
-  m_Name: SecondColleagueEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053921848559407727
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921848559407726}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053921848559407712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921848559407726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Colleague'
-  subject: 'Subject: Authority'
-  body: "Some of our colleagues at The NP Post have been crafting this podcast about
-    the case using the documents collected by the police. \n\nGive it a listen."
-  opened: 0
 --- !u!1 &1053921848560961406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,8 +854,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: -0.001399}
-  m_SizeDelta: {x: 95.567, y: 744.92}
+  m_AnchoredPosition: {x: 0, y: -0.001399}
+  m_SizeDelta: {x: 95.567, y: 1050}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1053921848560961394
 CanvasRenderer:
@@ -1222,60 +939,11 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1053921849045361854}
   m_Direction: 2
   m_Value: 1.0000001
-  m_Size: 0.25090435
+  m_Size: 0.35130382
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1053921848664818004
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053921848664818006}
-  - component: {fileID: 1053921848664818005}
-  m_Layer: 0
-  m_Name: FifthColleagueEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053921848664818006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921848664818004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053921848664818005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053921848664818004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Colleague'
-  subject: 'Subject: Purpose'
-  body: " We secretly obtained an early copy of the new NP Official Textbook. We
-    need to work together to figure out the purpose behind the sources that were
-    chosen for the textbook.\n\nMAKE SURE THEY AREN\u2019T BIASED!"
-  opened: 0
 --- !u!1 &1053921848670064836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,8 +982,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00011444, y: -27.462}
-  m_SizeDelta: {x: 1900, y: 744.92}
+  m_AnchoredPosition: {x: 0, y: -150}
+  m_SizeDelta: {x: 2000, y: 1043}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1053921848670064838
 MonoBehaviour:
@@ -1465,7 +1133,6 @@ RectTransform:
   - {fileID: 9191489752548628592}
   - {fileID: 3723054888474332031}
   - {fileID: 6747594362146332883}
-  - {fileID: 3753539720958435223}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1520,6 +1187,7 @@ MonoBehaviour:
   subject: {fileID: 3724495316816474607}
   sender: {fileID: 3724495315697827663}
   body: {fileID: 3724495316166857111}
+  correctionEmail: {fileID: 0}
 --- !u!1 &1053921849045361853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,7 +1220,7 @@ RectTransform:
   m_Father: {fileID: 1053921848938789666}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7490957}
+  m_AnchorMin: {x: 0, y: 0.6486962}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -5.2750693e-11, y: 0.000015258789}
@@ -2129,10 +1797,10 @@ RectTransform:
   m_Father: {fileID: 1053921848670064837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000024318695, y: -2968.9404}
-  m_SizeDelta: {x: 1708.8667, y: 2968.9402}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1000, y: -2968.9404}
+  m_SizeDelta: {x: 1810, y: 2968.9402}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3724495316166857104
 CanvasRenderer:
@@ -2164,7 +1832,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 96
+    m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2257,56 +1925,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Subject: Hello World'
---- !u!1 &3724495317158072451
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3724495317158072460}
-  - component: {fileID: 3724495317158072461}
-  m_Layer: 0
-  m_Name: DayOneEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3724495317158072460
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3724495317158072451}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 960, y: 216, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.8, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3724495317158072461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3724495317158072451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3b196b11c60a5b4d95b18cb501b2d7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Colleague'
-  subject: 'Subject: Political Curruption'
-  body: "We are getting loads of tips about the corruption rumors, I am sending you
-    a series of sources. \n\nMake sure to really focus on the currency of the information,
-    I am hearing a lot about how people are trying to prove their theories with outdated
-    or not updated information.\n\n- Best of luck!"
-  opened: 0
 --- !u!1 &3807613072853917529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,61 +2059,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &4176866666817842125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6919929142725170172}
-  - component: {fileID: 1330637328126944922}
-  m_Layer: 0
-  m_Name: BossEmail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6919929142725170172
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4176866666817842125}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3753539720958435223}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1330637328126944922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4176866666817842125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295216eecec891438e9e3512cc001f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sender: 'From: Boss'
-  subject: 'Subject: Welcome'
-  body: 'Greetings and welcome to Nefaripolis.
-
-
-    Your job is to check information
-    and see whether it''s reliable. blah blah blah blah blah blah. Don''t mess up!
-
-
-    -Your
-    Boss'
-  opened: 0
 --- !u!1 &4487267209069402573
 GameObject:
   m_ObjectHideFlags: 0
