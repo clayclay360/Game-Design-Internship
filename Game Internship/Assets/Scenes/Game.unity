@@ -4585,46 +4585,133 @@ MonoBehaviour:
     - Yes
     - No
     sources:
-    - Type: 1
-      isReliable: 0
-      source: 
-      title: 
-      author: ' iloveacidrainholes'
-      information: Acid rain has been falling in our country for over 30 years. I
-        have seen metal melt in front of me many times before the factory was turned
-        into an acid wash jeans factory. This is not their fault
-      month: Posted March 10
-      year: 2030
-    - Type: 1
-      isReliable: 1
-      source: 
-      title: 
-      author: -Nefaripolis Weather Service Official
-      information: 'ALERT: Please stay inside for the next eight hours as the doppler
-        radar is predicting a large amount of rainwater with an extremely high acid
-        content within the Factory area of Nefaripolis City Proper'
-      month: Posted July 18
-      year: 2030
-    - Type: 1
-      isReliable: 1
-      source: 
-      title: 
-      author: '- Joel Kinney'
-      information: Image taken from a newspaper article published 2 years ago showing
-        the accumulation of waste byproduct in the river behind the plastic spork
-        factory
-      month: Posted August 8
-      year: 2030
     - Type: 0
       isReliable: 1
-      source: Academic Article
-      title: Bob Lee
-      author: ' Nefaripolis Climate'
-      information: ...a five year study across the factory system of Nefaripolis
-        shows that there has been a steady increase in waste byproducts going into
-        our air and water systems affecting the acid content in the rain.
-      month: Posted April 25
-      year: 2030
+      source: The Climate Chronicle (Scholarly Journal)
+      title: "Canton\u2019s Climate and our Consequences"
+      author: By Allison Fern Ph. D, Emily Fern Ph. D and, Gregory Oak Ph. D
+      information: "The industrial climate of Canton has allowed for our small, secluded
+        city-state to thrive and keep up with our sister country, The United States.
+        These advancements, however, have spawned dreadful consequences for our environment.
+        In this paper, we will be exploring the drastic changes Canton\u2019s climate
+        has gone through using past data and current testing, and look for solutions
+        to a dire issue."
+      month: 'Date: May 12th,'
+      year: 2021
+    - Type: 1
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: -@Environmentgeek1223
+      information: "My whole family is freaking out because they saw our car begin
+        to melt today. What gives? I\u2019ve told them multiple times that the acid
+        rain is a natural occurrence, that has NOTHING TO DO WITH ANYTHING MAN MADE?
+        God, read a book, people!"
+      month: Posted March 9th,
+      year: 2023
+    - Type: 0
+      isReliable: 1
+      source: Infopedia
+      title: Canton
+      author: 'Section: Climate'
+      information: "According to expert environmental scientists, Canton\u2019s rapid
+        industrialization has shocked the climate to an intense degree. Since 1986,
+        37 different animal species have gone extinct, the PH levels of the Grass
+        river have dropped significantly, and the amount of sulfuric acid being produced
+        in clouds has increased by a significant margin, leading to an increase in
+        acid rain. (Wiki note: the Grass River is one of 3 rivers in Canton, hosting
+        a declining ecosystem of fauna and flora)."
+      month: 'Last edited: September 30th,'
+      year: 2022
+    - Type: 0
+      isReliable: 0
+      source: NP Post
+      title: Water quality has never been better!
+      author: By Billie Verger
+      information: "There\u2019s never been a better time to go swimming in the rivers
+        or collecting rainwater here in glorious Canton! \u201CWe environmental scientists
+        have been ecstatic with environmentally-conscious legislation.\u201D says
+        Dr. Frederick Auburn. \u201CTruly we are ahead of the United States, and
+        even the European Union when it comes to contributions to the environment.\u201D"
+      month: 'Date: January 20th,'
+      year: 1980
+    - Type: 0
+      isReliable: 0
+      source: The Canton Herald
+      title: 'Acid rain: Who to blame?'
+      author: By Lickada Boot, Government Sanctioned Journalist
+      information: 'The citizens of Canton are outraged at the increase in acidity
+        in the rainstorms, as well as the frequency of said storms. Citizens report
+        over 17 million in property damage over the course of 3 years, roughly the
+        time these storms began getting worse. Who is to blame? All fingers point
+        to the poorly regulated Trapezoid Pants factory, which is currently under
+        investigation. (Note: The Trapezoid Pants Factory is a large factory with
+        about 250 active employees working daily, and is considered one of the top
+        10 safest factories in Canton).'
+      month: 'Date: April 18th,'
+      year: 2022
+    - Type: 1
+      isReliable: 1
+      source: Saiddit
+      title: Saiddit
+      author: -u/DrHenryGrayOfficial
+      information: "Today has been a grim day in Canton. While no deaths have been
+        reported, 146 serious injuries have caused the local hospital to be completely
+        overwhelmed. The community has suffered a hefty blow, and while it may seem
+        like this was an unavoidable natural disaster, this is far from the truth.
+        Officials claim that today's acid rain storm is the result of lenient legislation
+        and the rapid industrialization pushed by our governance. Please read the
+        article posted by my friends at The Climate Chronicles, titled \u201CCanton\u2019s
+        Climate and our Consequences.\u201D."
+      month: Posted March 9th,
+      year: 2023
+    - Type: 1
+      isReliable: 0
+      source: Witter
+      title: Witter
+      author: -@memaw
+      information: " Everybody is complaining about their cars getting damaged and
+        shit. Really? Don\u2019t they know there\u2019s kids in Africa without cars?
+        Wake up, Canton."
+      month: Posted February 6th,
+      year: 2023
+    - Type: 0
+      isReliable: 0
+      source: FMZ
+      title: OMG, this acid rain has got to stop!
+      author: By Jenna Chim
+      information: Really guys? While everyone here is complaining about their cars
+        getting destroyed and their houses falling apart, I just had the worst day
+        ever! I was walking to work today when I tripped over a REAL DEAD BODY and
+        spilled my drink everywhere! He was probably a victim of the acid rain or
+        whatever, but I was too devastated over the fact my special coffee was ruined!
+        My day is RUINED!
+      month: 'Date: February 6th,'
+      year: 2023
+    - Type: 0
+      isReliable: 1
+      source: NP Post
+      title: Regulations of factories repealed, government forgets to inform the
+        public
+      author: By Bob Writer
+      information: Today a frightening whistle has been blown. Anonymous informant
+        within Canton Town Hall reveals to NP Post that legislators repealed the
+        1986 Preserve the Climate bill, allowing factories to be much more apathetic
+        towards their carbon footprint. As of June 2020, emissions from factories
+        have increased by 2000%, according to independent studies from St. Lawrence.
+      month: 'Date: July 10th,'
+      year: 2020
+    - Type: 1
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: By Kimberly Oldie
+      information: " I can\u2019t believe people haven\u2019t realized it. THE AMERICANS
+        HAVE USED THEIR WEATHER SATELLITE TO CAUSE CHAOS AMONG US! I mean, seriously,
+        does anything else really make sense?! I\u2019ve done my research, and so
+        should you! Go to Conspiracynut.com for more!"
+      month: Posted May 18th,
+      year: 2023
     emails:
     - {fileID: 19993762}
     - {fileID: 1491806379}
