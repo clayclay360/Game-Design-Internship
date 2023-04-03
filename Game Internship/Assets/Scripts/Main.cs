@@ -31,7 +31,7 @@ public class Main : MonoBehaviour
         articles = new Articles();
         newsPaper.gameObject.SetActive(false);
 
-        GameManager.currentDay = 0; // for testing
+        GameManager.currentDay = 2; // for testing
         StartCoroutine(Gameloop());
     }
 
@@ -304,7 +304,7 @@ public class Main : MonoBehaviour
             yield return null;
             int numberOfReviewedInformation = 0;
 
-            while (numberOfReviewedInformation < 4)
+            while (numberOfReviewedInformation < 3)
             {
                 //temporary
                 sourceIndex = numberOfReviewedInformation;
@@ -325,47 +325,47 @@ public class Main : MonoBehaviour
             #region ReadEmails
 
             //count the emails
-            //int currentEmailIndex = 1;
+            int currentEmailIndex = 1;
 
-            //for (int i = 0; i < emailSystem.Inbox.Length; i++)
-            //{
-            //    if (emailSystem.Inbox[i] == null && currentEmailIndex < questions[GameManager.currentDay].emails.Length)
-            //    {
-            //        //add next wave of emails
-            //        Debug.Log("EmailAdd");
-            //        emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[currentEmailIndex];
-            //        currentEmailIndex++;
-            //    }
-            //}
+            for (int i = 0; i < emailSystem.Inbox.Length; i++)
+            {
+                if (emailSystem.Inbox[i] == null && currentEmailIndex < questions[GameManager.currentDay].emails.Length)
+                {
+                    //add next wave of emails
+                    Debug.Log("EmailAdd");
+                    emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[currentEmailIndex];
+                    currentEmailIndex++;
+                }
+            }
 
 
-            //GameManager.readyToStartWork = false;
-            //while (!GameManager.readyToStartWork)
-            //{
-            //    yield return null;
-            //}
+            GameManager.readyToStartWork = false;
+            while (!GameManager.readyToStartWork)
+            {
+                yield return null;
+            }
             #endregion
 
             #region MoreAccuracy
-            // start passing out information
-            //yield return new WaitForSeconds(1);
+           //start passing out information
+           yield return new WaitForSeconds(1);
 
-            //while (numberOfReviewedInformation < 4/*questions[GameManager.currentDay].sources.Length*/)
-            //{
-            //    //temporary
-            //    sourceIndex = numberOfReviewedInformation;
-            //    CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
-            //    numberOfReviewedInformation++;
+            while (numberOfReviewedInformation < 10/*questions[GameManager.currentDay].sources.Length*/)
+            {
+                //temporary
+                sourceIndex = numberOfReviewedInformation;
+                CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
+                numberOfReviewedInformation++;
 
-            //    //wait until player finishes sources
-            //    while (!GameManager.readyForNextSource)
-            //    {
-            //        yield return null;
-            //    }
-            //    GameManager.readyForNextSource = false;
+                //wait until player finishes sources
+                while (!GameManager.readyForNextSource)
+                {
+                    yield return null;
+                }
+                GameManager.readyForNextSource = false;
 
-            //    yield return new WaitForSeconds(.5f);
-            //}
+                yield return new WaitForSeconds(.5f);
+            }
             #endregion
 
             #region GetAnswers
