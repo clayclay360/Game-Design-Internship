@@ -8,6 +8,7 @@ public class SearchManager : MonoBehaviour
     public GameObject ContentHolder;
     public GameObject[] Element;
     public GameObject SearchBar;
+
     public int totalElements;
 
     void Start()
@@ -45,8 +46,8 @@ public class SearchManager : MonoBehaviour
             }
 
         }
-
         
     }
+
 
 }
