@@ -31,7 +31,7 @@ public class Main : MonoBehaviour
         articles = new Articles();
         newsPaper.gameObject.SetActive(false);
 
-        GameManager.currentDay = 2; // for testing
+        GameManager.currentDay = 3; // for testing
         StartCoroutine(Gameloop());
     }
 
@@ -417,7 +417,7 @@ public class Main : MonoBehaviour
             yield return null;
             int numberOfReviewedInformation = 0;
 
-            while (numberOfReviewedInformation < 4)
+            while (numberOfReviewedInformation < 5)
             {
                 //temporary
                 sourceIndex = numberOfReviewedInformation;
@@ -438,47 +438,160 @@ public class Main : MonoBehaviour
             #region ReadEmails
 
             //count the emails
-            //int currentEmailIndex = 1;
+            int currentEmailIndex = 1;
 
-            //for (int i = 0; i < emailSystem.Inbox.Length; i++)
-            //{
-            //    if (emailSystem.Inbox[i] == null && currentEmailIndex < questions[GameManager.currentDay].emails.Length)
-            //    {
-            //        //add next wave of emails
-            //        Debug.Log("EmailAdd");
-            //        emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[currentEmailIndex];
-            //        currentEmailIndex++;
-            //    }
-            //}
+            for (int i = 0; i < emailSystem.Inbox.Length; i++)
+            {
+                if (emailSystem.Inbox[i] == null && currentEmailIndex < questions[GameManager.currentDay].emails.Length)
+                {
+                    //add next wave of emails
+                    Debug.Log("EmailAdd");
+                    emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[currentEmailIndex];
+                    currentEmailIndex++;
+                }
+            }
 
 
-            //GameManager.readyToStartWork = false;
-            //while (!GameManager.readyToStartWork)
-            //{
-            //    yield return null;
-            //}
+            GameManager.readyToStartWork = false;
+            while (!GameManager.readyToStartWork)
+            {
+                yield return null;
+            }
             #endregion
 
             #region MorePurpose
             // start passing out information
-            //yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1);
 
-            //while (numberOfReviewedInformation < 4/*questions[GameManager.currentDay].sources.Length*/)
-            //{
-            //    //temporary
-            //    sourceIndex = numberOfReviewedInformation;
-            //    CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
-            //    numberOfReviewedInformation++;
+            while (numberOfReviewedInformation < 10/*questions[GameManager.currentDay].sources.Length*/)
+            {
+                //temporary
+                sourceIndex = numberOfReviewedInformation;
+                CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
+                numberOfReviewedInformation++;
 
-            //    //wait until player finishes sources
-            //    while (!GameManager.readyForNextSource)
-            //    {
-            //        yield return null;
-            //    }
-            //    GameManager.readyForNextSource = false;
+                //wait until player finishes sources
+                while (!GameManager.readyForNextSource)
+                {
+                    yield return null;
+                }
+                GameManager.readyForNextSource = false;
 
-            //    yield return new WaitForSeconds(.5f);
-            //}
+                yield return new WaitForSeconds(.5f);
+            }
+            #endregion
+
+            #region GetAnswers
+            LeftText.text = questions[GameManager.currentDay].answers[0];
+            RightText.text = questions[GameManager.currentDay].answers[1];
+            #endregion
+
+            answerPrompt.SetActive(true);
+            Debug.Log("End Task");
+        }
+        else if (GameManager.currentDay == 4)
+        {
+            // start the day and display question
+            #region Display
+            blackScreen.gameObject.SetActive(true);
+            blackScreen.alpha = 1;
+            yield return new WaitForSeconds(2);
+
+            while (blackScreen.alpha != 0)
+            {
+                blackScreen.alpha -= 0.1f;
+                yield return new WaitForSeconds(0.1f);
+            }
+            dayText.text = "";
+            blackScreen.blocksRaycasts = false;
+            #endregion
+
+            #region ReadEmails
+            for (int i = 0; i < 1; i++)
+            {
+                emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[i];
+            }
+            yield return null;
+
+            while (!GameManager.readyToStartWork)
+            {
+                yield return null;
+            }
+            #endregion
+
+            #region DisplayQuestion
+            yield return new WaitForSeconds(1);
+            questionText.gameObject.SetActive(true);
+            questionText.text = questions[GameManager.currentDay].question;
+            #endregion
+
+            #region Fifth Day
+            // start passing out information
+            yield return null;
+            int numberOfReviewedInformation = 0;
+
+            while (numberOfReviewedInformation < 7)
+            {
+                //temporary
+                sourceIndex = numberOfReviewedInformation;
+                CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
+                numberOfReviewedInformation++;
+
+                //wait until player finishes sources
+                while (!GameManager.readyForNextSource)
+                {
+                    yield return null;
+                }
+                GameManager.readyForNextSource = false;
+
+                yield return new WaitForSeconds(.5f);
+            }
+            #endregion
+
+            #region ReadEmails
+
+            //count the emails
+            int currentEmailIndex = 1;
+
+            for (int i = 0; i < emailSystem.Inbox.Length; i++)
+            {
+                if (emailSystem.Inbox[i] == null && currentEmailIndex < questions[GameManager.currentDay].emails.Length)
+                {
+                    //add next wave of emails
+                    Debug.Log("EmailAdd");
+                    emailSystem.Inbox[i] = questions[GameManager.currentDay].emails[currentEmailIndex];
+                    currentEmailIndex++;
+                }
+            }
+
+
+            GameManager.readyToStartWork = false;
+            while (!GameManager.readyToStartWork)
+            {
+                yield return null;
+            }
+            #endregion
+
+            #region MoreFifthDay
+            // start passing out information
+            yield return new WaitForSeconds(1);
+
+            while (numberOfReviewedInformation < 10/*questions[GameManager.currentDay].sources.Length*/)
+            {
+                //temporary
+                sourceIndex = numberOfReviewedInformation;
+                CreateSource(questions[GameManager.currentDay].sources[sourceIndex].Type);
+                numberOfReviewedInformation++;
+
+                //wait until player finishes sources
+                while (!GameManager.readyForNextSource)
+                {
+                    yield return null;
+                }
+                GameManager.readyForNextSource = false;
+
+                yield return new WaitForSeconds(.5f);
+            }
             #endregion
 
             #region GetAnswers
