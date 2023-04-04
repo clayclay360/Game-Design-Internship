@@ -4721,52 +4721,260 @@ MonoBehaviour:
     - No
     sources:
     - Type: 0
+      isReliable: 1
+      source: Infopedia
+      title: Canton
+      author: 'Section: History'
+      information: In 1920, the Spanish Flu pandemic crippled the United States.
+        Clinging onto its isolationist ideals, the United States had turned a blind
+        eye to the first World War, and was reluctant to trade with Europe and Asia.
+        The economy had been greatly affected as a result, and many cities and states
+        suffered from the United States being unable to provide the resources necessary
+        to stabilize local and state governments. A select few of these states and
+        cities decided to secede from the union, claiming independence from the United
+        States.
+      month: 'Last Edited: August 17th,'
+      year: 2016
+    - Type: 0
       isReliable: 0
-      source: NP Official Textbook
-      title: Introduction of Book
-      author: 
-      information: 'This book aims to help students in Nerfaripolis learn about our
-        great and powerful culture. We have ruled and dominated this land for hundreds
-        of glorious years and wish to fill young minds with this history. No one
-        has come close to our greatness and that is fact. '
-      month: 
-      year: 0
+      source: NP Post
+      title: Revisiting our history
+      author: By Bradley Greeb
+      information: ' In the inception of our great nation, our founding fathers had
+        bravely stood up against the neglectful United States that looked down upon
+        the small community Canton used to be. Present Day, we have grown to be one
+        of the greatest nations to ever exist throughout history! Today, we will
+        explore many of the key parts of our history that lead Canton to stand the
+        test of time!'
+      month: 'Date: November 2nd,'
+      year: 2018
+    - Type: 0
+      isReliable: 0
+      source: The Canton Herald
+      title: "Canton\u2019s Grand Mayors and their Contributions"
+      author: By Brandon Brownnose, Government Sanctioned Journalist
+      information: ' January 13th marks the day our great nation has been founded!
+        In this article, we will explore the Grand Mayors. From Jeramiah Heinrich,
+        the first Grand Mayor, to our current Grand Mayor, Peter Harbold, our leaders
+        have strived to make our little city the strongest city-state to ever exist,
+        bringing us an industrial revolution unlike any other seen in history!'
+      month: Date January 13th,
+      year: 2022
     - Type: 0
       isReliable: 1
-      source: NP Official Textbook
-      title: Introduction of Book
-      author: 
-      information: "Academic Article from Economics of Nefaripolis, 2029: \u201C...statistics
-        of the treasury department shows that over the past 20 years, the economy
-        of Nefaripolis has grown from a deficit into the glorious wealth we have
-        currently"
-      month: 
-      year: 0
+      source: Academics Anonymous
+      title: "Canton\u2019s industrial revolution"
+      author: By Dr. Kelly Rib
+      information: "This paper hopes to explore the data of Canton\u2019s production
+        of goods throughout the country\u2019s history in order to determine economic
+        trends, changes and fluctuations in productions and the economy as a whole,
+        as well as the impact the industrialization of Canton has had on its citizens
+        and environment over the decades."
+      month: 'Date: May 3rd,'
+      year: 2015
     - Type: 0
       isReliable: 0
-      source: NP Official Textbook
-      title: Quote from Book
-      author: 
-      information: "Nefaripolis\u2019 first president was known for his generosity.
-        Despite being a billionaire, he gave out a million dollars every year to
-        various charities of his choice. Because of the dismantling of the welfare
-        system early in his reign, these funds help support new social services,
-        including his pet project of Bird Watching. [Citation from: An Exalted Leader:
-        Nefaripolis\u2019 First President Straight from his Right Handman published
-        2025"
-      month: 
-      year: 0
+      source: FMZ
+      title: Where did Canton come from?
+      author: By Leena Buss
+      information: ' While historians and teachers may tell you that Canton gained
+        its independence through our hard work and resilience, it has fallen upon
+        deaf ears on the real reason our country has gained its prosperity and freedom;
+        God. Yes, you read that right. God! It is through the will of our lord and
+        savior that we have the food on our tables, the great factories that provide
+        us with everything we need, and our fantastic Grand Mayor who works himself
+        to the bone to give us the lives we deserve! Glory to Canton!'
+      month: 'Date: June 18th,'
+      year: 2022
+    - Type: 1
+      isReliable: 0
+      source: Saiddit
+      title: Saiddit
+      author: '- u/Histerybuff'
+      information: centon is te best plese to live it makes mi feel safer wen i see
+        te statew of our grant mayor in te town sqware gloree to centon
+      month: 'Date: January 13th,'
+      year: 2016
     - Type: 0
       isReliable: 0
-      source: Press Conference with Nefaripolis Tourism Office
-      title: 
-      author: 
-      information: The official textbook is the only thing that we need to learn
-        the history of our great city, one that will make residents proud and outsiders
-        want to visit! Click the affiliated link on our website to order now for
-        your schoo
-      month: 
-      year: 0
+      source: Academics Anonymous
+      title: 'Sociology of Canton: History of Ethics in the Workplace'
+      author: By Abdula Pik, Ph.D
+      information: "This book explores the dynamic changes made to safety conditions,
+        racial and gender statistics, and the ethical treatment of workers throughout
+        Canton\u2019s History. From abolishing child labor to bringing child labor
+        back into popularity, Canton has seen intense, radical changes to the ethics
+        of offices, workshops, and factories all across the city state."
+      month: 'Date: December 4th,'
+      year: 1964
+    - Type: 0
+      isReliable: 1
+      source: NP Post
+      title: Remembering the Downtown Inferno Crisis
+      author: By Bob Writer
+      information: Today, 40 years ago, Downtown Canton had suffered the most horrific
+        fire the city-state has ever seen. At around 3:40 AM, 9 year old Alice Angel
+        had been working a 17 hour shift at the Fenton Fireworks Factory. It is alleged
+        that Alice Angel had mishandled a volatile firework during her shift, which
+        caused it to fly into the gunpowder storage, causing a massive explosion
+        that sparked a 6 day inferno to spread over 18 blocks. The fire resulted
+        in 67 fatalities and over 470 injuries.
+      month: 'Date: July 4th,'
+      year: 2020
+    - Type: 1
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: -Cheryl Baker
+      information: "You know what, I\u2019m gonna say it. The American Space Laser
+        is what caused that fire all those years ago! We all know they have one!"
+      month: 'Posted: September 30th,'
+      year: 2017
+    - Type: 0
+      isReliable: 1
+      source: The Climate Chronicle
+      title: "Canton\u2019s History of Conservation"
+      author: By Emily Fern, Ph.D
+      information: "This article explores Canton\u2019s efforts in Nature conservation
+        throughout its rather brief history. While Canton\u2019s biodiversity is
+        not as dense as many of the other countries in North America, Canton has
+        been a leader in conserving its many endangered species, including the Oilfish,
+        a threatened species of fish resulting from the effects of local trout eggs
+        being exposed to oil being dumped into the rivers."
+      month: 'Date: September 10th,'
+      year: 2017
+    emails:
+    - {fileID: 292615255}
+    - {fileID: 1828298988}
+  - question: Should this book be used in schools?
+    answers:
+    - Yes
+    - No
+    sources:
+    - Type: 1
+      isReliable: 0
+      source: Saiddit
+      title: Saiddit
+      author: -1337_H4CC3R
+      information: "My parents never gave me an allowance when I was little\u2026
+        Now I bet they wish they did, because I just gave myself the allowance I
+        deserved. Thank you Code Cobras!!!"
+      month: 'Posted: March 11th,'
+      year: 2023
+    - Type: 0
+      isReliable: 1
+      source: Academics Anonymous
+      title: 'All eyes on you: How the government accesses your information'
+      author: By Steven Meyers
+      information: "As you are most likely familiar, your home computer is provided
+        by the Department of Information. While a free computer is more than what
+        the US government could possibly provide, it is important to note what the
+        government puts on your computer to collect and monitor what you see and
+        do. This paper will break down exactly how the government accesses this information,
+        and where it ends up.\r"
+      month: 'Date: September 23rd,'
+      year: 2023
+    - Type: 0
+      isReliable: 1
+      source: NP Post
+      title: "Department of Information remarks on security of Canton\u2019s data
+        vaults"
+      author: By Bob Writer
+      information: "The Department of Information has recently made a public statement
+        on the new security protocols regarding their data vaults, the servers on
+        which all citizen\u2019s most precious information is stored. \u201CWith
+        recent testing, we realized the vulnerabilities of our data vaults were unacceptable,\u201D
+        says Adrian Sector, Head of the DoI, \u201CWe will be working on a new system
+        to strengthen the security of our data vaults to keep the citizens of Canton
+        safe, expected to be completed in the next 5 years.\u201D"
+      month: 'Date: July 9th,'
+      year: 2020
+    - Type: 0
+      isReliable: 0
+      source: FMZ
+      title: Cash Catastrophe!
+      author: By Jimmy John
+      information: "Last night was absolutely crazy! The bank info of everyone in
+        Canton was put into the hands of thieves, and many people have already lost
+        their money! People are asking \u201CHow could this have happened?\u201D
+        Well, buckle up, because I know exactly how this happened: It didn\u2019t!
+        It\u2019s all an early April fools prank that will probably be undone next
+        month! That\u2019s what I think anyway!"
+      month: 'Date: March 11th,'
+      year: 2023
+    - Type: 1
+      isReliable: 0
+      source: Witter
+      title: Witter
+      author: '@Sadman45'
+      information: "I can\u2019t believe it! All of my money was stripped from my
+        bank account, and the government says they have no idea how anyone could
+        have gotten my information! At least tomorrow can\u2019t get any worse, right?!"
+      month: 'Date: September 10th,'
+      year: 2001
+    - Type: 1
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: -Sergei Alpha
+      information: " All of these beta males have lost all of their cash in a little
+        security breach because they trusted the Canton government to save them.
+        The reason these brokies are suffering is because they didn\u2019t follow
+        my 15 steps to becoming rich forever! Don\u2019t worry, there\u2019s still
+        hope, visit my website and become rich today!"
+      month: 'Date: March 11th,'
+      year: 2023
+    - Type: 0
+      isReliable: 1
+      source: Infopedia
+      title: PCs for the Public Program
+      author: 'Section: Backdooring'
+      information: "The Personal computers provided by Canton\u2019s Department of
+        Information in the \u201CPCs for the Public Program\u201D are controversial
+        for their \u201CSpy chip\u201D, hardware that serves as a backdoor for law
+        enforcement and Department of Information workers to access the information
+        on your personal computer. Many citizens find this necessary, however most
+        citizens find this to be a security risk and an invasion of privacy."
+      month: 'Last edited: February 15th,'
+      year: 2023
+    - Type: 1
+      isReliable: 1
+      source: Witter
+      title: Witter
+      author: -@Creepy Cobra
+      information: People of Canton, the Code Cobras have finally pulled off our
+        magnum opus. Breaking into Cantons data vaults was an easy feat, with little
+        more than a firewall and a simple encryption shielding its contents. Siphoning
+        your cash was even easier. Without the shackles of currency, the government
+        has lost their grip on us all. It is time to return to the natural freedoms
+        we are obligated to enjoy!
+      month: 'Posted: March 11th,'
+      year: 2023
+    - Type: 0
+      isReliable: 0
+      source: The Canton Herald
+      title: Code Cobras responsible for Data breach, Data vaults unaffected.
+      author: By Brandon Brownnose, Government-sanctioned journalist
+      information: "Last night, the anarchist hacking and terrorist organization,
+        Code Cobras released the sensitive data of hundreds of thousands of Cantonites
+        onto a network of websites, accessible to the public. The Department of Information
+        has issued this statement: \u201CWe have no idea of the source of this data
+        breach, however investigations into government data vaults have shown it
+        is unlikely they are compromised.\u201D The investigation into the issue
+        is still ongoing, however our glorious and infallible government is doing
+        everything in their power to correct this."
+      month: 'Date: March 11th,'
+      year: 2023
+    - Type: 1
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: -Old man Cletus
+      information: "All you whippersnappers lost all your money in this little ol\u2019
+        scandal. I didn\u2019t lose a dollar because all my money is REAL and in
+        my VAULT. If you want it, come get it!"
+      month: Posted March 11th,
+      year: 2023
     emails:
     - {fileID: 292615255}
     - {fileID: 1828298988}
