@@ -298,10 +298,10 @@ RectTransform:
   m_Father: {fileID: 106791169}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 450, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &85249319
 MonoBehaviour:
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -375,8 +375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: -89.6}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -731.75, y: -401.6}
+  m_SizeDelta: {x: 330, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106791170
 MonoBehaviour:
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -840,10 +840,10 @@ RectTransform:
   m_Father: {fileID: 1859896497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 75.4}
-  m_SizeDelta: {x: 1750, y: 850}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &343906586
 MonoBehaviour:
@@ -858,14 +858,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 549fb10893a3646478c8d4ac55fb3643, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2801,8 +2801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -89.6}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -727, y: -134.8}
+  m_SizeDelta: {x: 330, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1295978956
 MonoBehaviour:
@@ -3891,10 +3891,10 @@ RectTransform:
   m_Father: {fileID: 1295978955}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 450, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741968704
 MonoBehaviour:
@@ -3909,7 +3909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4179,10 +4179,10 @@ RectTransform:
   m_Father: {fileID: 967037647}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -187.2}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1901133083
 GameObject:
@@ -4313,7 +4313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4387,7 +4387,7 @@ MonoBehaviour:
     - Candidate B
     sources:
     - Type: 0
-      isReliable: 0
+      isReliable: 1
       source: NP Post
       title: Councilman Cameron Rook steals candy from baby
       author: By Bob Writer
@@ -4411,7 +4411,7 @@ MonoBehaviour:
       month: Posted January 6th,
       year: 2001
     - Type: 1
-      isReliable: 1
+      isReliable: 0
       source: Witter
       title: Witter
       author: -@mrboopy
@@ -4421,7 +4421,7 @@ MonoBehaviour:
       month: Posted October 30th,
       year: 2013
     - Type: 0
-      isReliable: 0
+      isReliable: 1
       source: Infopedia
       title: Cameron Rook
       author: 
@@ -4431,29 +4431,40 @@ MonoBehaviour:
         councilman, however no official case has ever been sparked'
       month: Last edited July 5th,
       year: 2020
+    - Type: 0
+      isReliable: 0
+      source: FMZ
+      title: ' C. Rook does WHAAAAAAT?!'
+      author: By Seymour Booty
+      information: "C. Rook seems to have dropped the ball yet again! He was recently
+        caught putting an angry bull in a local china shop! \u201CI just wanted to
+        see what everyone meant when they said the phrase!\u201D he said, laughing
+        in front of the destruction he caused!"
+      month: Published on August 27th,
+      year: 1999
     - Type: 1
       isReliable: 0
       source: Facepage
       title: Facepage
-      author: 'Tammy Poomalla '
-      information: "I used to babysit a kid named Cameron back in 1980. He would
+      author: -Tammy Poomalla
+      information: " I used to babysit a kid named Cameron back in 1980. He would
         always snap the toys in half so the other kids couldn\u2019t play with them.
         What a little rascal!"
-      month: December 12th,
+      month: Posted December 12th,
       year: 2017
     - Type: 0
-      isReliable: 0
+      isReliable: 1
       source: Academics Anonymous
       title: "Investigation of Cameron Rook\u2019s involvement in the increase of
         Crime throughout Canton"
       author: By Ali Baba and Emma Zone
-      information: "Criminal activity had been at a stable incline since the iron
-        border separating Canton from the United States was created. However in the
-        past decade, crime rates have skyrocketed across the board, reaching unprecedented
-        levels. In this study, we correlate Councilman C. Rook\u2019s passed legislation
-        and crimes were reported throughout the city. Our findings conclude C. Rook
-        is directly to blame."
-      month: April 2nd,
+      information: "Abstract: Criminal activity had been at a stable incline since
+        the iron border separating Canton from the United States was created. However
+        in the past decade, crime rates have skyrocketed across the board, reaching
+        unprecedented levels. In this study, we correlate Councilman C. Rook\u2019s
+        passed legislation and crimes were reported throughout the city. Our findings
+        conclude C. Rook is directly to blame."
+      month: 'Date: April 2nd,'
       year: 2020
     - Type: 0
       isReliable: 1
@@ -4465,19 +4476,8 @@ MonoBehaviour:
         tax rates for working citizens. The same bill also lowered taxes for government
         legislators and the council, which are reported to make 4x the average working
         citizens yearly salary.
-      month: ' May 10th,'
+      month: 'Date: May 10th,'
       year: 2018
-    - Type: 1
-      isReliable: 0
-      source: Witter
-      title: Witter
-      author: -@mrcoolguy21
-      information: " Did you guys see the news about C. Rook\u2019s plan to demolish
-        the lake port to make a chemical waste disposal facility? As if we need to
-        be dumping chemicals into one of the few clean lakes around here! Read below:
-        (link unavailable)"
-      month: September 17th,
-      year: 2009
     emails:
     - {fileID: 1483750732}
     - {fileID: 170359951}
@@ -5227,6 +5227,14 @@ PrefabInstance:
     - target: {fileID: 6465674406603615089, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747594362146332883, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -47
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747594362146332883, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 186.8
       objectReference: {fileID: 0}
     - target: {fileID: 7205134959461111880, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

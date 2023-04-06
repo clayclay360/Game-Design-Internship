@@ -20,6 +20,7 @@ public class Main : MonoBehaviour
     public Question[] questions;
 
     private int sourceIndex;
+    private int numberOfSourcesInDay;
 
     private InformationType informationType;
     private EmailSystem emailSystem;
@@ -31,14 +32,18 @@ public class Main : MonoBehaviour
         articles = new Articles();
         newsPaper.gameObject.SetActive(false);
 
-        GameManager.currentDay = 2; // for testing
+        GameManager.currentDay = 0; // for testing
         StartCoroutine(Gameloop());
     }
 
     public IEnumerator Gameloop()
     {
+        GameManager.numberOfCorrectSources = 0;
+
         if (GameManager.currentDay == 0)
         {
+            numberOfSourcesInDay = questions[GameManager.currentDay].sources.Length;
+
             // start the day and display question
             #region Display
 
@@ -69,9 +74,9 @@ public class Main : MonoBehaviour
             #endregion
 
             #region DisplayQuestion
-            yield return new WaitForSeconds(1);
-            questionText.gameObject.SetActive(true);
-            questionText.text = questions[GameManager.currentDay].question;
+            //yield return new WaitForSeconds(1);
+            //questionText.gameObject.SetActive(true);
+            //questionText.text = questions[GameManager.currentDay].question;
             #endregion
 
             #region Currency
@@ -143,15 +148,17 @@ public class Main : MonoBehaviour
             #endregion
 
             #region GetAnswers
-            LeftText.text = questions[GameManager.currentDay].answers[0];
-            RightText.text = questions[GameManager.currentDay].answers[1];
+            //LeftText.text = questions[GameManager.currentDay].answers[0];
+            //RightText.text = questions[GameManager.currentDay].answers[1];
             #endregion
 
-            answerPrompt.SetActive(true);
+            //answerPrompt.SetActive(true);
             Debug.Log("End Task");
         }
         else if (GameManager.currentDay == 1)
         {
+            numberOfSourcesInDay = questions[GameManager.currentDay].sources.Length;
+
             // start the day and display question
             #region Display
             blackScreen.gameObject.SetActive(true);
@@ -181,9 +188,9 @@ public class Main : MonoBehaviour
             #endregion
 
             #region DisplayQuestion
-            yield return new WaitForSeconds(1);
-            questionText.gameObject.SetActive(true);
-            questionText.text = questions[GameManager.currentDay].question;
+            //yield return new WaitForSeconds(1);
+            //questionText.gameObject.SetActive(true);
+            //questionText.text = questions[GameManager.currentDay].question;
             #endregion
 
             #region Authority
@@ -256,15 +263,17 @@ public class Main : MonoBehaviour
             #endregion
 
             #region GetAnswers
-            LeftText.text = questions[GameManager.currentDay].answers[0];
-            RightText.text = questions[GameManager.currentDay].answers[1];
+            //LeftText.text = questions[GameManager.currentDay].answers[0];
+            //RightText.text = questions[GameManager.currentDay].answers[1];
             #endregion
 
-            answerPrompt.SetActive(true);
+            //answerPrompt.SetActive(true);
             Debug.Log("End Task");
         }
         else if( GameManager.currentDay == 2)
         {
+            numberOfSourcesInDay = questions[GameManager.currentDay].sources.Length;
+
             // start the day and display question
             #region Display
             blackScreen.gameObject.SetActive(true);
@@ -294,9 +303,9 @@ public class Main : MonoBehaviour
             #endregion
 
             #region DisplayQuestion
-            yield return new WaitForSeconds(1);
-            questionText.gameObject.SetActive(true);
-            questionText.text = questions[GameManager.currentDay].question;
+            //yield return new WaitForSeconds(1);
+            //questionText.gameObject.SetActive(true);
+            //questionText.text = questions[GameManager.currentDay].question;
             #endregion
 
             #region Accuracy
@@ -369,15 +378,17 @@ public class Main : MonoBehaviour
             #endregion
 
             #region GetAnswers
-            LeftText.text = questions[GameManager.currentDay].answers[0];
-            RightText.text = questions[GameManager.currentDay].answers[1];
+            //LeftText.text = questions[GameManager.currentDay].answers[0];
+            //RightText.text = questions[GameManager.currentDay].answers[1];
             #endregion
 
-            answerPrompt.SetActive(true);
+            //answerPrompt.SetActive(true);
             Debug.Log("End Task");
         }
         else if (GameManager.currentDay == 3)
         {
+            numberOfSourcesInDay = questions[GameManager.currentDay].sources.Length;
+
             // start the day and display question
             #region Display
             blackScreen.gameObject.SetActive(true);
@@ -407,9 +418,9 @@ public class Main : MonoBehaviour
             #endregion
 
             #region DisplayQuestion
-            yield return new WaitForSeconds(1);
-            questionText.gameObject.SetActive(true);
-            questionText.text = questions[GameManager.currentDay].question;
+            //yield return new WaitForSeconds(1);
+            //questionText.gameObject.SetActive(true);
+            //questionText.text = questions[GameManager.currentDay].question;
             #endregion
 
             #region Purpose
@@ -482,15 +493,17 @@ public class Main : MonoBehaviour
             #endregion
 
             #region GetAnswers
-            LeftText.text = questions[GameManager.currentDay].answers[0];
-            RightText.text = questions[GameManager.currentDay].answers[1];
+            //LeftText.text = questions[GameManager.currentDay].answers[0];
+            //RightText.text = questions[GameManager.currentDay].answers[1];
             #endregion
 
-            answerPrompt.SetActive(true);
+            //answerPrompt.SetActive(true);
             Debug.Log("End Task");
         }
         else if (GameManager.currentDay == 4)
         {
+            numberOfSourcesInDay = questions[GameManager.currentDay].sources.Length;
+
             // start the day and display question
             #region Display
             blackScreen.gameObject.SetActive(true);
@@ -520,9 +533,9 @@ public class Main : MonoBehaviour
             #endregion
 
             #region DisplayQuestion
-            yield return new WaitForSeconds(1);
-            questionText.gameObject.SetActive(true);
-            questionText.text = questions[GameManager.currentDay].question;
+            //yield return new WaitForSeconds(1);
+            //questionText.gameObject.SetActive(true);
+            //questionText.text = questions[GameManager.currentDay].question;
             #endregion
 
             #region Fifth Day
@@ -595,13 +608,15 @@ public class Main : MonoBehaviour
             #endregion
 
             #region GetAnswers
-            LeftText.text = questions[GameManager.currentDay].answers[0];
-            RightText.text = questions[GameManager.currentDay].answers[1];
+            //LeftText.text = questions[GameManager.currentDay].answers[0];
+            //RightText.text = questions[GameManager.currentDay].answers[1];
             #endregion
 
-            answerPrompt.SetActive(true);
+            //answerPrompt.SetActive(true);
             Debug.Log("End Task");
         }
+
+        EndDay(PlayerPasses());
     }
 
     // create the source and fill in the information
@@ -632,6 +647,17 @@ public class Main : MonoBehaviour
         information.monthText.text = questions[GameManager.currentDay].sources[sourceIndex].month;
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
+    }
+
+    public bool PlayerPasses()
+    {
+        if(numberOfSourcesInDay / 2 < GameManager.numberOfCorrectSources)
+        {
+            Debug.Log("Player Passes");
+            return true;
+        }
+        Debug.Log("Player Failed");
+        return false;
     }
 
     public void EndDay(bool isPlayerCorrect)

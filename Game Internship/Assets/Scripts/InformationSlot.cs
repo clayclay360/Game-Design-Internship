@@ -21,11 +21,13 @@ public class InformationSlot : MonoBehaviour, IDropHandler
                 {
                     GameManager.correctlySorted += 1;
                     GameManager.playerScore += 50; // player score increases
+                    GameManager.numberOfCorrectSources++; // number of correct sources playet gets
                 }
                 else if(!information.isReliable && slotType.Equals(SlotType.unreliable))
                 {
                     GameManager.correctlySorted += 1;
                     GameManager.playerScore += 50; // player score increases 
+                    GameManager.numberOfCorrectSources++; // number of correct sources playet gets
                 }
                 else
                 {
