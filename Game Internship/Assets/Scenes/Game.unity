@@ -738,7 +738,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263960651}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -746,9 +746,69 @@ Transform:
   - {fileID: 376532025}
   - {fileID: 871960424}
   - {fileID: 221657034}
+  - {fileID: 1670562543}
+  - {fileID: 1593660293}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &277596931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 277596932}
+  - component: {fileID: 277596933}
+  m_Layer: 0
+  m_Name: DayFiveLloydEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &277596932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277596931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1670562543}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &277596933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277596931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: Overtime!
+  body: "Hey there, (Name)\r\n\r\nHuman resources has informed me that you do not
+    enjoy my attempts at humor regarding my relations with your mother. I am obligated
+    to inform you that I have not been having relations with your mother, and I am
+    also obligated to apologize for overstepping these boundaries. I am also obligated
+    to apologize for eating your lunch, putting your stapler in a peanut butter jar,
+    putting the staples in a jelly jar, and telling you to \u201CEat a sandwich once
+    and a while\u201D knowing that the sandwich you would make would bring you harm.
+    \r\n\r\nAll this being said, it looks like there was a mistake when scheduling
+    the hours for this week. It seems someone switched our hours, making it so I
+    have the entire weekend off and you have to work extra hours on the weekend!
+    I wonder how that could have happened?\r\n\r\nEnjoy your weekend,\r\nLloyd Libel,
+    Senior Fact Checker."
+  opened: 0
 --- !u!1 &292615253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,6 +3646,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576715888}
   m_CullTransparentMesh: 1
+--- !u!1 &1593660292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593660293}
+  m_Layer: 0
+  m_Name: DaySixEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593660293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593660292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1611476104}
+  - {fileID: 2082151564}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1611476103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611476104}
+  - component: {fileID: 1611476105}
+  m_Layer: 0
+  m_Name: DaySixIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611476104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611476103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1593660293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611476105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611476103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Anonymous
+  subject: The Cash Act
+  body: "It seems you\u2019re working the weekend, (name). I apologize sincerely,
+    I was hoping you and I would have a rest after such a busy week. I am glad to
+    have you here, however, for I trust no one else for what we must do.\r\n\r\nThe
+    government is getting desperate, and with this economic crisis, the people\u2019s
+    faith in the government is waning. Change is coming, and the United States is
+    sending an ambassador to examine if intervention is necessary tomorrow. The government
+    has found great opportunity in the crisis, as they are going to pass an emergency
+    bill soon to begin redistributing funds to the people. While people are relieved
+    their government is helping, they don\u2019t know what else is written in the
+    bill.\r\n\r\nThe main goals of the bill will indeed begin solving the financial
+    crisis, however there are darker goals written deep within the bill, far deeper
+    than the average citizens will read into, and written in legal jargon they\u2019ll
+    barely understand. The government will take complete control over banks, factories,
+    newspapers, and shops all around Canton. Business owners who don\u2019t comply
+    will be fined and imprisoned. It is imperative we inform the people of the true
+    intentions of the bill, and how damaging it is to their lives. You know what
+    you must do.\r\n~anonymous"
+  opened: 0
+--- !u!1 &1670562542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670562543}
+  m_Layer: 0
+  m_Name: DayFiveEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1670562543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670562542}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1770901855}
+  - {fileID: 277596932}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678326140
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,6 +4200,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742121051}
   m_CullTransparentMesh: 1
+--- !u!1 &1770901854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770901855}
+  - component: {fileID: 1770901856}
+  m_Layer: 0
+  m_Name: DayFiveIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770901855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770901854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1670562543}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1770901856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770901854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Anonymous
+  subject: Data Breach
+  body: "Happy Friday, (name). You\u2019ve made it through an entire work week. While
+    I would like to praise your efforts, I have some grave news. \r\n\r\nLast night,
+    sensitive information of every resident had been made public by the hacking group
+    known as the Code Cobras. Names, addresses, occupations, bank account information,
+    passwords, and whatever else you\u2019d want to keep secret has been revealed
+    to the public through a network of websites. Pandora\u2019s box can no longer
+    be closed, and everyone\u2019s sensitive information will now be saved by people
+    who wish to exploit it. The government will swear up and down they will have
+    no idea how this could have happened, but you and I know better, don\u2019t we?\r\n\r\nYour
+    journalists already have everything they need to reveal the government\u2019s
+    negligence in securing the citizen\u2019s most sensitive information, all they
+    need now is to make sure what sources to use. There will be a lot to sort through,
+    but you must remain focused on the government\u2019s role in this. You've been
+    fully oriented to the process, and I trust you can sort these sources effectively.\r\n\r\nStay
+    safe out there. There\u2019s no telling the chaos that will ensue from this breach.\r\n~Anonymous"
+  opened: 0
 --- !u!1 &1772122362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,6 +5273,61 @@ MonoBehaviour:
   socialsPrefab: {fileID: 2231909901935483417, guid: 4bd07adc63b3c834dbfb6804b0a4f1b1, type: 3}
   researchPrefab: {fileID: 0}
   newspaperPrefab: {fileID: 1542358782119838860, guid: 46ee2519023528e48ac80b03707f1a39, type: 3}
+--- !u!1 &2082151563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082151564}
+  - component: {fileID: 2082151565}
+  m_Layer: 0
+  m_Name: DaySixLloydEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082151564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082151563}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1593660293}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082151565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082151563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: Take a Hike
+  body: "Hey hey, *\n\r\nI have a question to ask you\u2026 what the actual hell
+    do you think you\u2019re accomplishing. I know that anonymous dude has taken
+    an interest and all, but let's not forget what\u2019s REALLY important. That
+    promotion is mine, and has been mine for a long long time, before you ever even
+    showed up. Do you even realize the amount of work I put in EVERY DAY to get where
+    I am now? Let me just say that the 4 hour break I take before my shift ends every
+    day is VERY necessary.\r\n\r\nSpeaking of breaks, I\u2019m going to enjoy my
+    weekend\u2026 WITH. YOUR. MOTHER!!!\r\n\r\nWith hatred and malice,\r\nLloyd Libel,
+    Senior Fact Checker"
+  opened: 0
 --- !u!1001 &1053921849016950264
 PrefabInstance:
   m_ObjectHideFlags: 0

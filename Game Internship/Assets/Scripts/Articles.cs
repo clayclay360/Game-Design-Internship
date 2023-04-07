@@ -19,6 +19,10 @@ public class Articles
                 return dayThree(wasPlayerCorrect);
             case 3:
                 return dayFour(wasPlayerCorrect);
+            case 4:
+                return dayFive(wasPlayerCorrect);
+            case 5:
+                return daySix(wasPlayerCorrect);
         }
 
         //This should never happen. If an empty newspaper shows up something has gone wrong.
@@ -179,5 +183,69 @@ public class Articles
             };
         }
     }
+
+    private string[] dayFive(bool wasPlayerCorrect)
+    {
+        if (wasPlayerCorrect)
+        {
+            return new string[]
+            {
+                "THE LAYMAN'S ALMANAC", //Header
+                "Code Cobra's Strike at the Throat!", //Deck
+                "Today, March 11th 2023, the citizens of Canton have experienced one of " +
+                "the worst tragedies since the Spanish Flu crisis of the 1920s. The " +
+                "Code Cobras, an anarchist hacking organization, has revealed the " +
+                "sensitive information of every citizen in Canton, including their " +
+                "bank information, claiming to use the data vaults residing within " +
+                "the Department of Information, likely using the backdoors hardwired " +
+                "within each government-assigned computer. With anonymous criminals " +
+                "withdrawing money in the names of innocent people, the people of " +
+                "Canton are experiencing an unprecedented economic crisis."
+            };
+        }
+        else
+        {
+            return new string[]
+            {
+                "THE CANTON HERALD", //Header
+                "Terrorists Leak Information, Banks to Blame!", //Deck
+                "The Code Cobras, a domestic terrorist organization, have recently " +
+                "leaked the sensitive information of many citizens, resulting in mass " +
+                "identity theft and the complete emptying of digital bank accounts. " +
+                "The treasury has promised compensation to those with more than $100,000 lost."
+            };
+        }
+    }
+
+    private string[] daySix(bool wasPlayerCorrect)
+    {
+        if (wasPlayerCorrect)
+        {
+            return new string[]
+            {
+                "THE LAYMAN'S ALMANAC", //Header
+                "The Cash Act, Section XII, and the end of our freedoms", //Deck
+                "The Cash Act, emergency legislation put forward to seize wealth from " +
+                "thieves taking advantage of the mass data breach and redistribute " +
+                "wealth to the citizens of Canton. The Cash Act, however, holds much " +
+                "more severe consequences for citizens of Canton, stripping them of " +
+                "their rights to own businesses and forcefully handing control over " +
+                "to the Canton government"
+            };
+        }
+        else
+        {
+            return new string[]
+            {
+                "THE CANTON HERALD", //Header
+                "The Cash Act is set to pass in two days!", //Deck
+                "Our glorious leaders have now set the bill to pass in two days time, " +
+                "with overwhelming public support. With just under 80% of funds seized " +
+                "already, the population will be able to rest easy knowing their banks " +
+                "will be full once again in a few days time."
+            };
+        }
+    }
+
     #endregion
 }

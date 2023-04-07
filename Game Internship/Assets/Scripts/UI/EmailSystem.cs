@@ -109,6 +109,9 @@ public class EmailSystem : MonoBehaviour
                     return $"The information in the article is most likely accurate, because it {correctionInfo}.";
                 case "purpose":
                     return $"The article's information can be considered reliable, because its purpose is to {correctionInfo}.";
+                case "CRAAP":
+                    return "The article is current, relevent, authoritative, accurate, and has purpose. By these measures, it is reliable.";
+
             }
         }
         else
@@ -293,34 +296,36 @@ public class EmailSystem : MonoBehaviour
         switch (index)
         {
             case 1:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("I took all of my parent's money!", false, "relevancy", 
+                    "despite having to do with the outcome of the hack, it gives no information about the attack itself");
                 break;
             case 2:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("All eyes on you: How the government accesses your information", true, "CRAAP", "");
                 break;
             case 3:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Department of Information remarks on security of Canton’s data vaults", true, "CRAAP", "");
                 break;
             case 4:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Cash Catastrophe!", false, "accuracy", "is based on an opinion and not backed up with sources");
                 break;
             case 5:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"I can't believe it!\"", false, "currency", "September 10th, 2001");
                 break;
             case 6:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"All these beta males…\"", false, "purpose", "sell the influencer's program");
                 break;
             case 7:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("PCs for the Public Program", true, "CRAAP", "");
                 break;
             case 8:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"People of Canton…\"", true, "CRAAP", "");
                 break;
             case 9:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Code Cobras responsible for Data breach, Data vaults unaffected.", false, "purpose", 
+                    "shield the government from any blame for the incident");
                 break;
             case 10:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"All you worshippers…\"", false, "relevancy", "where Old man Cletus hides his money has nothing to do with this data breach");
                 break;
         }
         return correctionEmail;
@@ -331,34 +336,34 @@ public class EmailSystem : MonoBehaviour
         switch (index)
         {
             case 1:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("The Cash Act", true, "CRAAP", "");
                 break;
             case 2:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"Soon the Grand Mayor…\"", false, "relevancy", "it is advertising a giveaway");
                 break;
             case 3:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Concerns about the Cash Act", true, "CRAAP", "");
                 break;
             case 4:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"I don't get what the hubbub…\"", false, "accuracy", "it does not accurately describe the consequences of the bill");
                 break;
             case 5:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Government owned businesses: How do they affect us?", false, "currency", "March 12th, 1984");
                 break;
             case 6:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("What’s up with this Cash Act?", false, "authority", "are pursuing their own selfish goals");
                 break;
             case 7:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Finances and Fascism: Canton’s Economy Projections", true, "CRAAP", "");
                 break;
             case 8:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("Canton’s Cash Act redistributes wealth at the sacrifice of many rights.", true, "CRAAP", "");
                 break;
             case 9:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("The Cash Act to save the economy!", false, "purpose", "glorify the government");
                 break;
             case 10:
-                correctionEmail = GenerateCorrectionEmail("", true, "", "");
+                correctionEmail = GenerateCorrectionEmail("\"WE NEED MORE GOVERNMENT!\"", false, "purpose", "advocate for the government");
                 break;
         }
         return correctionEmail;
