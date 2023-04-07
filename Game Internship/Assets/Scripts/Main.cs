@@ -647,6 +647,7 @@ public class Main : MonoBehaviour
         information.monthText.text = questions[GameManager.currentDay].sources[sourceIndex].month;
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
+        information.index = questions[GameManager.currentDay].sources[sourceIndex].index;
     }
 
     public bool PlayerPasses()

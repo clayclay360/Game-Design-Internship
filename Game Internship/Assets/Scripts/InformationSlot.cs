@@ -7,6 +7,7 @@ public class InformationSlot : MonoBehaviour, IDropHandler
 {
     public enum SlotType { reliable, unreliable };
     public SlotType slotType;
+    public EmailSystem emailSys;
 
 
     public void OnDrop(PointerEventData eventData)
@@ -32,8 +33,10 @@ public class InformationSlot : MonoBehaviour, IDropHandler
                 else
                 {
                     //incorrect
+                    StartCoroutine(emailSys.SendCorrectionEmailAfterDelay(GameManager.currentDay, information.index, 0.0f));
                 }
 
+                
                 Destroy(information.gameObject);
                 GameManager.readyForNextSource = true;
             }

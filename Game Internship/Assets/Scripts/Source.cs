@@ -7,6 +7,7 @@ public class Source
 {
     public enum type { article, social, research, newspaper};
     public type Type;
+    public int index;
     public bool isReliable;
     public string source;
     public string title;

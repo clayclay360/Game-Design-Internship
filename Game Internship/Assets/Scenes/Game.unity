@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotType: 0
+  emailSys: {fileID: 2064069490}
 --- !u!1 &138420394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +2878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotType: 1
+  emailSys: {fileID: 2064069490}
 --- !u!1 &1373882860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,13 +4631,14 @@ MonoBehaviour:
   answerPrompt: {fileID: 493541064}
   newsPaper: {fileID: 622304371}
   questions:
-  - question: 'Which candidate do you think is corrupt: Canidate A or Canidate B? '
+  - question: Exposing C. Rook
     answers:
     - Candidate A
     - Candidate B
     sources:
     - Type: 0
-      isReliable: 1
+      index: 1
+      isReliable: 0
       source: NP Post
       title: Councilman Cameron Rook steals candy from baby
       author: By Bob Writer
@@ -4648,6 +4651,7 @@ MonoBehaviour:
       month: Posted June 5th,
       year: 2019
     - Type: 1
+      index: 2
       isReliable: 0
       source: Saiddit
       title: Saiddit
@@ -4659,6 +4663,7 @@ MonoBehaviour:
       month: Posted January 6th,
       year: 2001
     - Type: 1
+      index: 3
       isReliable: 0
       source: Witter
       title: Witter
@@ -4669,6 +4674,7 @@ MonoBehaviour:
       month: Posted October 30th,
       year: 2013
     - Type: 0
+      index: 4
       isReliable: 1
       source: Infopedia
       title: Cameron Rook
@@ -4680,6 +4686,7 @@ MonoBehaviour:
       month: Last edited July 5th,
       year: 2020
     - Type: 0
+      index: 5
       isReliable: 0
       source: FMZ
       title: ' C. Rook does WHAAAAAAT?!'
@@ -4691,6 +4698,7 @@ MonoBehaviour:
       month: Published on August 27th,
       year: 1999
     - Type: 1
+      index: 6
       isReliable: 0
       source: Facepage
       title: Facepage
@@ -4701,6 +4709,7 @@ MonoBehaviour:
       month: Posted December 12th,
       year: 2017
     - Type: 0
+      index: 7
       isReliable: 1
       source: Academics Anonymous
       title: "Investigation of Cameron Rook\u2019s involvement in the increase of
@@ -4715,6 +4724,7 @@ MonoBehaviour:
       month: 'Date: April 2nd,'
       year: 2020
     - Type: 0
+      index: 8
       isReliable: 1
       source: NP Post
       title: C. Rook raises taxes, and forgives his own
@@ -4729,12 +4739,13 @@ MonoBehaviour:
     emails:
     - {fileID: 1483750732}
     - {fileID: 170359951}
-  - question: Is Buster Custard guilty or not?
+  - question: The Canton Clubber
     answers:
     - Yes
     - No
     sources:
     - Type: 0
+      index: 1
       isReliable: 1
       source: Academics Anonymous
       title: "Canton\u2019s Police Force, Void of Accountability"
@@ -4748,6 +4759,7 @@ MonoBehaviour:
       month: September 4th,
       year: 2021
     - Type: 1
+      index: 2
       isReliable: 0
       source: Witter
       title: Witter
@@ -4759,6 +4771,7 @@ MonoBehaviour:
       month: March 8th,
       year: 2023
     - Type: 0
+      index: 3
       isReliable: 0
       source: The Canton Herald
       title: "BREAKING: State Attorneys confident in Police Sergeant\u2019s innocence"
@@ -4771,6 +4784,7 @@ MonoBehaviour:
       month: March 8th,
       year: 2023
     - Type: 0
+      index: 4
       isReliable: 0
       source: Infopedia
       title: Canton Police Force
@@ -4782,6 +4796,7 @@ MonoBehaviour:
       month: Last edited:February 27th,
       year: 2016
     - Type: 1
+      index: 5
       isReliable: 1
       source: Facepage
       title: Facepage
@@ -4794,6 +4809,7 @@ MonoBehaviour:
       month: 'March 8th, '
       year: 2023
     - Type: 1
+      index: 6
       isReliable: 0
       source: Saiddit
       title: Saiddit
@@ -4806,6 +4822,7 @@ MonoBehaviour:
       month: 'March 8th, '
       year: 2023
     - Type: 0
+      index: 7
       isReliable: 0
       source: FMZ
       title: Canton Clubber sleeping with Grand Mayor?!
@@ -4819,6 +4836,7 @@ MonoBehaviour:
       month: January 17th,
       year: 2017
     - Type: 0
+      index: 8
       isReliable: 1
       source: ' Canton Supreme Court Archives (Scholarly Journal)'
       title: Marissa Urder
@@ -4831,6 +4849,7 @@ MonoBehaviour:
       month: 'Last reviewed: May 29th,'
       year: 2022
     - Type: 0
+      index: 9
       isReliable: 0
       source: The NP Post
       title: New evidence links suspect to Canton Clubber killings
@@ -4845,12 +4864,13 @@ MonoBehaviour:
     emails:
     - {fileID: 1460859462}
     - {fileID: 653604018}
-  - question: Is the factory to blame for the acid rain?
+  - question: Acid Rain
     answers:
     - Yes
     - No
     sources:
     - Type: 0
+      index: 1
       isReliable: 1
       source: The Climate Chronicle (Scholarly Journal)
       title: "Canton\u2019s Climate and our Consequences"
@@ -4864,6 +4884,7 @@ MonoBehaviour:
       month: 'Date: May 12th,'
       year: 2021
     - Type: 1
+      index: 2
       isReliable: 0
       source: Facepage
       title: Facepage
@@ -4875,6 +4896,7 @@ MonoBehaviour:
       month: Posted March 9th,
       year: 2023
     - Type: 0
+      index: 3
       isReliable: 1
       source: Infopedia
       title: Canton
@@ -4889,6 +4911,7 @@ MonoBehaviour:
       month: 'Last edited: September 30th,'
       year: 2022
     - Type: 0
+      index: 4
       isReliable: 0
       source: NP Post
       title: Water quality has never been better!
@@ -4901,6 +4924,7 @@ MonoBehaviour:
       month: 'Date: January 20th,'
       year: 1980
     - Type: 0
+      index: 5
       isReliable: 0
       source: The Canton Herald
       title: 'Acid rain: Who to blame?'
@@ -4916,6 +4940,7 @@ MonoBehaviour:
       month: 'Date: April 18th,'
       year: 2022
     - Type: 1
+      index: 6
       isReliable: 1
       source: Saiddit
       title: Saiddit
@@ -4931,6 +4956,7 @@ MonoBehaviour:
       month: Posted March 9th,
       year: 2023
     - Type: 1
+      index: 7
       isReliable: 0
       source: Witter
       title: Witter
@@ -4941,6 +4967,7 @@ MonoBehaviour:
       month: Posted February 6th,
       year: 2023
     - Type: 0
+      index: 8
       isReliable: 0
       source: FMZ
       title: OMG, this acid rain has got to stop!
@@ -4954,6 +4981,7 @@ MonoBehaviour:
       month: 'Date: February 6th,'
       year: 2023
     - Type: 0
+      index: 9
       isReliable: 1
       source: NP Post
       title: Regulations of factories repealed, government forgets to inform the
@@ -4967,6 +4995,7 @@ MonoBehaviour:
       month: 'Date: July 10th,'
       year: 2020
     - Type: 1
+      index: 10
       isReliable: 0
       source: Facepage
       title: Facepage
@@ -4980,12 +5009,13 @@ MonoBehaviour:
     emails:
     - {fileID: 19993762}
     - {fileID: 1491806379}
-  - question: Should this book be used in schools?
+  - question: History Books
     answers:
     - Yes
     - No
     sources:
     - Type: 0
+      index: 1
       isReliable: 1
       source: Infopedia
       title: Canton
@@ -5001,6 +5031,7 @@ MonoBehaviour:
       month: 'Last Edited: August 17th,'
       year: 2016
     - Type: 0
+      index: 2
       isReliable: 0
       source: NP Post
       title: Revisiting our history
@@ -5014,6 +5045,7 @@ MonoBehaviour:
       month: 'Date: November 2nd,'
       year: 2018
     - Type: 0
+      index: 3
       isReliable: 0
       source: The Canton Herald
       title: "Canton\u2019s Grand Mayors and their Contributions"
@@ -5026,6 +5058,7 @@ MonoBehaviour:
       month: Date January 13th,
       year: 2022
     - Type: 0
+      index: 4
       isReliable: 1
       source: Academics Anonymous
       title: "Canton\u2019s industrial revolution"
@@ -5038,6 +5071,7 @@ MonoBehaviour:
       month: 'Date: May 3rd,'
       year: 2015
     - Type: 0
+      index: 5
       isReliable: 0
       source: FMZ
       title: Where did Canton come from?
@@ -5052,6 +5086,7 @@ MonoBehaviour:
       month: 'Date: June 18th,'
       year: 2022
     - Type: 1
+      index: 6
       isReliable: 0
       source: Saiddit
       title: Saiddit
@@ -5061,6 +5096,7 @@ MonoBehaviour:
       month: 'Date: January 13th,'
       year: 2016
     - Type: 0
+      index: 7
       isReliable: 0
       source: Academics Anonymous
       title: 'Sociology of Canton: History of Ethics in the Workplace'
@@ -5073,6 +5109,7 @@ MonoBehaviour:
       month: 'Date: December 4th,'
       year: 1964
     - Type: 0
+      index: 8
       isReliable: 1
       source: NP Post
       title: Remembering the Downtown Inferno Crisis
@@ -5087,6 +5124,7 @@ MonoBehaviour:
       month: 'Date: July 4th,'
       year: 2020
     - Type: 1
+      index: 9
       isReliable: 0
       source: Facepage
       title: Facepage
@@ -5096,6 +5134,7 @@ MonoBehaviour:
       month: 'Posted: September 30th,'
       year: 2017
     - Type: 0
+      index: 10
       isReliable: 1
       source: The Climate Chronicle
       title: "Canton\u2019s History of Conservation"
@@ -5111,12 +5150,13 @@ MonoBehaviour:
     emails:
     - {fileID: 292615255}
     - {fileID: 1828298988}
-  - question: Should this book be used in schools?
+  - question: Data Breach
     answers:
     - Yes
     - No
     sources:
     - Type: 1
+      index: 1
       isReliable: 0
       source: Saiddit
       title: Saiddit
@@ -5127,6 +5167,7 @@ MonoBehaviour:
       month: 'Posted: March 11th,'
       year: 2023
     - Type: 0
+      index: 2
       isReliable: 1
       source: Academics Anonymous
       title: 'All eyes on you: How the government accesses your information'
@@ -5140,6 +5181,7 @@ MonoBehaviour:
       month: 'Date: September 23rd,'
       year: 2023
     - Type: 0
+      index: 3
       isReliable: 1
       source: NP Post
       title: "Department of Information remarks on security of Canton\u2019s data
@@ -5155,6 +5197,7 @@ MonoBehaviour:
       month: 'Date: July 9th,'
       year: 2020
     - Type: 0
+      index: 4
       isReliable: 0
       source: FMZ
       title: Cash Catastrophe!
@@ -5168,6 +5211,7 @@ MonoBehaviour:
       month: 'Date: March 11th,'
       year: 2023
     - Type: 1
+      index: 5
       isReliable: 0
       source: Witter
       title: Witter
@@ -5178,6 +5222,7 @@ MonoBehaviour:
       month: 'Date: September 10th,'
       year: 2001
     - Type: 1
+      index: 6
       isReliable: 0
       source: Facepage
       title: Facepage
@@ -5190,6 +5235,7 @@ MonoBehaviour:
       month: 'Date: March 11th,'
       year: 2023
     - Type: 0
+      index: 7
       isReliable: 1
       source: Infopedia
       title: PCs for the Public Program
@@ -5203,6 +5249,7 @@ MonoBehaviour:
       month: 'Last edited: February 15th,'
       year: 2023
     - Type: 1
+      index: 8
       isReliable: 1
       source: Witter
       title: Witter
@@ -5216,6 +5263,7 @@ MonoBehaviour:
       month: 'Posted: March 11th,'
       year: 2023
     - Type: 0
+      index: 9
       isReliable: 0
       source: The Canton Herald
       title: Code Cobras responsible for Data breach, Data vaults unaffected.
@@ -5231,6 +5279,7 @@ MonoBehaviour:
       month: 'Date: March 11th,'
       year: 2023
     - Type: 1
+      index: 10
       isReliable: 0
       source: Facepage
       title: Facepage
@@ -5241,8 +5290,150 @@ MonoBehaviour:
       month: Posted March 11th,
       year: 2023
     emails:
-    - {fileID: 292615255}
-    - {fileID: 1828298988}
+    - {fileID: 1770901856}
+    - {fileID: 277596933}
+  - question: The Cash Act
+    answers:
+    - Yes
+    - No
+    sources:
+    - Type: 1
+      index: 1
+      isReliable: 0
+      source: Saiddit
+      title: Saiddit
+      author: -1337_H4CC3R
+      information: "My parents never gave me an allowance when I was little\u2026
+        Now I bet they wish they did, because I just gave myself the allowance I
+        deserved. Thank you Code Cobras!!!"
+      month: 'Posted: March 11th,'
+      year: 2023
+    - Type: 0
+      index: 2
+      isReliable: 1
+      source: Academics Anonymous
+      title: 'All eyes on you: How the government accesses your information'
+      author: By Steven Meyers
+      information: "As you are most likely familiar, your home computer is provided
+        by the Department of Information. While a free computer is more than what
+        the US government could possibly provide, it is important to note what the
+        government puts on your computer to collect and monitor what you see and
+        do. This paper will break down exactly how the government accesses this information,
+        and where it ends up.\r"
+      month: 'Date: September 23rd,'
+      year: 2023
+    - Type: 0
+      index: 3
+      isReliable: 1
+      source: NP Post
+      title: "Department of Information remarks on security of Canton\u2019s data
+        vaults"
+      author: By Bob Writer
+      information: "The Department of Information has recently made a public statement
+        on the new security protocols regarding their data vaults, the servers on
+        which all citizen\u2019s most precious information is stored. \u201CWith
+        recent testing, we realized the vulnerabilities of our data vaults were unacceptable,\u201D
+        says Adrian Sector, Head of the DoI, \u201CWe will be working on a new system
+        to strengthen the security of our data vaults to keep the citizens of Canton
+        safe, expected to be completed in the next 5 years.\u201D"
+      month: 'Date: July 9th,'
+      year: 2020
+    - Type: 0
+      index: 4
+      isReliable: 0
+      source: FMZ
+      title: Cash Catastrophe!
+      author: By Jimmy John
+      information: "Last night was absolutely crazy! The bank info of everyone in
+        Canton was put into the hands of thieves, and many people have already lost
+        their money! People are asking \u201CHow could this have happened?\u201D
+        Well, buckle up, because I know exactly how this happened: It didn\u2019t!
+        It\u2019s all an early April fools prank that will probably be undone next
+        month! That\u2019s what I think anyway!"
+      month: 'Date: March 11th,'
+      year: 2023
+    - Type: 1
+      index: 5
+      isReliable: 0
+      source: Witter
+      title: Witter
+      author: '@Sadman45'
+      information: "I can\u2019t believe it! All of my money was stripped from my
+        bank account, and the government says they have no idea how anyone could
+        have gotten my information! At least tomorrow can\u2019t get any worse, right?!"
+      month: 'Date: September 10th,'
+      year: 2001
+    - Type: 1
+      index: 6
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: -Sergei Alpha
+      information: " All of these beta males have lost all of their cash in a little
+        security breach because they trusted the Canton government to save them.
+        The reason these brokies are suffering is because they didn\u2019t follow
+        my 15 steps to becoming rich forever! Don\u2019t worry, there\u2019s still
+        hope, visit my website and become rich today!"
+      month: 'Date: March 11th,'
+      year: 2023
+    - Type: 0
+      index: 7
+      isReliable: 1
+      source: Infopedia
+      title: PCs for the Public Program
+      author: 'Section: Backdooring'
+      information: "The Personal computers provided by Canton\u2019s Department of
+        Information in the \u201CPCs for the Public Program\u201D are controversial
+        for their \u201CSpy chip\u201D, hardware that serves as a backdoor for law
+        enforcement and Department of Information workers to access the information
+        on your personal computer. Many citizens find this necessary, however most
+        citizens find this to be a security risk and an invasion of privacy."
+      month: 'Last edited: February 15th,'
+      year: 2023
+    - Type: 1
+      index: 8
+      isReliable: 1
+      source: Witter
+      title: Witter
+      author: -@Creepy Cobra
+      information: People of Canton, the Code Cobras have finally pulled off our
+        magnum opus. Breaking into Cantons data vaults was an easy feat, with little
+        more than a firewall and a simple encryption shielding its contents. Siphoning
+        your cash was even easier. Without the shackles of currency, the government
+        has lost their grip on us all. It is time to return to the natural freedoms
+        we are obligated to enjoy!
+      month: 'Posted: March 11th,'
+      year: 2023
+    - Type: 0
+      index: 9
+      isReliable: 0
+      source: The Canton Herald
+      title: Code Cobras responsible for Data breach, Data vaults unaffected.
+      author: By Brandon Brownnose, Government-sanctioned journalist
+      information: "Last night, the anarchist hacking and terrorist organization,
+        Code Cobras released the sensitive data of hundreds of thousands of Cantonites
+        onto a network of websites, accessible to the public. The Department of Information
+        has issued this statement: \u201CWe have no idea of the source of this data
+        breach, however investigations into government data vaults have shown it
+        is unlikely they are compromised.\u201D The investigation into the issue
+        is still ongoing, however our glorious and infallible government is doing
+        everything in their power to correct this."
+      month: 'Date: March 11th,'
+      year: 2023
+    - Type: 1
+      index: 10
+      isReliable: 0
+      source: Facepage
+      title: Facepage
+      author: -Old man Cletus
+      information: "All you whippersnappers lost all your money in this little ol\u2019
+        scandal. I didn\u2019t lose a dollar because all my money is REAL and in
+        my VAULT. If you want it, come get it!"
+      month: Posted March 11th,
+      year: 2023
+    emails:
+    - {fileID: 1611476105}
+    - {fileID: 2082151565}
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0
@@ -5273,6 +5464,17 @@ MonoBehaviour:
   socialsPrefab: {fileID: 2231909901935483417, guid: 4bd07adc63b3c834dbfb6804b0a4f1b1, type: 3}
   researchPrefab: {fileID: 0}
   newspaperPrefab: {fileID: 1542358782119838860, guid: 46ee2519023528e48ac80b03707f1a39, type: 3}
+--- !u!114 &2064069490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1053921848946984970, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+  m_PrefabInstance: {fileID: 1053921849016950264}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3134bffc0346d804d9c512f0021b1aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2082151563
 GameObject:
   m_ObjectHideFlags: 0

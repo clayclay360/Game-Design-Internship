@@ -14,4 +14,5 @@ public class Information : MonoBehaviour
     public Text yearText;
     [HideInInspector]
     public bool isReliable;
+    public int index;
 }

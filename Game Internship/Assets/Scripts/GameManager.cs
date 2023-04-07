@@ -18,5 +18,5 @@ public class GameManager
     public static int correctlySorted;
     public static int[] correctNeeded = { 2, 2 } ;
 
-    public static string[] dayText = { "Day One", "Day Two", "Day Three", "Day Four", "Final Day"};
+    public static string[] dayText = { "Day One", "Day Two", "Day Three", "Day Four", "Day Five", "Day Six", "Final Day"};
 }
