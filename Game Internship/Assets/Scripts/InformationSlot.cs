@@ -33,7 +33,7 @@ public class InformationSlot : MonoBehaviour, IDropHandler
                 else
                 {
                     //incorrect
-                    StartCoroutine(emailSys.SendCorrectionEmailAfterDelay(GameManager.currentDay, information.index, 0.0f));
+                    StartCoroutine(emailSys.SendCorrectionEmailAfterDelay(GameManager.currentDay, information.index));
                 }
 
                 

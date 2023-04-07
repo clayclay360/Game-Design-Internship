@@ -70,7 +70,7 @@ public class EmailSystem : MonoBehaviour
 
     #region Correction Emails
     
-    public IEnumerator SendCorrectionEmailAfterDelay(int dayIndex, int articleIndex, float delay = 5.0f)
+    public IEnumerator SendCorrectionEmailAfterDelay(int dayIndex, int articleIndex, float delay = 3.0f)
     {
         yield return new WaitForSeconds(delay);
         AddEmail(ReturnCorrectionEmail(dayIndex, articleIndex));
