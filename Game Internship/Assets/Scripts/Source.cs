@@ -16,4 +16,5 @@ public class Source
     public string information;
     public string month;
     public int year;
+    public Sprite characterImage;
 }
