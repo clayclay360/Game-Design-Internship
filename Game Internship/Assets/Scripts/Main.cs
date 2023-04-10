@@ -648,6 +648,11 @@ public class Main : MonoBehaviour
         information.yearText.text = questions[GameManager.currentDay].sources[sourceIndex].year.ToString();
         information.isReliable = questions[GameManager.currentDay].sources[sourceIndex].isReliable;
         information.index = questions[GameManager.currentDay].sources[sourceIndex].index;
+
+        if(information.sriteRenderer != null)
+        {
+            information.sriteRenderer.sprite = questions[GameManager.currentDay].sources[sourceIndex].characterImage;
+        }
     }
 
     public bool PlayerPasses()

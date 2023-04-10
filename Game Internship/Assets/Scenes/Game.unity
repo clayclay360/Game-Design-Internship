@@ -4638,7 +4638,7 @@ MonoBehaviour:
     sources:
     - Type: 0
       index: 1
-      isReliable: 0
+      isReliable: 1
       source: NP Post
       title: Councilman Cameron Rook steals candy from baby
       author: By Bob Writer
@@ -4650,6 +4650,7 @@ MonoBehaviour:
         is unknown.\r"
       month: Posted June 5th,
       year: 2019
+      characterImage: {fileID: 0}
     - Type: 1
       index: 2
       isReliable: 0
@@ -4662,6 +4663,7 @@ MonoBehaviour:
         almost got hit a few times!\r"
       month: Posted January 6th,
       year: 2001
+      characterImage: {fileID: 21300000, guid: 70790e59efb14f54283de043e558ef06, type: 3}
     - Type: 1
       index: 3
       isReliable: 0
@@ -4673,6 +4675,7 @@ MonoBehaviour:
         even play, he just wanted to see me lose!\r"
       month: Posted October 30th,
       year: 2013
+      characterImage: {fileID: 21300000, guid: 991977b0cd6840542a099e88218745b1, type: 3}
     - Type: 0
       index: 4
       isReliable: 1
@@ -4685,6 +4688,7 @@ MonoBehaviour:
         councilman, however no official case has ever been sparked'
       month: Last edited July 5th,
       year: 2020
+      characterImage: {fileID: 0}
     - Type: 0
       index: 5
       isReliable: 0
@@ -4697,6 +4701,7 @@ MonoBehaviour:
         in front of the destruction he caused!"
       month: Published on August 27th,
       year: 1999
+      characterImage: {fileID: 0}
     - Type: 1
       index: 6
       isReliable: 0
@@ -4708,6 +4713,7 @@ MonoBehaviour:
         What a little rascal!"
       month: Posted December 12th,
       year: 2017
+      characterImage: {fileID: 21300000, guid: c57d8216299fdd34da071aaae93cdb12, type: 3}
     - Type: 0
       index: 7
       isReliable: 1
@@ -4723,6 +4729,7 @@ MonoBehaviour:
         conclude C. Rook is directly to blame."
       month: 'Date: April 2nd,'
       year: 2020
+      characterImage: {fileID: 0}
     - Type: 0
       index: 8
       isReliable: 1
@@ -4736,6 +4743,7 @@ MonoBehaviour:
         citizens yearly salary.
       month: 'Date: May 10th,'
       year: 2018
+      characterImage: {fileID: 0}
     emails:
     - {fileID: 1483750732}
     - {fileID: 170359951}
@@ -4758,6 +4766,7 @@ MonoBehaviour:
         on our people."
       month: September 4th,
       year: 2021
+      characterImage: {fileID: 0}
     - Type: 1
       index: 2
       isReliable: 0
@@ -4770,6 +4779,7 @@ MonoBehaviour:
         things!"
       month: March 8th,
       year: 2023
+      characterImage: {fileID: 21300000, guid: 892449c793b324a44a5edbe58b3fef84, type: 3}
     - Type: 0
       index: 3
       isReliable: 0
@@ -4783,6 +4793,7 @@ MonoBehaviour:
         who has been assigned to defend Kevin Iller in his upcoming trial."
       month: March 8th,
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 4
       isReliable: 0
@@ -4795,6 +4806,7 @@ MonoBehaviour:
         the fire. department had left the scene."
       month: Last edited:February 27th,
       year: 2016
+      characterImage: {fileID: 0}
     - Type: 1
       index: 5
       isReliable: 1
@@ -4808,6 +4820,7 @@ MonoBehaviour:
         know, I was there.
       month: 'March 8th, '
       year: 2023
+      characterImage: {fileID: 21300000, guid: 70790e59efb14f54283de043e558ef06, type: 3}
     - Type: 1
       index: 6
       isReliable: 0
@@ -4821,6 +4834,7 @@ MonoBehaviour:
         them see the truth!."
       month: 'March 8th, '
       year: 2023
+      characterImage: {fileID: 21300000, guid: 892449c793b324a44a5edbe58b3fef84, type: 3}
     - Type: 0
       index: 7
       isReliable: 0
@@ -4835,6 +4849,7 @@ MonoBehaviour:
         life?"
       month: January 17th,
       year: 2017
+      characterImage: {fileID: 0}
     - Type: 0
       index: 8
       isReliable: 1
@@ -4848,6 +4863,7 @@ MonoBehaviour:
         sentence for accessory to murder and kidnapping, with no chance of parole."
       month: 'Last reviewed: May 29th,'
       year: 2022
+      characterImage: {fileID: 0}
     - Type: 0
       index: 9
       isReliable: 0
@@ -4861,6 +4877,7 @@ MonoBehaviour:
         linking. Policeman Kevin Iller to the crime."
       month: December 22nd,
       year: 2002
+      characterImage: {fileID: 0}
     emails:
     - {fileID: 1460859462}
     - {fileID: 653604018}
@@ -4883,6 +4900,7 @@ MonoBehaviour:
         to a dire issue."
       month: 'Date: May 12th,'
       year: 2021
+      characterImage: {fileID: 0}
     - Type: 1
       index: 2
       isReliable: 0
@@ -4895,6 +4913,7 @@ MonoBehaviour:
         God, read a book, people!"
       month: Posted March 9th,
       year: 2023
+      characterImage: {fileID: 21300000, guid: 0785826584043b34eb1a8ab0a6ccbd24, type: 3}
     - Type: 0
       index: 3
       isReliable: 1
@@ -4910,6 +4929,7 @@ MonoBehaviour:
         a declining ecosystem of fauna and flora)."
       month: 'Last edited: September 30th,'
       year: 2022
+      characterImage: {fileID: 0}
     - Type: 0
       index: 4
       isReliable: 0
@@ -4923,6 +4943,7 @@ MonoBehaviour:
         even the European Union when it comes to contributions to the environment.\u201D"
       month: 'Date: January 20th,'
       year: 1980
+      characterImage: {fileID: 0}
     - Type: 0
       index: 5
       isReliable: 0
@@ -4939,6 +4960,7 @@ MonoBehaviour:
         10 safest factories in Canton).'
       month: 'Date: April 18th,'
       year: 2022
+      characterImage: {fileID: 0}
     - Type: 1
       index: 6
       isReliable: 1
@@ -4955,6 +4977,7 @@ MonoBehaviour:
         Climate and our Consequences.\u201D."
       month: Posted March 9th,
       year: 2023
+      characterImage: {fileID: 21300000, guid: 991977b0cd6840542a099e88218745b1, type: 3}
     - Type: 1
       index: 7
       isReliable: 0
@@ -4966,6 +4989,7 @@ MonoBehaviour:
         Wake up, Canton."
       month: Posted February 6th,
       year: 2023
+      characterImage: {fileID: 21300000, guid: c57d8216299fdd34da071aaae93cdb12, type: 3}
     - Type: 0
       index: 8
       isReliable: 0
@@ -4980,6 +5004,7 @@ MonoBehaviour:
         My day is RUINED!
       month: 'Date: February 6th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 9
       isReliable: 1
@@ -4994,18 +5019,20 @@ MonoBehaviour:
         have increased by 2000%, according to independent studies from St. Lawrence.
       month: 'Date: July 10th,'
       year: 2020
+      characterImage: {fileID: 0}
     - Type: 1
       index: 10
       isReliable: 0
       source: Facepage
       title: Facepage
-      author: By Kimberly Oldie
+      author: '- Kimberly Oldie'
       information: " I can\u2019t believe people haven\u2019t realized it. THE AMERICANS
         HAVE USED THEIR WEATHER SATELLITE TO CAUSE CHAOS AMONG US! I mean, seriously,
         does anything else really make sense?! I\u2019ve done my research, and so
         should you! Go to Conspiracynut.com for more!"
       month: Posted May 18th,
       year: 2023
+      characterImage: {fileID: 21300000, guid: c57d8216299fdd34da071aaae93cdb12, type: 3}
     emails:
     - {fileID: 19993762}
     - {fileID: 1491806379}
@@ -5030,6 +5057,7 @@ MonoBehaviour:
         States.
       month: 'Last Edited: August 17th,'
       year: 2016
+      characterImage: {fileID: 0}
     - Type: 0
       index: 2
       isReliable: 0
@@ -5044,6 +5072,7 @@ MonoBehaviour:
         test of time!'
       month: 'Date: November 2nd,'
       year: 2018
+      characterImage: {fileID: 0}
     - Type: 0
       index: 3
       isReliable: 0
@@ -5057,6 +5086,7 @@ MonoBehaviour:
         bringing us an industrial revolution unlike any other seen in history!'
       month: Date January 13th,
       year: 2022
+      characterImage: {fileID: 0}
     - Type: 0
       index: 4
       isReliable: 1
@@ -5070,6 +5100,7 @@ MonoBehaviour:
         and environment over the decades."
       month: 'Date: May 3rd,'
       year: 2015
+      characterImage: {fileID: 0}
     - Type: 0
       index: 5
       isReliable: 0
@@ -5085,6 +5116,7 @@ MonoBehaviour:
         to the bone to give us the lives we deserve! Glory to Canton!'
       month: 'Date: June 18th,'
       year: 2022
+      characterImage: {fileID: 0}
     - Type: 1
       index: 6
       isReliable: 0
@@ -5095,6 +5127,7 @@ MonoBehaviour:
         te statew of our grant mayor in te town sqware gloree to centon
       month: 'Date: January 13th,'
       year: 2016
+      characterImage: {fileID: 0}
     - Type: 0
       index: 7
       isReliable: 0
@@ -5108,6 +5141,7 @@ MonoBehaviour:
         of offices, workshops, and factories all across the city state."
       month: 'Date: December 4th,'
       year: 1964
+      characterImage: {fileID: 0}
     - Type: 0
       index: 8
       isReliable: 1
@@ -5123,6 +5157,7 @@ MonoBehaviour:
         in 67 fatalities and over 470 injuries.
       month: 'Date: July 4th,'
       year: 2020
+      characterImage: {fileID: 0}
     - Type: 1
       index: 9
       isReliable: 0
@@ -5133,6 +5168,7 @@ MonoBehaviour:
         is what caused that fire all those years ago! We all know they have one!"
       month: 'Posted: September 30th,'
       year: 2017
+      characterImage: {fileID: 0}
     - Type: 0
       index: 10
       isReliable: 1
@@ -5147,6 +5183,7 @@ MonoBehaviour:
         being exposed to oil being dumped into the rivers."
       month: 'Date: September 10th,'
       year: 2017
+      characterImage: {fileID: 0}
     emails:
     - {fileID: 292615255}
     - {fileID: 1828298988}
@@ -5166,6 +5203,7 @@ MonoBehaviour:
         deserved. Thank you Code Cobras!!!"
       month: 'Posted: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 2
       isReliable: 1
@@ -5180,6 +5218,7 @@ MonoBehaviour:
         and where it ends up.\r"
       month: 'Date: September 23rd,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 3
       isReliable: 1
@@ -5196,6 +5235,7 @@ MonoBehaviour:
         safe, expected to be completed in the next 5 years.\u201D"
       month: 'Date: July 9th,'
       year: 2020
+      characterImage: {fileID: 0}
     - Type: 0
       index: 4
       isReliable: 0
@@ -5210,6 +5250,7 @@ MonoBehaviour:
         month! That\u2019s what I think anyway!"
       month: 'Date: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 1
       index: 5
       isReliable: 0
@@ -5221,6 +5262,7 @@ MonoBehaviour:
         have gotten my information! At least tomorrow can\u2019t get any worse, right?!"
       month: 'Date: September 10th,'
       year: 2001
+      characterImage: {fileID: 0}
     - Type: 1
       index: 6
       isReliable: 0
@@ -5234,6 +5276,7 @@ MonoBehaviour:
         hope, visit my website and become rich today!"
       month: 'Date: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 7
       isReliable: 1
@@ -5248,6 +5291,7 @@ MonoBehaviour:
         citizens find this to be a security risk and an invasion of privacy."
       month: 'Last edited: February 15th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 1
       index: 8
       isReliable: 1
@@ -5262,6 +5306,7 @@ MonoBehaviour:
         we are obligated to enjoy!
       month: 'Posted: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 9
       isReliable: 0
@@ -5278,6 +5323,7 @@ MonoBehaviour:
         everything in their power to correct this."
       month: 'Date: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 1
       index: 10
       isReliable: 0
@@ -5289,6 +5335,7 @@ MonoBehaviour:
         my VAULT. If you want it, come get it!"
       month: Posted March 11th,
       year: 2023
+      characterImage: {fileID: 0}
     emails:
     - {fileID: 1770901856}
     - {fileID: 277596933}
@@ -5308,6 +5355,7 @@ MonoBehaviour:
         deserved. Thank you Code Cobras!!!"
       month: 'Posted: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 2
       isReliable: 1
@@ -5322,6 +5370,7 @@ MonoBehaviour:
         and where it ends up.\r"
       month: 'Date: September 23rd,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 3
       isReliable: 1
@@ -5338,6 +5387,7 @@ MonoBehaviour:
         safe, expected to be completed in the next 5 years.\u201D"
       month: 'Date: July 9th,'
       year: 2020
+      characterImage: {fileID: 0}
     - Type: 0
       index: 4
       isReliable: 0
@@ -5352,6 +5402,7 @@ MonoBehaviour:
         month! That\u2019s what I think anyway!"
       month: 'Date: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 1
       index: 5
       isReliable: 0
@@ -5363,6 +5414,7 @@ MonoBehaviour:
         have gotten my information! At least tomorrow can\u2019t get any worse, right?!"
       month: 'Date: September 10th,'
       year: 2001
+      characterImage: {fileID: 0}
     - Type: 1
       index: 6
       isReliable: 0
@@ -5376,6 +5428,7 @@ MonoBehaviour:
         hope, visit my website and become rich today!"
       month: 'Date: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 7
       isReliable: 1
@@ -5390,6 +5443,7 @@ MonoBehaviour:
         citizens find this to be a security risk and an invasion of privacy."
       month: 'Last edited: February 15th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 1
       index: 8
       isReliable: 1
@@ -5404,6 +5458,7 @@ MonoBehaviour:
         we are obligated to enjoy!
       month: 'Posted: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 0
       index: 9
       isReliable: 0
@@ -5420,6 +5475,7 @@ MonoBehaviour:
         everything in their power to correct this."
       month: 'Date: March 11th,'
       year: 2023
+      characterImage: {fileID: 0}
     - Type: 1
       index: 10
       isReliable: 0
@@ -5431,6 +5487,7 @@ MonoBehaviour:
         my VAULT. If you want it, come get it!"
       month: Posted March 11th,
       year: 2023
+      characterImage: {fileID: 0}
     emails:
     - {fileID: 1611476105}
     - {fileID: 2082151565}
