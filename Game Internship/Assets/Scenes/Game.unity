@@ -3344,8 +3344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sender: Do not Share
-  subject: Anonymous
+  sender: Anonymous
+  subject: Do not Share
   body: "As an independent journal, the governance currently has little control over
     what you\r report on. I assure you this freedom will not last forever. Canton\u2019s
     governance seeks\r ultimate control over their people and the information they
@@ -5736,15 +5736,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1053921849045361854, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1053921849045361854, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1053921849045361854, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.73362887
       objectReference: {fileID: 0}
     - target: {fileID: 3000135464564208519, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_FontData.m_Font
@@ -5756,7 +5756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3724495316166857110, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 999.99994
+      value: 920.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078193606693947692, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6465674406603615089, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5890,5 +5894,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8889117635522456423, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889117635522456423, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9481720fc71aabb40a375a70684389cc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}

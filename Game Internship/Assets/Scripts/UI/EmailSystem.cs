@@ -12,7 +12,6 @@ public class EmailSystem : MonoBehaviour
     public GameObject emailPanel;
     public GameObject inboxPanel;
     public GameObject notifcations;
-    public Text buttonText;
     public Text notificationText;
     public Button toggleBtn;
     public Email[] Inbox;
@@ -430,7 +429,6 @@ public class EmailSystem : MonoBehaviour
     {
         DisplayEmails();
         inboxPanel.SetActive(!inboxPanel.activeSelf); //switch the active state
-        buttonText.text = inboxPanel.activeSelf ? "Hide Inbox" : "Show Inbox";
     }
 
     public void ShowEmail(int btnNum) //Accessed from button
