@@ -5,9 +5,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
-public class DraggableUI : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
-{ 
+public class DraggableUI : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerEnterHandler, IPointerExitHandler
+{
+    public bool scalable;
+    
     public Canvas canvas;
+    
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -29,10 +32,28 @@ public class DraggableUI : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
+        rectTransform.localScale /= 1.5f;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
+        rectTransform.localScale *= 1.5f;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (scalable)
+        {
+            rectTransform.localScale *= 1.25f;
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (scalable)
+        {
+            rectTransform.localScale /= 1.25f;
+        }
     }
 }
