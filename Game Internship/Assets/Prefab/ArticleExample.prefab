@@ -502,6 +502,8 @@ MonoBehaviour:
   monthText: {fileID: 1542358780692309065}
   yearText: {fileID: 6172006983663407161}
   isReliable: 0
+  sriteRenderer: {fileID: 0}
+  index: 0
 --- !u!114 &6582941906958067248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf1366b7ce926f44a0786264912917a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scalable: 1
   canvas: {fileID: 0}
 --- !u!225 &5591135679263867441
 CanvasGroup:
