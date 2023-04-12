@@ -31,29 +31,37 @@ public class DraggableUI : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        canvasGroup.blocksRaycasts = false;
-        rectTransform.localScale /= 1.5f;
+        if (scalable)
+        {
+            canvasGroup.blocksRaycasts = false;
+            rectTransform.localScale /= 1.5f;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+
         canvasGroup.blocksRaycasts = true;
-        rectTransform.localScale *= 1.5f;
+        
+        if (scalable)
+        {
+            rectTransform.localScale *= 1.5f;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (scalable)
-        {
-            rectTransform.localScale *= 1.25f;
-        }
+        //if (scalable)
+        //{
+        //    rectTransform.localScale *= 1.25f;
+        //}
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (scalable)
-        {
-            rectTransform.localScale /= 1.25f;
-        }
+        //if (scalable)
+        //{
+        //    rectTransform.localScale /= 1.25f;
+        //}
     }
 }
