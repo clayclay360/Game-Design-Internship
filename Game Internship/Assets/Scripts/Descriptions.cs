@@ -7,6 +7,13 @@ public class Descriptions : MonoBehaviour
     public GameObject Source;
     public GameObject Content;
     public GameObject ExitBTN;
+
+    void Start()
+    {
+        Content.SetActive(false);
+        Source.SetActive(false);
+        ExitBTN.SetActive(false);
+    }
     public void ShowDescription()
     {
         if (Source != null)
@@ -14,8 +21,8 @@ public class Descriptions : MonoBehaviour
             bool isActive = Source.activeSelf;
             Source.SetActive(!isActive);
             Debug.Log(isActive);
-            ExitBTN.SetActive(true);
             Content.SetActive(false);
+            ExitBTN.SetActive(true);
 
         }
     }
@@ -30,8 +37,13 @@ public class Descriptions : MonoBehaviour
         }
         Content.SetActive(true);
         ExitBTN.SetActive(false);
+    }
 
-        
-        
+    public void showWiki()
+    {
+        bool isActive = Content.activeSelf;
+        Content.SetActive(!isActive);
+
+
     }
 }

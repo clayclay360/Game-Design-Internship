@@ -8,11 +8,17 @@ public class SearchManager : MonoBehaviour
     public GameObject ContentHolder;
     public GameObject[] Element;
     public GameObject SearchBar;
+    public GameObject SearchBTN;
+    public GameObject WikiBTN;
 
     public int totalElements;
 
     void Start()
     {
+        SearchBTN.SetActive(false);
+        SearchBar.SetActive(false);
+        WikiBTN.SetActive(false);
+        StartCoroutine(showSearch());
         totalElements = ContentHolder.transform.childCount;
         Element = new GameObject[totalElements];
 
@@ -20,6 +26,8 @@ public class SearchManager : MonoBehaviour
         {
             Element[i] = ContentHolder.transform.GetChild(i).gameObject;
         }
+
+
     }
 
     public void Search()
@@ -49,5 +57,11 @@ public class SearchManager : MonoBehaviour
         
     }
 
-
+    public IEnumerator showSearch()
+    {
+        yield return new WaitForSeconds(3f);
+        SearchBTN.SetActive(true);
+        SearchBar.SetActive(true);
+        WikiBTN.SetActive(true);
+    }
 }
