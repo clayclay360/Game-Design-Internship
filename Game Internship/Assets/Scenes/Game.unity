@@ -4751,7 +4751,7 @@ MonoBehaviour:
     sources:
     - Type: 0
       index: 1
-      isReliable: 1
+      isReliable: 0
       source: NP Post
       title: Councilman Cameron Rook steals candy from baby
       author: By Bob Writer

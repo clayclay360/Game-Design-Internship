@@ -91,7 +91,7 @@ public class Articles
             return new string[]
             {
                 "LAYMAN'S JOURNAL", //Header
-                "Citizens gather outside Canton Police Station, cursing Canton Clubber.", //Deck
+                "Citizens curse Canton Clubber outside Canton Police Station", //Deck
                 "Citizens restlessly wait outside the Canton Police station this evening, " +
                 "following the arrest of Police Sergeant Kevin Iller, the alleged Canton Clubber. " +
                 "Many have come to protest the Police Station, claiming they could have done " +
@@ -171,7 +171,7 @@ public class Articles
             return new string[]
             {
                 "THE CANTON HERALD", //Header
-                "Department of Education to create a new round of textbooks.", //Deck
+                "Department of Education to create a new round of textbooks", //Deck
                 "With the positive reactions to the newest edition of The " +
                 "History of Glorious Canton 8th edition, the Department " +
                 "of Education has begun creating new editions for each " +

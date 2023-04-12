@@ -10,14 +10,14 @@ public class EndingNewspaper : MonoBehaviour
     public string headlineText;
     public string deckText;
     public string articleText;
-    public Sprite image;
+    //public Sprite image;
     public Animation spinAnimation;
 
     [Header("UI")]
-    public TextMeshProUGUI headline;
-    public TextMeshProUGUI deck;
-    public TextMeshProUGUI article;
-    public Image imageRend;
+    public Text headline;
+    public Text deck;
+    public Text article;
+    //public Image imageRend;
 
     //I don't expect this to work completely with the newspaper layout but it could come in handy.
     public void SetNewspaper(string hl, string dck, string txt, Sprite sprite = null)
