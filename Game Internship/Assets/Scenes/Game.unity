@@ -716,6 +716,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233015768}
   m_CullTransparentMesh: 1
+--- !u!1 &233610302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233610303}
+  - component: {fileID: 233610304}
+  m_Layer: 0
+  m_Name: DaySevenIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233610303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233610302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2032218653}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233610304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233610302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Anonymous
+  subject: The Final Push
+  body: "It is time, *. All of our efforts, and decades of civil unrest and abuse
+    of government power, have led us to such a decisive day in Canton history. Today,
+    the United States will be sending their ambassador to evaluate if intervention
+    is necessary. The Department of Information will be giving them a highly sanitized
+    version of events in order to deceive the United States into believing they have
+    everything under control. \r\n\r\nIf we are unsuccessful in our goals, they will
+    indeed have everything under their control, for they will pass The Cash Act,
+    taking complete control over the economy, and most importantly, the press. Unless
+    we want to become the next North Korea, I suggest we move boldly.\r\n\r\nBy now
+    you understand that we must deliver the final push to the people. Today, you
+    will be focusing on reinforcing our argument to the people that they MUST protest
+    The Cash Act if they wish to preserve their freedoms. The people need to know
+    the FACTS of the matter, so remind yourself that our arguments must be strong
+    to be persuasive. You have your sources, and I have my utmost confidence in you."
+  opened: 0
 --- !u!1 &263960651
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +809,7 @@ Transform:
   - {fileID: 221657034}
   - {fileID: 1670562543}
   - {fileID: 1593660293}
+  - {fileID: 2032218653}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -976,6 +1037,58 @@ Transform:
   m_Father: {fileID: 263960652}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &410888022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410888023}
+  - component: {fileID: 410888024}
+  m_Layer: 0
+  m_Name: DaySevenLloydEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &410888023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410888022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2032218653}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &410888024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410888022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a226da6132fe26489ecff7047e7ebef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sender: Lloyd Libel
+  subject: Your formal invitation to suck it
+  body: "Dear *,\r\n\r\nI will not rest while you attempt to take what is rightfully
+    mine. If you want this promotion so bad, you\u2019ll have to work for it! I hope
+    you didn\u2019t think it could be that easy. When your attempts are ignored by
+    management, and I become the victor, I will make sure to bury you in sources,
+    just like that anonymous asshole did to me! Here\u2019s a taste of what\u2019s
+    to come, you cockroach!\r\n\r\nEat it,\r\nLloyd Libel, Senior Mother-F\u2014er"
+  opened: 0
 --- !u!1 &436267208 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3724495316166857109, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
@@ -5491,6 +5604,14 @@ MonoBehaviour:
     emails:
     - {fileID: 1611476105}
     - {fileID: 2082151565}
+  - question: The Final Push
+    answers:
+    - Yes
+    - No
+    sources: []
+    emails:
+    - {fileID: 233610304}
+    - {fileID: 410888024}
 --- !u!4 &1990688870
 Transform:
   m_ObjectHideFlags: 0
@@ -5521,6 +5642,38 @@ MonoBehaviour:
   socialsPrefab: {fileID: 2231909901935483417, guid: 4bd07adc63b3c834dbfb6804b0a4f1b1, type: 3}
   researchPrefab: {fileID: 0}
   newspaperPrefab: {fileID: 1542358782119838860, guid: 46ee2519023528e48ac80b03707f1a39, type: 3}
+--- !u!1 &2032218652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032218653}
+  m_Layer: 0
+  m_Name: DaySevenEmails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032218653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032218652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 233610303}
+  - {fileID: 410888023}
+  m_Father: {fileID: 263960652}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2064069490 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1053921848946984970, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}

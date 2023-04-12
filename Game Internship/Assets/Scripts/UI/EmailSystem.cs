@@ -115,16 +115,18 @@ public class EmailSystem : MonoBehaviour
     /// Uses its parameters to generate an email telling the player that they got a question wrong.
     /// </summary>
     /// <returns></returns>
-    public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, string pieceOfCRAAP, string correctionInfo)
+    public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, string pieceOfCRAAP, string correctionInfo, bool hasTitle = true)
     {
         Email correctionEmail = gameObject.AddComponent<Email>();
         string reliableString = isReliable ? "unreliable, when it is actually reliable" : 
                                              "reliable, when it is actually unreliable";
 
-        correctionEmail.subject = $"Correction about \"{articleTitle}\"";
+        string titleOrBeginning = hasTitle ? $"titled \"{articleTitle}.\"" : $"which began {articleTitle}";
+
+        correctionEmail.subject = $"Correction";
         correctionEmail.sender = "Boss"; //Change this later? Add story?
         correctionEmail.body = "Dear *,\n\nIt appears you have made an error " +
-                               $"in regards to a recent article you reviewed titled {articleTitle}. " +
+                               $"in regards to a recent article you reviewed {titleOrBeginning} " +
                                $"The article was marked incorrectly as {reliableString}.\n\n" +
                                $"The reliability of the information has to do with its {pieceOfCRAAP}. " +
                                $"{sortCRAAP(isReliable, pieceOfCRAAP, correctionInfo)}" +
@@ -191,13 +193,13 @@ public class EmailSystem : MonoBehaviour
                 return GenerateCorrectionEmail("C. Rook does WHAAAAAAT?!", false, "curency", "August 27th, 1999");
             //Part 2
             case 6:
-                return GenerateCorrectionEmail("\"I used to babysit… \"", false, "relevancy", "it does not mention Cameron Rook, just a boy named Cameron");
+                return GenerateCorrectionEmail("\"I used to babysit… \"", false, "relevancy", "it does not mention Cameron Rook, just a boy named Cameron", false);
             case 7:
                 return GenerateCorrectionEmail("Investigation of Cameron Rook's involvement in the increase of Crime throughout Canton", true, "relevancy", "it has to do with C. Rook's legislation");
             case 8:
                 return GenerateCorrectionEmail("C. Rook raises taxes, and forgives his own", true, "relevancy", "it discusses C. Rook's tax bill");
             case 9:
-                return GenerateCorrectionEmail("\"Did you guys see the news… \"", false, "currency", "September 17th, 2009");
+                return GenerateCorrectionEmail("\"Did you guys see the news… \"", false, "currency", "September 17th, 2009", false);
             case 10:
                 return GenerateCorrectionEmail("Monsters Among Us", false, "relevancy", "it doesn't have to do with C. Rook's policies");
         }
@@ -211,14 +213,14 @@ public class EmailSystem : MonoBehaviour
             case 1:
                 return GenerateCorrectionEmail("Canton's Police Force, Void of Accountability", true, "authority", "published it in an academic journal");
             case 2:
-                return GenerateCorrectionEmail("\"They've got the wrong guy!\"", false, "authority", "have no credentials or sources");
+                return GenerateCorrectionEmail("\"They've got the wrong guy!\"", false, "authority", "have no credentials or sources", false);
             case 3:
                 return GenerateCorrectionEmail("BREAKING: State Attorneys confident in Police Sergeant’s innocence", false, "authority", "are politically motivated");
             //Part 2
             case 4:
                 return GenerateCorrectionEmail("Canton Police Force", false, "relevancy", "it does not involve Kevin Iller");
             case 5:
-                return GenerateCorrectionEmail("\"I have been inundated with questions…\"", true, "authority", "are a detective with a firsthand statement");
+                return GenerateCorrectionEmail("\"I have been inundated with questions…\"", true, "authority", "are a detective with a firsthand statement", false);
             case 6:
                 return GenerateCorrectionEmail("We did it Saiddit!", false, "authority", "did not back up their statement with any credibility");
             case 7:
@@ -226,7 +228,7 @@ public class EmailSystem : MonoBehaviour
             case 8:
                 return GenerateCorrectionEmail("Marissa Urder", true, "authority", "are an archive of official documents");
             case 9:
-                return GenerateCorrectionEmail("\"I would never have believed…\"", true, "authority", "directly quote a statement made by the chief of police");
+                return GenerateCorrectionEmail("\"I would never have believed…\"", true, "authority", "directly quote a statement made by the chief of police", false);
             case 10:
                 return GenerateCorrectionEmail("New evidence links suspect to Canton Clubber killings", false, "currency", "December 22nd, 2002");
         }
@@ -240,7 +242,7 @@ public class EmailSystem : MonoBehaviour
             case 1:
                 return GenerateCorrectionEmail("Water quality has never been better!", true, "accuracy", "was written by many experts");
             case 2:
-                return GenerateCorrectionEmail("\"My whole family is freaking out…\"", false, "accuracy", "is not backed up by any real sources");
+                return GenerateCorrectionEmail("\"My whole family is freaking out…\"", false, "accuracy", "is not backed up by any real sources", false);
             case 3:
                 return GenerateCorrectionEmail("Canton", true, "accuracy", "comes from a moderated information wiki");
             //Part 2
@@ -251,13 +253,13 @@ public class EmailSystem : MonoBehaviour
             case 6:
                 return GenerateCorrectionEmail("Today’s Acid Rain", true, "accuracy", "has a source backing it up");
             case 7:
-                return GenerateCorrectionEmail("\"Everybody is complaining about their cars…\"", false, "relevancy", "brings up an issue unrelated to the acid rain");
+                return GenerateCorrectionEmail("\"Everybody is complaining about their cars…\"", false, "relevancy", "brings up an issue unrelated to the acid rain", false);
             case 8:
                 return GenerateCorrectionEmail("OMG, this acid rain has got to stop!", false, "accuracy", "does not confirm whether the problem was caused by the acid rain");
             case 9:
                 return GenerateCorrectionEmail("Regulations of factories repealed, government forgets to inform the public.", true, "accuracy", "provides factual information");
             case 10:
-                return GenerateCorrectionEmail("\"I can't believe people haven't realized it…\"", false, "accuracy", "does not provide any evidence for its statements");
+                return GenerateCorrectionEmail("\"I can't believe people haven't realized it…\"", false, "accuracy", "does not provide any evidence for its statements", false);
         }
         return null;
     }
@@ -284,7 +286,7 @@ public class EmailSystem : MonoBehaviour
             case 8:
                 return GenerateCorrectionEmail("Remembering the Downtown Inferno Crisis", true, "purpose", "provide information about a historical event");
             case 9:
-                return GenerateCorrectionEmail("\" You know what, I’m gonna say it.\"", false, "accuracy", "does not provide any sources");
+                return GenerateCorrectionEmail("\" You know what, I’m gonna say it.\"", false, "accuracy", "does not provide any sources", false);
             case 10:
                 return GenerateCorrectionEmail("Canton’s History of Conservation", true, "purpose", "provide information about Canton's efforts in nature conservation");
         }
@@ -305,18 +307,18 @@ public class EmailSystem : MonoBehaviour
             case 4:
                 return GenerateCorrectionEmail("Cash Catastrophe!", false, "accuracy", "is based on an opinion and not backed up with sources");
             case 5:
-                return GenerateCorrectionEmail("\"I can't believe it!\"", false, "currency", "September 10th, 2001");
+                return GenerateCorrectionEmail("\"I can't believe it!\"", false, "currency", "September 10th, 2001", false);
             case 6:
-                return GenerateCorrectionEmail("\"All these beta males…\"", false, "purpose", "sell the influencer's program");
+                return GenerateCorrectionEmail("\"All these beta males…\"", false, "purpose", "sell the influencer's program", false);
             case 7:
                 return GenerateCorrectionEmail("PCs for the Public Program", true, "CRAAP", "");
             case 8:
-                return GenerateCorrectionEmail("\"People of Canton…\"", true, "CRAAP", "");
+                return GenerateCorrectionEmail("\"People of Canton…\"", true, "CRAAP", "", false);
             case 9:
                 return GenerateCorrectionEmail("Code Cobras responsible for Data breach, Data vaults unaffected.", false, "purpose", 
                     "shield the government from any blame for the incident");
             case 10:
-                return GenerateCorrectionEmail("\"All you worshippers…\"", false, "relevancy", "where Old man Cletus hides his money has nothing to do with this data breach");
+                return GenerateCorrectionEmail("\"All you worshippers…\"", false, "relevancy", "where Old man Cletus hides his money has nothing to do with this data breach", false);
         }
         return null;
     }
@@ -328,11 +330,11 @@ public class EmailSystem : MonoBehaviour
             case 1:
                 return GenerateCorrectionEmail("The Cash Act", true, "CRAAP", "");
             case 2:
-                return GenerateCorrectionEmail("\"Soon the Grand Mayor…\"", false, "relevancy", "it is advertising a giveaway");
+                return GenerateCorrectionEmail("\"Soon the Grand Mayor…\"", false, "relevancy", "it is advertising a giveaway", false);
             case 3:
                 return GenerateCorrectionEmail("Concerns about the Cash Act", true, "CRAAP", "");
             case 4:
-                return GenerateCorrectionEmail("\"I don't get what the hubbub…\"", false, "accuracy", "it does not accurately describe the consequences of the bill");
+                return GenerateCorrectionEmail("\"I don't get what the hubbub…\"", false, "accuracy", "it does not accurately describe the consequences of the bill", false);
             case 5:
                 return GenerateCorrectionEmail("Government owned businesses: How do they affect us?", false, "currency", "March 12th, 1984");
             case 6:
@@ -344,7 +346,7 @@ public class EmailSystem : MonoBehaviour
             case 9:
                 return GenerateCorrectionEmail("The Cash Act to save the economy!", false, "purpose", "glorify the government");
             case 10:
-                return GenerateCorrectionEmail("\"WE NEED MORE GOVERNMENT!\"", false, "purpose", "advocate for the government");
+                return GenerateCorrectionEmail("\"WE NEED MORE GOVERNMENT!\"", false, "purpose", "advocate for the government", false);
         }
         return null;
     }
@@ -354,25 +356,36 @@ public class EmailSystem : MonoBehaviour
         switch (index)
         {
             case 1:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("\"I cannot believe…\"", false, "relevancy", "it makes an exaggerated claim", false);
             case 2:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("\"The Cash Act Bill is going…\"", false, "authority", "are an imposter account", false);
             case 3:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("Protest and Petition: The Importance of Public Demonstration Throughout Canton’s History", true, "CRAAP", "");
             case 4:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("What’s the big deal?", false, "accuracy", "tries to present an unlikely loophole");
             case 5:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("Government Conservation and its Flaws", true, "CRAAP", "");
             case 6:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("Government seizes factory, bankrupts it immediately", false, "currency", "March 13th, 2003");
             case 7:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("The Cash Act and how FMZ will go forward", true, "CRAAP", "");
             case 8:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("\"It only took a small nudge…\"", false, "purpose", "defend the actions of the Code Cobras", false);
             case 9:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("The unspoken benefits of Section XII", false, "purpose", "defend the Cash Act using amphiboly");
             case 10:
-                return GenerateCorrectionEmail("", true, "", "");
+                return GenerateCorrectionEmail("Section XII and it’s Consequences", true, "CRAAP", "");
+            //Part 2
+            case 11:
+                return GenerateCorrectionEmail("The People vs Kirstin Polluta", false, "relevancy", "it doesn't have to do specifically with the cash act or its effects");
+            case 12:
+                return GenerateCorrectionEmail("Kirstin Polluta Found Guilty, Town rejoices", false, "currency", "February 10th, 1935");
+            case 13:
+                return GenerateCorrectionEmail("Grand Mayor’s morality in question, compared to Kirstin Polluta.", true, "CRAAP", "");
+            case 14:
+                return GenerateCorrectionEmail("\" I find Peter Harbold…\"", false, "authority", "", false);
+            case 15:
+                return GenerateCorrectionEmail("\"To everyone criticizing the Grand Mayor…\"", false, "purpose", "crate false unity");
         }
         return null;
     }
