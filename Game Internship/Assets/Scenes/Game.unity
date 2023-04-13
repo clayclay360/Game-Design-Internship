@@ -5608,7 +5608,213 @@ MonoBehaviour:
     answers:
     - Yes
     - No
-    sources: []
+    sources:
+    - Type: 1
+      index: 1
+      isReliable: 0
+      source: Witter
+      title: Witter
+      author: '@eattherich'
+      information: "I cannot believe what this Cash Act Article is going to put in
+        place! They\u2019re going to take them all away, people! THEY\u2019RE COMING
+        FOR OUR DONUT SHOPS!!!"
+      month: Posted March 12th,
+      year: 2023
+      characterImage: {fileID: 21300000, guid: 991977b0cd6840542a099e88218745b1, type: 3}
+    - Type: 1
+      index: 2
+      isReliable: 0
+      source: FacePage
+      title: FacePage
+      author: McFinley Auto Parts
+      information: The Cash Act Bill is going to strip my own business away from
+        me! In preparation for this, we are introducing a 90% discount on ALL SALES!
+        Get it while you can, folks!
+      month: Posted March 13th,
+      year: 2023
+      characterImage: {fileID: 21300000, guid: 991977b0cd6840542a099e88218745b1, type: 3}
+    - Type: 0
+      index: 3
+      isReliable: 1
+      source: Academics Anonymous
+      title: "Protest and Petition: The Importance of Public Demonstration Throughout
+        Canton\u2019s History"
+      author: By Gerald McLevin
+      information: "The birth of Canton\u2019s independence was a direct result of
+        Jeramiah Heinrich\u2019s protests against the United States\u2019 neglect
+        of small towns during the Spanish Flu epidemic of the 1920s. It was through
+        the persuasive action of Grand Mayor Heinrich that the people demonstrated
+        against the United States, and to appease the people of Canton, the United
+        States allowed Canton to secede, giving them their demands of total autonomy.
+        In this essay, we explore the prominent demonstrations and movements throughout
+        our great nation\u2019s history, and find meaning in their effects."
+      month: 'Date: August 5th,'
+      year: 2013
+      characterImage: {fileID: 0}
+    - Type: 1
+      index: 4
+      isReliable: 0
+      source: Saiddit
+      title: ' u/buisnessgurusuperstar'
+      author: ' u/buisnessgurusuperstar'
+      information: " I see some people on this app saying they\u2019re going to go
+        out and protest the coming Cash Act Bill. But I work on multiple different
+        levels you cannot even comprehend. The Cash Act Bill says it will take control
+        of all businesses around the Canton City Hall, but it never says anything
+        about businesses that form AFTER the bill passes. Just make another business
+        after, dummies!"
+      month: Posted  March 12th,
+      year: 2023
+      characterImage: {fileID: 21300000, guid: 892449c793b324a44a5edbe58b3fef84, type: 3}
+    - Type: 0
+      index: 5
+      isReliable: 0
+      source: NP Post
+      title: Government seizes factory, bankrupts it immediately
+      author: Selena Rose
+      information: The Canton government recently seized the rights to Green Alternatives,
+        a small vegan restaurant, where the owner was recently arrested for public
+        nudity and embezzlement. Within 12 days, the government had declared the
+        restaurant bankrupt after misspending had completely drained the bank account
+        attached to the business, undergoing the process of selling the property
+        and giving severance to the employees.
+      month: 'Date: March 13th,'
+      year: 2003
+      characterImage: {fileID: 0}
+    - Type: 0
+      index: 6
+      isReliable: 1
+      source: 'FMZ '
+      title: The Cash Act and how FMZ will go forward
+      author: Bennita Canito
+      information: Canton has entered unprecedented times of civil unrest and bold
+        governmental control. Under The Cash Act, Section XII, FMZ will no longer
+        be operating independently from the Department of Information, which provides
+        sanctions and takes complete control over the content of newspapers affiliated
+        under it. Unless this is overturned, FMZ will no longer be covering celebrity
+        news, hosting bloggers and their content, and many other topics covered by
+        our journalists and affiliated bloggers. This is a blatant attack on the
+        freedom of press, and until this is overturned, many changes are to be expected,
+        though it is difficult to determine what the government has in store for
+        FMZ before these changes go through.
+      month: 'Date: March 13th,'
+      year: 2023
+      characterImage: {fileID: 0}
+    - Type: 1
+      index: 7
+      isReliable: 0
+      source: Witter
+      title: Witter
+      author: '@Creepy_Cobra'
+      information: ' It only took a small nudge for your governance to reveal their
+        true colors. As we have seen, while the vast majority of the money stolen
+        as a result of our attacks to the data vaults has been returned and seized
+        from thieves foolish enough to take the bait, the government uses this as
+        an opportunity to seize more power from you. It is time to fight back, and
+        take back the natural freedoms we deserve!'
+      month: 'Date: March 13th,'
+      year: 2023
+      characterImage: {fileID: 0}
+    - Type: 0
+      index: 8
+      isReliable: 0
+      source: The Canton Herald
+      title: The unspoken benefits of Section XII
+      author: By Lickada Boot, Government-sanctioned journalist
+      information: In the recent days following the inception of the Cash Act, there
+        has been much conversation and controversy around Section XII. The criteria
+        of Section XII would allow City Council to claim ownership around businesses
+        in a limited vicinity around City Hall indefinitely. It is important to clarify
+        that indefinitely does not technically mean forever, and that this emergency
+        bill is to put forward legislation to solve a very important issue. Through
+        Section XII, the government will wrangle control of a suffering economy to
+        give it the care it needs to survive.
+      month: 'Date: March 13th,'
+      year: 2023
+      characterImage: {fileID: 0}
+    - Type: 0
+      index: 9
+      isReliable: 1
+      source: NP Post
+      title: "Section XII and it\u2019s Consequences"
+      author: By  Bob Writer
+      information: "The ever divisive Cash Act and its extremely controversial Section
+        XII have reached international attention. Today, a United States ambassador
+        arrives to speak with the Grand Mayor to discuss the tragedies of recent
+        events and the trajectory of Canton\u2019s social and economic health. Many
+        activists are calling for a public protest and petition in front of City
+        Hall to demonstrate public dissatisfaction with the Cash Act, government
+        corruption under Councilman C.Rook, and other events in recent history."
+      month: 'Date: March 13th,'
+      year: 2023
+      characterImage: {fileID: 0}
+    - Type: 0
+      index: 10
+      isReliable: 0
+      source: Canton Supreme Court Archives
+      title: The People vs Kirstin Polluta
+      author: 
+      information: The court finds in favor of the Cantonites. Kirstin Polluta has
+        been found guilty of corruption and abuse of government authority for the
+        overtaxation of the Cantonites, illegally using government bank accounts
+        to fund their campaign and fund private parties in City Hall. They have been
+        removed from office and sentenced to over 90 years in prison.
+      month: 'Last Reviewed: February 10th,'
+      year: 2023
+      characterImage: {fileID: 0}
+    - Type: 3
+      index: 11
+      isReliable: 0
+      source: "The Commoner\u2019s Voice"
+      title: Kirstin Polluta Found Guilty, Town rejoices
+      author: By Alfeo Cantanzo
+      information: "For the crimes of the blatant theft of the common man\u2019s
+        wealth, Grand Mayor Kirstin Polluta has been found guilty on all charges.
+        The courts decide life in prison and removal from public office. Kirstin
+        Polluta swears that her opposition has rigged the system against her, claiming
+        corruption and foul play. Kirstin Polluta plans to appeal."
+      month: 'Date: February 10th,'
+      year: 1935
+      characterImage: {fileID: 0}
+    - Type: 3
+      index: 12
+      isReliable: 1
+      source: NP Post
+      title: "Grand Mayor\u2019s morality in question, compared to Kirstin Polluta."
+      author: By Jennine Contigo
+      information: "As the Cantonites rally online, protesting the Cash Act after
+        recent press and discussion around the bill, citizens have accused the City
+        Council and Grand Mayor Peter Harbold of corruption. \u201CThis is just like
+        that [Polluta] screwed over our grandparents, we\u2019re being screwed by
+        our government today. History truly repeats itself\u201D says disgruntled
+        protestor."
+      month: 'Date: March 13th,'
+      year: 2023
+      characterImage: {fileID: 0}
+    - Type: 1
+      index: 13
+      isReliable: 0
+      source: Witter
+      title: '@just_some_guy_123'
+      author: '@just_some_guy_123'
+      information: I find Peter Harbold and all of those C.Rooks on the council GUILTY
+        for trying to copy Kirstin Polluta. At least she had the balls to speak to
+        her citizens, not hide behind your legislators!
+      month: 'Date: March 12th,'
+      year: 2023
+      characterImage: {fileID: 21300000, guid: 0785826584043b34eb1a8ab0a6ccbd24, type: 3}
+    - Type: 1
+      index: 14
+      isReliable: 0
+      source: ' Facepage '
+      title: James Stunad
+      author: James Stunad
+      information: 'To everyone criticizing the Grand Mayor rn: Have you ever had
+        to save the economy? Be a little more calm, because you have no idea where
+        they are coming from. Peace and love, people, peace and love.'
+      month: 'Date: March 13th,'
+      year: 2023
+      characterImage: {fileID: 21300000, guid: 70790e59efb14f54283de043e558ef06, type: 3}
     emails:
     - {fileID: 233610304}
     - {fileID: 410888024}
