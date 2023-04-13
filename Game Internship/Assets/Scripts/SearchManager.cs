@@ -17,8 +17,8 @@ public class SearchManager : MonoBehaviour
     {
         SearchBTN.SetActive(false);
         SearchBar.SetActive(false);
-        WikiBTN.SetActive(false);
-        StartCoroutine(showSearch());
+        //WikiBTN.SetActive(false);
+        //StartCoroutine(showSearch());
         totalElements = ContentHolder.transform.childCount;
         Element = new GameObject[totalElements];
 
@@ -60,8 +60,8 @@ public class SearchManager : MonoBehaviour
     public IEnumerator showSearch()
     {
         yield return new WaitForSeconds(3f);
-        SearchBTN.SetActive(true);
-        SearchBar.SetActive(true);
+        //SearchBTN.SetActive(true);
+        //SearchBar.SetActive(true);
         WikiBTN.SetActive(true);
     }
 }
