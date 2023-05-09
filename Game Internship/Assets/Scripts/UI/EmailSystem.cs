@@ -4,10 +4,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-//TODO: Add From/Subject to base email so it's not in every line
+//This script manages the email system during the gameplay loop
+//Note: The email system right now is only able to handle up to 5 emails in the inbox at once.
+//There are situations where the player might have more than 5 emails, so this may require some fixing-up.
 public class EmailSystem : MonoBehaviour
 {
+    #region variables
     public Email currentEmail;
+    //References to the gameObjects used by the email system
     [Header("UI")]
     public GameObject emailPanel;
     public GameObject inboxPanel;
@@ -16,26 +20,31 @@ public class EmailSystem : MonoBehaviour
     public Button toggleBtn;
     public Email[] Inbox;
     public Scrollbar scrollBar;
-
+    //Arrays for the individual objects in the inbox that the player can select to view emails
     [Header("Inbox")]
     public Button[] InboxBtns;
     public Text[] InboxSubjects;
     public Text[] InboxFroms;
-
+    //Text elements that we update with strings to populate emails
     [Header("Email Parts")]
     public Text subject;
     public Text sender;
     public Text body;
-
+    //Extra for keeping track of the emails
     private int currentEmailIndex;
     private int numberOfUnreadEmails;
     private bool emailUpToDate;
+    #endregion
 
+    #region Email Management
     public void Start()
     {
         DisplayEmails();
     }
 
+    /// <summary>
+    /// Sets up the inbox elements to view the current emails
+    /// </summary>
     public void DisplayEmails()
     {
         SortInbox();
@@ -53,29 +62,48 @@ public class EmailSystem : MonoBehaviour
             }
         }
     }
-
+    /// <summary>
+    /// Changes the open email text elements to reflect the currently selected email
+    /// </summary>
+    /// <param name="email"></param>
     public void ChangeEmail(Email email)
     {
         subject.text = email.subject;
         sender.text = email.sender;
         body.text = email.body;
     }
-
+    /// <summary>
+    /// Adds an email to the inbox in the lowest empty place.
+    /// </summary>
+    /// <param name="email">The email we're adding to the inbox</param>
     public void AddEmail(Email email)
     {
         SortInbox();
         Inbox[FindLowestEmpty()] = email;
     }
+    #endregion
 
+    /// <summary>
+    /// This whole region is for sending the player the emails that tell them when they get an article wrong.
+    /// </summary>
+    /// <param name="dayIndex">The current day</param>
+    /// <param name="articleIndex">The article number that the player got wrong. Articles are numbered sequentially by day.</param>
+    /// <param name="delay">The time we wait until the player recieves the email correcting them.</param>
+    /// <returns></returns>
     #region Correction Emails
-    
+
     public IEnumerator SendCorrectionEmailAfterDelay(int dayIndex, int articleIndex, float delay = 3.0f)
     {
         yield return new WaitForSeconds(delay);
         AddEmail(ReturnCorrectionEmail(dayIndex, articleIndex));
         CheckEmails();
     }
-
+    /// <summary>
+    /// Uses the day and article numbers to call the correct method to get the correction email.
+    /// </summary>
+    /// <param name="day"></param>
+    /// <param name="index"></param>
+    /// <returns></returns>
     public Email ReturnCorrectionEmail(int day, int index)
     {
         if (index < 1 || index > 10)
@@ -112,8 +140,13 @@ public class EmailSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Uses its parameters to generate an email telling the player that they got a question wrong.
+    /// This is the method that actually generates all the text for the correction email. Called by each of the corrections methods.
     /// </summary>
+    /// <param name="articleTitle">Title of article sorted  incorrectly</param>
+    /// <param name="isReliable">Whether the article is reliable or not</param>
+    /// <param name="pieceOfCRAAP">Which part of the CRAAP test the article pertains to</param>
+    /// <param name="correctionInfo">Extra information needed for the CRAAP correction</param>
+    /// <param name="hasTitle">Whether or not the article actually has a title</param>
     /// <returns></returns>
     public Email GenerateCorrectionEmail(string articleTitle, bool isReliable, string pieceOfCRAAP, string correctionInfo, bool hasTitle = true)
     {
@@ -135,6 +168,13 @@ public class EmailSystem : MonoBehaviour
         return correctionEmail;
     }
 
+    /// <summary>
+    /// Method returns a string that gives information pertaining to the piece of CRAAP for the article/email.
+    /// </summary>
+    /// <param name="isReliable">Whether or not the article was reliable</param>
+    /// <param name="pieceOfCRAAP">The piece of CRAAP pertaining to the error</param>
+    /// <param name="correctionInfo">Extra information given to the player about why they were wrong</param>
+    /// <returns></returns>
     private string sortCRAAP(bool isReliable, string pieceOfCRAAP, string correctionInfo)
     {
         if (isReliable)
@@ -176,7 +216,7 @@ public class EmailSystem : MonoBehaviour
                          "\nDouble check that your spelled it correctly and it's all lowercase!");
         return "WHOA!! This shouldn't be here!";
     }
-    
+    //All of these are hard coded. Sorry about that.
     public Email DayOneCorrections(int index)
     {
         switch (index)
@@ -391,6 +431,10 @@ public class EmailSystem : MonoBehaviour
     }
     #endregion
 
+    #region UI
+    /// <summary>
+    /// Sorts all the emails and removes empty spaces in the inbox to make everything nice and neat.
+    /// </summary>
     public void SortInbox()
     {
         if (FindLowestEmpty() == 99)
@@ -421,7 +465,10 @@ public class EmailSystem : MonoBehaviour
         }
 
     }
-
+    /// <summary>
+    /// Returns the number of the lowest empty place in the inbox.
+    /// </summary>
+    /// <returns></returns>
     public int FindLowestEmpty()
     {
         for (int i = 0; i < Inbox.Length; i++)
@@ -436,7 +483,8 @@ public class EmailSystem : MonoBehaviour
 
 
     /// <summary>
-    /// Set buttons to NONE in navigation sto stop them from continuously calling their methods
+    /// Set buttons to NONE in navigation sto stop them from continuously calling their methods.
+    /// Shows or hides the inbox panel.
     /// </summary>
     public void ShowHide()
     {
@@ -475,7 +523,9 @@ public class EmailSystem : MonoBehaviour
         CheckEmails();
         GameManager.readyToStartWork = emailUpToDate; 
     }
-
+    /// <summary>
+    /// Used to progress the game loop with the story emails and set the notification when the player has new emails.
+    /// </summary>
     public void CheckEmails() 
     {
         bool allEmailsDeleted = true;
@@ -527,5 +577,5 @@ public class EmailSystem : MonoBehaviour
         notificationText.text = numberOfUnreadEmails.ToString();
         #endregion
     }
-
+    #endregion
 }

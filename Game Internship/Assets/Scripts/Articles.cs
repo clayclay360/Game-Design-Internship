@@ -5,7 +5,12 @@ using UnityEngine;
 //This script contains all of the information used to populate newspaper articles for the end of the day
 public class Articles
 {
-    //These variables are used to 
+    /// <summary>
+    /// The main method usesd to get our article information. The method returns an array of three strings which are used to populate newspaper info.
+    /// </summary>
+    /// <param name="day">The current day that we're fetching articles for</param>
+    /// <param name="wasPlayerCorrect">Whether the player was able to correctly sort enough articles to win the day</param>
+    /// <returns></returns>
     public string[] GetNewspaperInfo(int day, bool wasPlayerCorrect)
     {
         switch (day)
@@ -30,7 +35,13 @@ public class Articles
         return new string[] { "", "", ""};
     }
 
+
     #region dayTemplate
+    /// <summary>
+    /// Empty day to use for creating extra days. Only necessary if you plan on adding extra days.
+    /// </summary>
+    /// <param name="wasPlayerCorrect">Whether the player was able to correctly sort enough articles to win the day</param>
+    /// <returns></returns>
     private string[] dayX(bool wasPlayerCorrect)
     {
         if (wasPlayerCorrect)

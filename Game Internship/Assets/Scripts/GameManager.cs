@@ -8,7 +8,7 @@ public class GameManager
 {
     public static int reliableDate;
     public static int currentDay;
-    public static int totalDays = 6;
+    public static int totalDays = 6; // 0 index ;)
     public static int playerScore = 0;
     public static int numberOfCorrectSources = 0;
     public static bool readyForNextSource;
