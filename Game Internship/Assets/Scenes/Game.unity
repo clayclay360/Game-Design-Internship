@@ -24415,6 +24415,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0.73362887
       objectReference: {fileID: 0}
+    - target: {fileID: 2542370521798824949, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3000135464564208519, guid: 961daa1dd9ace1e42ba9c09884d05610, type: 3}
       propertyPath: m_FontData.m_Font
       value: 

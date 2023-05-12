@@ -32,7 +32,7 @@ public class Main : MonoBehaviour
         articles = new Articles();
         newsPaper.gameObject.SetActive(false);
 
-        GameManager.currentDay = 5; ; // for testing
+        GameManager.currentDay = 0; ; // for testing
         StartCoroutine(Gameloop());
     }
 

@@ -506,11 +506,28 @@ public class EmailSystem : MonoBehaviour
         Inbox[currentEmailIndex].opened = true;
     }
 
+    /// <summary>
+    /// Deletes the opened email from the email panel
+    /// </summary>
     public void DeleteEmail()
     {
         Inbox[currentEmailIndex].opened = true;
         emailPanel.SetActive(false);
         Inbox[currentEmailIndex] = null;
+        DisplayEmails();
+        if (Inbox[0] == null)
+        {
+            ShowHide();
+        }
+    }
+
+    /// <summary>
+    /// Deletes a specific email from the inbox panel. There is a button correlating to each email.
+    /// </summary>
+    /// <param name="buttonIndex">The button/email index</param>
+    public void DeleteEmailByButton(int buttonIndex)
+    {
+        Inbox[buttonIndex] = null;
         DisplayEmails();
         if (Inbox[0] == null)
         {
